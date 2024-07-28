@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Bimantis",
@@ -16,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <TooltipProvider>{children}</TooltipProvider>
+        <Suspense fallback={<div>Loading...</div>}>
+          <TooltipProvider>{children}</TooltipProvider>
+        </Suspense>
       </body>
     </html>
   );

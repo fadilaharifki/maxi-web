@@ -9,13 +9,15 @@ const LayoutComponent = ({ children }: any) => {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    const hash = window.location.hash;
-    if (hash) {
-      const targetElement = document.querySelector(hash);
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: "smooth",
-        });
+    if (typeof window !== "undefined") {
+      const hash = window.location.hash;
+      if (hash) {
+        const targetElement = document.querySelector(hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
       }
     }
   }, [searchParams]);
