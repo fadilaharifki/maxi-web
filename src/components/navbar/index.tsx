@@ -3,10 +3,12 @@
 import { PhoneIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
+import { twMerge } from "tailwind-merge";
 
 const NavBar = () => {
+  const pathname = usePathname();
   const router = useRouter();
   const menus = [
     {
@@ -29,7 +31,12 @@ const NavBar = () => {
   return (
     <>
       <div className="grid grid-cols-3 justify-around items-center py-3 fixed z-50 w-screen bg-white">
-        <div className="flex justify-center items-center gap-3 cursor-pointer hover:scale-125 duration-300">
+        <div
+          className="flex justify-center items-center gap-3 cursor-pointer hover:scale-125 duration-300"
+          onClick={() => {
+            router.push("/");
+          }}
+        >
           <Image
             src="/assets/image/logo.png"
             width={1000}
@@ -52,7 +59,12 @@ const NavBar = () => {
                 href={menu.slug}
               >
                 {menu.name}
-                <div className="border-b-4 py-3 border-transparent duration-300 -mx-2 group-hover:border-primary-green absolute inset-0"></div>
+                <div
+                  className={twMerge(
+                    "border-b-4 py-3 border-transparent duration-300 -mx-2 group-hover:border-primary-green absolute inset-0",
+                    pathname === menu.slug ? "border-primary-green" : ""
+                  )}
+                ></div>
               </Link>
             );
           })}
