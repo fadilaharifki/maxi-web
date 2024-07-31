@@ -1,6 +1,19 @@
+import { toTitleCase } from "@/lib/utils";
 import { HeartIcon } from "lucide-react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
+import { DialogComponent } from "../dialog";
+import { useEffect, useState } from "react";
+import {
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "../ui/dialog";
+import { Button } from "../ui/button";
+import useParamsHook from "@/hooks/useParamsHook";
+import { AllProduct } from "@/modules/product/product";
 
 interface CardComponentInterface {
   classNameImage?: string;
@@ -11,6 +24,8 @@ interface CardComponentInterface {
   price?: string;
   codeCurrency?: string;
   description?: string;
+  category?: string;
+  onDetail?: () => void;
 }
 
 const CardComponent = ({
@@ -22,13 +37,18 @@ const CardComponent = ({
   price,
   codeCurrency,
   description,
+  category,
+  onDetail = () => {},
 }: CardComponentInterface) => {
   return (
     <div
       className={twMerge(
-        "bg-white rounded-2xl shadow-lg overflow-hidden mx-auto",
+        "bg-white rounded-2xl shadow-lg overflow-hidden mx-auto cursor-pointer",
         classNameContainer
       )}
+      onClick={() => {
+        onDetail();
+      }}
     >
       <div className="relative">
         <Image
@@ -54,9 +74,16 @@ const CardComponent = ({
         )}
       </div>
       <div className="p-4">
-        <h2 className="text-lg font-semibold text-gray-800 font-comfortaa">
+        <h2 className="text-lg font-semibold leading-none text-gray-800 font-comfortaa">
           {productName}
         </h2>
+
+        {category && (
+          <span className="text-xs font-comfortaa">
+            {toTitleCase(category)}
+          </span>
+        )}
+
         {price && (
           <div className="flex items-center mt-2">
             <div className="bg-black rounded-full px-2">
