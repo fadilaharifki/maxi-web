@@ -42,11 +42,14 @@ const NavBar = () => {
             width={1000}
             height={1000}
             alt="Logo"
-            className="h-10 w-11"
+            className="h-15 w-16"
           />
-          <div>
-            <div className="font-comfortaa text-primary-green font-bold text-2xl">
+          <div className="flex justify-between flex-col">
+            <div className="font-comfortaa text-primary-green font-bold text-2xl uppercase">
               Bimantis
+            </div>
+            <div className="font-comfortaa text-primary-green font-bold text-lg uppercase">
+              PT. Bima Inti Selaras
             </div>
           </div>
         </div>

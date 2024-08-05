@@ -6,11 +6,7 @@ import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
 import CardComponent from "@/components/card";
 import LayoutComponent from "@/components/layout";
 
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { AllProduct } from "./product";
+import { AllProduct } from "../../contants/product";
 import { PaginationComponnet } from "@/components/pagination";
 import { useEffect, useMemo, useState } from "react";
 import { SelectComponent } from "@/components/select";

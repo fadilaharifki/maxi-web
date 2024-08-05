@@ -63,20 +63,24 @@ const FooterComponent = () => {
     }
   };
 
+  const flag = false;
+
   return (
     <div>
-      <div
-        id="contact-us"
-        className="grid grid-cols-2 px-10 bg-green-white py-5 gap-x-32"
-      >
-        <div className="font-comfortaa text-primary-green">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry?
+      {flag && (
+        <div
+          id="contact-us"
+          className="grid grid-cols-2 px-10 bg-green-white py-5 gap-x-32"
+        >
+          <div className="font-comfortaa text-primary-green">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry?
+          </div>
+          <div className="font-comfortaa">
+            <InputWithButton placeholder="Enter your email" />
+          </div>
         </div>
-        <div className="font-comfortaa">
-          <InputWithButton placeholder="Enter your email" />
-        </div>
-      </div>
+      )}
       <div className="w-screen bg-primary-green">
         <div className="grid grid-cols-5 p-10 ">
           <div className="flex flex-col gap-10">

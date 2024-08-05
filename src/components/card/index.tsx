@@ -13,7 +13,7 @@ import {
 } from "../ui/dialog";
 import { Button } from "../ui/button";
 import useParamsHook from "@/hooks/useParamsHook";
-import { AllProduct } from "@/modules/product/product";
+import { AllProduct } from "@/contants/product";
 
 interface CardComponentInterface {
   classNameImage?: string;
