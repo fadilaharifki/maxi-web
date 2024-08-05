@@ -22,10 +22,7 @@ const NavBar = () => {
   ];
 
   const handleScrollToContact = () => {
-    const contactElement = document.getElementById("contact-us");
-    if (contactElement) {
-      contactElement.scrollIntoView({ behavior: "smooth" });
-    }
+    router.push("/contact-us");
   };
 
   return (
