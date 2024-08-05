@@ -32,4 +32,10 @@ export const logoCustomers = [
   {
     url: "/assets/image/chateraise.jpg",
   },
+  {
+    url: "/assets/image/oishi.png",
+  },
+  {
+    url: "/assets/image/dbff.png",
+  },
 ];

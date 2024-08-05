@@ -276,7 +276,7 @@ const ModuleHome = () => {
           <div className="font-comfortaa text-5xl text-bold text-primary-green">
             Our active customers..
           </div>
-          <div className="grid grid-cols-6">
+          <div className="grid grid-cols-5 gap-3 justify-center items-center">
             {logoCustomers.map((logo, index) => {
               return (
                 <div key={index}>
