@@ -85,22 +85,44 @@ const ContactUsModule = () => {
                       Head Office
                     </div>
                     <div className="flex items-center font-poppins text-sm text-bold text-white">
-                      <MapPin className="w-3 h-3 mr-2" /> Ruko Mahkota Mas Blok
-                      J 57-60 Jl. M.H. Thamrin Kota Tangerang – Indonesia 15117
+                      <MapPin className="w-3 h-3 mr-2" /> Jl. Lautze No. 12
+                      Jakarta Pusat - Indonesia 10750
                     </div>
                     <div className="flex items-center font-poppins text-sm text-bold text-white">
-                      <Phone className="w-3 h-3 mr-2" /> : +62 21 – 5577 5024
+                      <Phone className="w-3 h-3 mr-2" /> : +62 21 639 4547
                     </div>
                   </div>
 
                   <div className="flex justify-start flex-col items-start">
                     <div className="font-poppins text-xl text-bold text-white">
-                      Plant
+                      Global Sales Office :
                     </div>
                     <div className="flex items-center font-poppins text-sm text-bold text-white">
                       <MapPin className="w-3 h-3 mr-2" />
-                      Jl. Raya Pasar Kemis KM 3.5 Kabupaten Tangerang –
+                      Ruko Mahkota Mas Blok J 57-60 Jl. M.H. Thamrin Kota
+                      Tangerang - Indonesia 15117
+                    </div>
+                    <div className="flex items-center font-poppins text-sm text-bold text-white">
+                      <Phone className="w-3 h-3 mr-2" /> : +62 21 5577 5024
+                    </div>
+                  </div>
+                  <div className="flex justify-start flex-col items-start">
+                    <div className="font-poppins text-xl text-bold text-white">
+                      Indonesia Plant :
+                    </div>
+                    <div className="flex items-center font-poppins text-sm text-bold text-white">
+                      <MapPin className="w-3 h-3 mr-2" />
+                      Jl. Raya Pasar Kemis KM 3.5 Kabupaten Tangerang -
                       Indonesia 15135
+                    </div>
+                  </div>
+                  <div className="flex justify-start flex-col items-start">
+                    <div className="font-poppins text-xl text-bold text-white">
+                      Timor-Leste Plant :
+                    </div>
+                    <div className="flex items-center font-poppins text-sm text-bold text-white">
+                      <MapPin className="w-3 h-3 mr-2" />
+                      Manleuana, Dom Alexio, Dili - Timor Leste
                     </div>
                   </div>
                 </div>

@@ -67,11 +67,11 @@ const ModuleHome = () => {
           <div className="absolute inset-0 bg-black opacity-10"></div>
           <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10">
             <div>
-              <div className="font-comfortaa text-7xl font-bold text-white uppercase">
+              <div className="font-comfortaa text-2xl sm:text-7xl font-bold text-white uppercase">
                 Bimantis
               </div>
             </div>
-            <div className="font-comfortaa text-3xl font-bold text-white w-96 flex-wrap">
+            <div className="font-comfortaa text-md sm:text-2xl font-bold text-white w-screen sm:w-96 flex-wrap">
               We learnt to be honest and helpful in everything we do to support
               you
             </div>

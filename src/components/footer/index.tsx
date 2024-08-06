@@ -82,7 +82,7 @@ const FooterComponent = () => {
         </div>
       )}
       <div className="w-screen bg-primary-green">
-        <div className="grid grid-cols-5 p-10 ">
+        <div className="grid grid-cols-3 p-10 ">
           <div className="flex flex-col gap-10">
             <div className="font-comfortaa text-xl text-bold text-white">
               Bimantis
@@ -121,32 +121,23 @@ const FooterComponent = () => {
               })}
             </div>
           </div>
-          <div className="col-span-3 flex justify-end flex-col items-end gap-10">
+          <div className="flex justify-end flex-col items-end gap-10">
             <div className="font-poppins text-3xl text-bold text-white">
               PT. BIMA INTI SELARAS
             </div>
-
             <div className="flex justify-end flex-col items-end">
               <div className="font-poppins text-xl text-bold text-white">
-                Head Office
+                Global Sales Office :
               </div>
               <div className="flex items-center font-poppins text-sm text-bold text-white">
                 <MapPin className="w-3 h-3 mr-2" /> Ruko Mahkota Mas Blok J
-                57-60 Jl. M.H. Thamrin Kota Tangerang – Indonesia 15117
+                57-60 Jl. M.H. Thamrin
               </div>
               <div className="flex items-center font-poppins text-sm text-bold text-white">
-                <Phone className="w-3 h-3 mr-2" /> : +62 21 – 5577 5024
-              </div>
-            </div>
-
-            <div className="flex justify-end flex-col items-end">
-              <div className="font-poppins text-xl text-bold text-white">
-                Plant
+                Kota Tangerang - Indonesia 15117
               </div>
               <div className="flex items-center font-poppins text-sm text-bold text-white">
-                <MapPin className="w-3 h-3 mr-2" />
-                Jl. Raya Pasar Kemis KM 3.5 Kabupaten Tangerang – Indonesia
-                15135
+                <Phone className="w-3 h-3 mr-2" /> : +62 21 5577 5024
               </div>
             </div>
           </div>

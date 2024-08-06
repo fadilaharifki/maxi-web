@@ -24,11 +24,22 @@ const config: Config = {
       },
       fontFamily: {
         comfortaa: ["Comfortaa", ...defaultTheme.fontFamily.sans],
-        poppins: ["Poppins", "sans-serif"],
+        poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
+        josefinSans: ["Josefin Sans", ...defaultTheme.fontFamily.sans],
+        bebasNeue: ["Bebas Neue", ...defaultTheme.fontFamily.sans],
+        montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
+      },
+      fontWeight: {
+        "comfortaa-light": "300",
+        "comfortaa-regular": "400",
+        "comfortaa-bold": "700",
+        "nanum-regular": "400",
+        "nanum-bold": "700",
       },
       colors: {
         "primary-green": "#0E462B",
         "green-white": "#F8FAF5",
+        "rose-gold": "#feeae1",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
