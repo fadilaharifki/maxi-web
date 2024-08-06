@@ -51,10 +51,10 @@ const NavBar = () => {
                 className="h-10 w-11"
               />
               <div className="flex justify-between flex-col">
-                <div className="font-comfortaa text-primary-green font-comfortaa-bold text-xl uppercase">
+                <div className="font-montserrat text-primary-green font-semibold text-xl uppercase">
                   Bimantis
                 </div>
-                <div className="font-comfortaa text-primary-green font-comfortaa-bold text-sm uppercase">
+                <div className="font-montserrat text-primary-green font-semibold text-sm uppercase">
                   PT. Bima Inti Selaras
                 </div>
               </div>
