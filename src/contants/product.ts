@@ -8,6 +8,12 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: true,
     new_product: false,
+    images: [
+      "/assets/image/products/honey/2.jpg",
+      "/assets/image/products/honey/3.jpg",
+      "/assets/image/products/honey/1.jpg",
+      "/assets/image/products/honey/4.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },

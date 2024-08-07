@@ -26,6 +26,7 @@ interface CardComponentInterface {
   description?: string;
   category?: string;
   onDetail?: () => void;
+  images?: string[];
 }
 
 const CardComponent = ({
@@ -38,6 +39,7 @@ const CardComponent = ({
   codeCurrency,
   description,
   category,
+  images,
   onDetail = () => {},
 }: CardComponentInterface) => {
   return (
@@ -52,7 +54,7 @@ const CardComponent = ({
     >
       <div className="relative">
         <Image
-          src="/assets/image/products/palm-sugar.png"
+          src={images?.[0] ?? "/assets/image/products/palm-sugar.png"}
           alt="Product Image"
           width={400}
           height={300}

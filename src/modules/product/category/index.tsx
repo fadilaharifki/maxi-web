@@ -27,6 +27,13 @@ import {
   ProductFormOptions,
 } from "../select-options";
 import { AllProduct } from "@/contants/product";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const CategoryProductModules = () => {
   const { params, updateParams, removeParams, getFullURL } = useParamsHook();
@@ -125,11 +132,12 @@ const CategoryProductModules = () => {
                 return (
                   <CardComponent
                     key={i}
+                    images={product.images}
                     productName={product.product_name}
                     description={product.description}
                     isBestSeller={product.best_seller}
                     category={product.category}
-                    classNameImage="h-32"
+                    classNameImage="h-52"
                     isLike
                     onDetail={() => {
                       updateParams({
@@ -180,13 +188,30 @@ const CategoryProductModules = () => {
             <DialogDescription>{meta?.description}</DialogDescription>
           </DialogHeader>
           <div>
-            <Image
-              src="/assets/image/products/palm-sugar.png"
-              alt="Product Image"
-              width={400}
-              height={300}
-              className={twMerge("object-cover w-full h-72 rounded-2xl")}
-            />
+            <Carousel className="w-full">
+              <CarouselContent>
+                {(meta.images ?? ["/assets/image/not-found.jpg"]).map(
+                  (url: string, index: number) => (
+                    <CarouselItem key={index}>
+                      <div className="p-1">
+                        <Image
+                          src={url}
+                          alt="Product Image"
+                          width={400}
+                          height={300}
+                          className={twMerge(
+                            "object-cover w-full h-72 rounded-2xl"
+                          )}
+                        />
+                      </div>
+                    </CarouselItem>
+                  )
+                )}
+              </CarouselContent>
+              <CarouselPrevious className="ml-16" />
+              <CarouselNext className="mr-16" />
+            </Carousel>
+
             <div className="flex gap-3 my-5">
               <div>
                 <DialogDescription>Product Form</DialogDescription>
