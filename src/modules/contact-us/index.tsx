@@ -65,11 +65,11 @@ const ContactUsModule = () => {
             width={1000}
             height={1000}
             alt="Logo"
-            className="w-screen h-screen object-cover"
+            className="w-screen h-[150vh] md:h-screen object-cover"
           />
           <div className="absolute inset-0 bg-black opacity-10"></div>
-          <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10">
-            <div className="grid grid-cols-2">
+          <div className="absolute inset-0 flex flex-col justify-center gap-5 px-5 md:px-10">
+            <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="flex justify-center items-center">
                 <div className="col-span-3 flex justify-start flex-col items-start gap-10">
                   <div>
@@ -127,7 +127,7 @@ const ContactUsModule = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col px-32">
+              <div className="flex flex-col pt-10 md:pt-0 md:px-32">
                 <form
                   className="flex flex-col gap-5 "
                   onSubmit={handleSubmit(onSubmit)}
