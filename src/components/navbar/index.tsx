@@ -11,8 +11,7 @@ import useScreenSize from "@/hooks/useScreenSize";
 const NavBar = () => {
   const pathname = usePathname();
   const router = useRouter();
-  const { width, breakpoint } = useScreenSize();
-  console.log(width, breakpoint, "width, breakpoint }");
+  const { breakpoint } = useScreenSize();
 
   const menus = [
     {

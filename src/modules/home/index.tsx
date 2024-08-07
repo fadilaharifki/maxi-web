@@ -80,7 +80,7 @@ const ModuleHome = () => {
                 Bimantis
               </div>
             </div>
-            <div className="font-comfortaa text-md sm:text-2xl font-bold text-white w-22 sm:w-96 flex-wrap">
+            <div className="font-comfortaa text-base sm:text-2xl font-bold text-white w-22 sm:w-96 flex-wrap">
               We learnt to be honest and helpful in everything we do to support
               you
             </div>

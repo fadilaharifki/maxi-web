@@ -81,57 +81,15 @@ const CategoryProductModules = () => {
 
   return (
     <LayoutComponent>
-      <section id="all-products" className="min-h-screen px-20 pb-12 pt-32">
-        <div className="grid grid-cols-5 min-h-80">
-          <div className="flex flex-col bg-orange-500 rounded-2xl p-4 text-white">
-            {/* <CardComponent
-              productName={"Palm Brown"}
-              description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
-              }
-              isLike
-              isBestSeller
-            /> */}
-            <div className="flex flex-col text-white gap-1 font-comfortaa">
-              {ProductFormOptions.map((menu, i) => {
-                return (
-                  <div
-                    className={twMerge(
-                      "hover:pl-5 duration-300 cursor-pointer",
-                      menu.disabel ? "hover:pl-0 font-bold" : "text-sm",
-                      product_form === menu.value ? "pl-5" : ""
-                    )}
-                    key={i}
-                    onClick={() => {
-                      updateParams({ product_form: menu.value });
-                    }}
-                  >
-                    {menu.label}
-                  </div>
-                );
-              })}
-              {CategoryOptions.map((menu, i) => {
-                return (
-                  <div
-                    className={twMerge(
-                      "hover:pl-5 duration-300 cursor-pointer",
-                      menu.disabel ? "font-bold hover:pl-0 pt-10" : "text-sm",
-                      category === menu.value ? "pl-5" : ""
-                    )}
-                    key={i}
-                    onClick={() => {
-                      updateParams({ category: menu.value });
-                    }}
-                  >
-                    {toTitleCase(menu.label)}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+      <section
+        id="all-products"
+        className="min-h-screen px-5 md:mx-20 pb-12 pt-32"
+      >
+        <div className="flex min-h-80">
           <div className="col-span-4">
-            <div className="grid grid-cols-4 rounded-2xl p-5 gap-2">
+            <div className="grid grid-cols-2 md:grid-cols-5 rounded-2xl mb-5 md:p-5 gap-2">
               <Input
+                className="col-span-2 md:col-span-1"
                 placeholder="Search Product"
                 onChange={(e) => {
                   if (e.target.value) updateParams({ keyword: e.target.value });
@@ -162,7 +120,7 @@ const CategoryProductModules = () => {
                 classNameSelectTrigger="w-full"
               />
             </div>
-            <div className=" grid grid-cols-4 gap-5 px-5">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-5">
               {currentItems.map((product, i) => {
                 return (
                   <CardComponent
@@ -183,22 +141,26 @@ const CategoryProductModules = () => {
                 );
               })}
             </div>
-            <div className="pt-10 flex ">
+            <div className="pt-10 flex flex-col md:flex-row gap-5">
               <PaginationComponnet
                 totalPages={totalPages}
                 currentPage={currentPage}
                 handlePageChange={handlePageChange}
               />
-              <SelectComponent
-                options={PerPageOptions}
-                value={itemsPerPage}
-                handleChange={(e) => {
-                  setItemsPerPage(+e);
-                }}
-                placholder="Limit Page"
-                classNameSelectTrigger="w-22"
-                isClean={false}
-              />
+              <div className="flex gap-2 justify-center items-center md:w-56">
+                <span className="font-comfortaa text-sm">Per Page</span>
+                <SelectComponent
+                  options={PerPageOptions}
+                  value={itemsPerPage}
+                  handleChange={(e) => {
+                    setItemsPerPage(+e);
+                    setCurrentPage(1);
+                  }}
+                  placholder="Limit Page"
+                  classNameSelectTrigger="w-22"
+                  isClean={false}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -253,30 +215,31 @@ const CategoryProductModules = () => {
                 )}
               </div>
             </div>
+
+            <div className="flex gap-3 justify-end">
+              <Share2Icon
+                onClick={() => {
+                  copyTextToClipboard(getFullURL());
+                }}
+                className=" cursor-pointer"
+              />
+              <PhoneIcon
+                className=" cursor-pointer"
+                onClick={() => {
+                  const phoneNumber = "6289505822191";
+
+                  const fullURL = getFullURL();
+
+                  const message = `Hello, I am interested in your product! ${fullURL}`;
+                  const encodedMessage = encodeURIComponent(message);
+
+                  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+                  window.open(whatsappURL, "_blank");
+                }}
+              />
+            </div>
           </div>
-          <DialogFooter>
-            <Share2Icon
-              onClick={() => {
-                copyTextToClipboard(getFullURL());
-              }}
-              className=" cursor-pointer"
-            />
-            <PhoneIcon
-              className=" cursor-pointer"
-              onClick={() => {
-                const phoneNumber = "6289505822191";
-
-                const fullURL = getFullURL();
-
-                const message = `Hello, I am interested in your product! ${fullURL}`;
-                const encodedMessage = encodeURIComponent(message);
-
-                const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
-                window.open(whatsappURL, "_blank");
-              }}
-            />
-          </DialogFooter>
         </DialogContent>
       </DialogComponent>
     </LayoutComponent>

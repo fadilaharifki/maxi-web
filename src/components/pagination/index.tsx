@@ -7,6 +7,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import useScreenSize from "@/hooks/useScreenSize";
 import { twMerge } from "tailwind-merge";
 
 interface PaginationComponnetInterface {
@@ -20,6 +21,8 @@ export function PaginationComponnet({
   currentPage = 1,
   handlePageChange = () => {},
 }: PaginationComponnetInterface) {
+  const { breakpoint } = useScreenSize();
+
   const maxDisplayPages = 5; // Maximum number of page numbers to display
   const halfDisplayPages = Math.floor(maxDisplayPages / 2);
   let startPage = Math.max(currentPage - halfDisplayPages, 1);
@@ -42,6 +45,7 @@ export function PaginationComponnet({
           }}
         >
           <PaginationPrevious
+            isLabel={breakpoint === "sm" || breakpoint === "md" ? false : true}
             className={twMerge(
               "cursor-pointer",
               currentPage === 1 ? "text-gray-400 hover:text-gray-400" : ""
@@ -85,6 +89,7 @@ export function PaginationComponnet({
           }}
         >
           <PaginationNext
+            isLabel={breakpoint === "sm" || breakpoint === "md" ? false : true}
             className={twMerge(
               "cursor-pointer",
               currentPage === totalPages

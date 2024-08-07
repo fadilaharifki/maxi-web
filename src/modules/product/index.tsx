@@ -18,12 +18,12 @@ const ProductModule = () => {
           router.push("product/category?category=beans+%26+grains");
         }}
       >
-        <div className="grid grid-cols-2 gap-10 p-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10">
           <div className="flex flex-col justify-center items-center">
-            <div className="font-comfortaa font-bold text-3xl text-primary-green">
+            <div className="font-comfortaa font-bold text-2xl md:text-3xl text-primary-green text-center">
               Sesame Seed
             </div>
-            <div className="font-comfortaa font-bold text-xl text-primary-green text-center">
+            <div className="font-comfortaa font-bold text-lg md:text-xl text-primary-green text-center">
               Natur Roasted Character
             </div>
           </div>
@@ -33,7 +33,7 @@ const ProductModule = () => {
               width={1000}
               height={1000}
               alt="Logo"
-              className="w-screen h-96 object-cover rounded-xl"
+              className="w-screen h-44 md:h-96 object-cover rounded-xl"
             />
           </div>
         </div>
@@ -44,21 +44,21 @@ const ProductModule = () => {
         }}
         className="bg-green-white hover:scale-105 duration-300 cursor-pointer"
       >
-        <div className="grid grid-cols-2 gap-10 p-10 pb-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 pb-32">
           <div>
             <Image
               src="/assets/image/background3.jpg"
               width={1000}
               height={1000}
               alt="Logo"
-              className="w-screen h-96 object-cover rounded-xl"
+              className="w-screen h-44 md:h-96 object-cover rounded-xl"
             />
           </div>
           <div className="flex flex-col justify-center items-center">
-            <div className="font-comfortaa font-bold text-3xl text-primary-green">
+            <div className="font-comfortaa font-bold text-2xl md:text-3xl text-primary-green">
               Purple Sweet Potato
             </div>
-            <div className="font-comfortaa font-bold text-xl text-primary-green text-center">
+            <div className="font-comfortaa font-bold text-lg md:text-xl text-primary-green text-center">
               A uniq taste natural color for all aprication in food & drink
             </div>
           </div>
@@ -76,16 +76,16 @@ const ProductModule = () => {
             width={1000}
             height={1000}
             alt="Logo"
-            className="w-screen h-[550px] object-cover"
+            className="w-screen h-96 md:h-[550px] object-cover"
           />
           <div className="absolute inset-0 bg-black opacity-50"></div>
-          <div className="absolute inset-0 flex flex-col justify-center gap-5 px-20">
+          <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10 md:px-20">
             <div>
-              <div className="font-comfortaa text-5xl font-bold text-white uppercase">
+              <div className="font-comfortaa text-2xl md:text-5xl font-bold text-white uppercase">
                 Palm Sugar
               </div>
             </div>
-            <div className="font-comfortaa text-xl font-bold text-white w-96 flex-wrap">
+            <div className="font-comfortaa text-base md:text-xl font-bold text-white w-5/6 md:w-96 flex-wrap">
               We learnt to be honest and helpful in everything we do to support
               you
             </div>
@@ -106,16 +106,16 @@ const ProductModule = () => {
             width={1000}
             height={1000}
             alt="Logo"
-            className="w-screen h-[550px] object-cover"
+            className="w-screen h-96 md:h-[550px] object-cover"
           />
           <div className="absolute inset-0 bg-black opacity-50"></div>
-          <div className="absolute inset-0 flex flex-col justify-center gap-5 px-20">
+          <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10 md:px-20">
             <div>
-              <div className="font-comfortaa text-5xl font-bold text-white uppercase">
+              <div className="font-comfortaa text-2xl md:text-5xl font-bold text-white uppercase">
                 Galatic
               </div>
             </div>
-            <div className="font-comfortaa text-xl font-bold text-white w-96 flex-wrap">
+            <div className="font-comfortaa text-base md:text-xl font-bold text-white w-5/6 md:w-96 flex-wrap">
               We learnt to be honest and helpful in everything we do to support
               you
             </div>
@@ -129,23 +129,23 @@ const ProductModule = () => {
             width={1000}
             height={1000}
             alt="Logo"
-            className="w-screen h-[550px] object-cover"
+            className="w-screen h-96 md:h-[550px] object-cover"
           />
           <div className="absolute inset-0 bg-black opacity-50"></div>
 
-          <div className="grid grid-cols-2 absolute inset-0 justify-center gap-5 px-20">
+          <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10 md:px-20">
             <div className="flex flex-col justify-center">
-              <div className="font-comfortaa text-5xl font-bold text-white uppercase">
+              <div className="font-comfortaa text-2xl md:text-5xl font-bold text-white uppercase">
                 Our Origin
               </div>
-              <div className="font-comfortaa text-xl font-bold text-white w-96 flex-wrap">
+              <div className="font-comfortaa text-base md:text-xl font-bold text-white w-5/6 md:w-96 flex-wrap">
                 We colaborate with the agricultur community for development
                 process and responsible sourcing base on good agricultural
                 practice to producting the final Nature Products.
               </div>
             </div>
-            <div className="flex flex-col justify-end items-end p-20">
-              <div className="font-comfortaa text-xl font-bold text-white w-96 flex-wrap">
+            <div className="flex flex-col justify-end items-end md:p-20">
+              <div className="font-comfortaa text-base md:text-xl text-end font-bold text-white w-5/6 md:w-96 flex-wrap">
                 Natural / foney liquid for various industries
               </div>
             </div>
@@ -153,12 +153,12 @@ const ProductModule = () => {
         </div>
       </section>
       <section className="hover:scale-105 duration-300 cursor-pointer">
-        <div className="grid grid-cols-2 gap-10 p-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10">
           <div className="flex flex-col justify-center items-center">
-            <div className="font-comfortaa font-bold text-3xl text-primary-green">
+            <div className="font-comfortaa font-bold text-2xl md:text-3xl text-primary-green text-center">
               Our unique Fruit & Vegetables
             </div>
-            <div className="font-comfortaa font-bold text-xl text-primary-green text-center">
+            <div className="font-comfortaa font-bold text-lg md:text-xl text-primary-green text-center">
               Fruit & Vegetables to improves quality of life
             </div>
           </div>
@@ -168,7 +168,7 @@ const ProductModule = () => {
               width={1000}
               height={1000}
               alt="Logo"
-              className="w-screen h-96 object-cover rounded-xl"
+              className="w-screen h-44 md:h-96 object-cover rounded-xl"
             />
           </div>
         </div>
