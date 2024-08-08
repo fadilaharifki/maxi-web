@@ -29,6 +29,7 @@ import { AllProduct } from "@/contants/product";
 import { logoCustomers } from "@/contants/cloboration";
 import { useSearchParams } from "next/navigation";
 import useScreenSize from "@/hooks/useScreenSize";
+import { twMerge } from "tailwind-merge";
 
 const ModuleHome = () => {
   const { width, breakpoint } = useScreenSize();
@@ -67,7 +68,7 @@ const ModuleHome = () => {
       <section className="h-screen" id="our-company">
         <div className="relative flex flex-col h-full bg-green-white">
           <Image
-            src="/assets/image/background1.jpg"
+            src="/assets/image/banner/1.jpg"
             width={1000}
             height={1000}
             alt="Logo"
@@ -124,7 +125,7 @@ const ModuleHome = () => {
       <section>
         <div className="relative flex flex-col h-full bg-green-white">
           <Image
-            src="/assets/image/background2.jpg"
+            src="/assets/image/banner/3.jpg"
             width={1000}
             height={1000}
             alt="Logo"
@@ -238,7 +239,7 @@ const ModuleHome = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 p-10 pb-10 md:pb-32 gap-y-10">
           <div>
             <Image
-              src="/assets/image/background3.jpg"
+              src="/assets/image/banner/2.jpg"
               width={1000}
               height={1000}
               alt="Logo"
@@ -282,6 +283,7 @@ const ModuleHome = () => {
                     description={product.description}
                     isBestSeller={product.best_seller}
                     category={product.category}
+                    images={product.images}
                     isLike
                     onDetail={() => {
                       updateParams({
@@ -352,13 +354,35 @@ const ModuleHome = () => {
             <DialogDescription>{meta?.description}</DialogDescription>
           </DialogHeader>
           <div>
-            <Image
-              src="/assets/image/products/palm-sugar.png"
-              alt="Product Image"
-              width={400}
-              height={300}
-              className="object-cover w-full h-72 rounded-2xl"
-            />
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {(meta.images ?? ["/assets/image/not-found.jpg"]).map(
+                  (url: string, index: number) => (
+                    <CarouselItem key={index}>
+                      <div className="p-1">
+                        <Image
+                          src={url}
+                          alt="Product Image"
+                          width={400}
+                          height={300}
+                          className={twMerge(
+                            "object-cover w-full h-72 rounded-2xl"
+                          )}
+                        />
+                      </div>
+                    </CarouselItem>
+                  )
+                )}
+              </CarouselContent>
+              <CarouselPrevious className="ml-16" />
+              <CarouselNext className="mr-16" />
+            </Carousel>
             <div className="flex gap-3 my-5">
               <div>
                 <DialogDescription>Product Form</DialogDescription>

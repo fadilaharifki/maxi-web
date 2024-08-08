@@ -24,7 +24,7 @@ export const AllProduct = [
     product_form: "Liquid",
     category: "NATURAL SWEETENERS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: true,
+    best_seller: false,
     new_product: false,
     images: [
       "/assets/image/products/dates/3.jpg",
@@ -44,7 +44,7 @@ export const AllProduct = [
     product_form: "Liquid & Powder",
     category: "NATURAL SWEETENERS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: true,
+    best_seller: false,
     new_product: false,
     images: [
       "/assets/image/products/brown-sugar/1.jpg",
@@ -67,8 +67,19 @@ export const AllProduct = [
     product_form: "Liquid",
     category: "NATURAL SWEETENERS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: true,
+    best_seller: false,
     new_product: false,
+    images: [
+      "/assets/image/products/fructose-glucose-maltose/1.jpg",
+      "/assets/image/products/fructose-glucose-maltose/2.jpg",
+      "/assets/image/products/fructose-glucose-maltose/3.jpg",
+      "/assets/image/products/fructose-glucose-maltose/4.jpg",
+      "/assets/image/products/fructose-glucose-maltose/5.jpg",
+      "/assets/image/products/fructose-glucose-maltose/6.jpg",
+      "/assets/image/products/fructose-glucose-maltose/7.jpg",
+      "/assets/image/products/fructose-glucose-maltose/8.jpg",
+      "/assets/image/products/fructose-glucose-maltose/9.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -80,8 +91,19 @@ export const AllProduct = [
     product_form: "Liquid",
     category: "NATURAL SWEETENERS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: true,
+    best_seller: false,
     new_product: false,
+    images: [
+      "/assets/image/products/fructose-glucose-maltose/4.jpg",
+      "/assets/image/products/fructose-glucose-maltose/5.jpg",
+      "/assets/image/products/fructose-glucose-maltose/6.jpg",
+      "/assets/image/products/fructose-glucose-maltose/7.jpg",
+      "/assets/image/products/fructose-glucose-maltose/8.jpg",
+      "/assets/image/products/fructose-glucose-maltose/9.jpg",
+      "/assets/image/products/fructose-glucose-maltose/1.jpg",
+      "/assets/image/products/fructose-glucose-maltose/2.jpg",
+      "/assets/image/products/fructose-glucose-maltose/3.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -93,8 +115,20 @@ export const AllProduct = [
     product_form: "Liquid",
     category: "NATURAL SWEETENERS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: false,
+    best_seller: true,
+
     new_product: true,
+    images: [
+      "/assets/image/products/fructose-glucose-maltose/7.jpg",
+      "/assets/image/products/fructose-glucose-maltose/8.jpg",
+      "/assets/image/products/fructose-glucose-maltose/9.jpg",
+      "/assets/image/products/fructose-glucose-maltose/1.jpg",
+      "/assets/image/products/fructose-glucose-maltose/2.jpg",
+      "/assets/image/products/fructose-glucose-maltose/3.jpg",
+      "/assets/image/products/fructose-glucose-maltose/4.jpg",
+      "/assets/image/products/fructose-glucose-maltose/5.jpg",
+      "/assets/image/products/fructose-glucose-maltose/6.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -106,8 +140,15 @@ export const AllProduct = [
     product_form: "Powder",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: false,
+    best_seller: true,
+
     new_product: true,
+    images: [
+      "/assets/image/products/mung-bean/1.jpg",
+      "/assets/image/products/mung-bean/2.jpg",
+      "/assets/image/products/mung-bean/3.jpg",
+      "/assets/image/products/mung-bean/4.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -121,6 +162,13 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: true,
+    images: [
+      "/assets/image/products/red-bean/3.jpg",
+      "/assets/image/products/red-bean/4.jpg",
+      "/assets/image/products/red-bean/5.jpg",
+      "/assets/image/products/red-bean/1.jpg",
+      "/assets/image/products/red-bean/2.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -134,6 +182,17 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: true,
+    images: [
+      "/assets/image/products/soy-bean/1.jpg",
+      "/assets/image/products/soy-bean/2.jpg",
+      "/assets/image/products/soy-bean/3.jpg",
+      "/assets/image/products/soy-bean/4.jpg",
+      "/assets/image/products/soy-bean/5.jpg",
+      "/assets/image/products/soy-bean/6.jpg",
+      "/assets/image/products/soy-bean/7.jpg",
+      "/assets/image/products/soy-bean/8.jpg",
+      "/assets/image/products/soy-bean/9.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -187,6 +246,13 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
+    images: [
+      "/assets/image/products/w-rice/2.jpg",
+      "/assets/image/products/w-rice/1.jpg",
+      "/assets/image/products/w-rice/3.jpg",
+      "/assets/image/products/w-rice/4.jpg",
+      "/assets/image/products/w-rice/5.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -198,8 +264,15 @@ export const AllProduct = [
     product_form: "Powder",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: false,
+    best_seller: true,
+
     new_product: false,
+    images: [
+      "/assets/image/products/red-rice/2.jpg",
+      "/assets/image/products/red-rice/1.jpg",
+      "/assets/image/products/red-rice/3.jpg",
+      "/assets/image/products/red-rice/4.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -231,6 +304,10 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
+    images: [
+      "/assets/image/products/white-glutin/1.jpg",
+      "/assets/image/products/white-glutin/2.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -242,8 +319,13 @@ export const AllProduct = [
     product_form: "Powder",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: false,
+    best_seller: true,
+
     new_product: false,
+    images: [
+      "/assets/image/products/black-glutin/1.jpg",
+      "/assets/image/products/black-glutin/2.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -257,6 +339,11 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
+    images: [
+      "/assets/image/products/corn/3.jpg",
+      "/assets/image/products/corn/1.jpg",
+      "/assets/image/products/corn/2.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -270,6 +357,12 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
+    images: [
+      "/assets/image/products/white-sesame-seeds/2.jpg",
+      "/assets/image/products/white-sesame-seeds/3.jpg",
+      "/assets/image/products/white-sesame-seeds/1.jpg",
+      "/assets/image/products/white-sesame-seeds/4.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -281,8 +374,14 @@ export const AllProduct = [
     product_form: "Whole Grains",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: false,
+    best_seller: true,
     new_product: false,
+    images: [
+      "/assets/image/products/black-sesame-seeds/2.jpg",
+      "/assets/image/products/black-sesame-seeds/3.jpg",
+      "/assets/image/products/black-sesame-seeds/1.jpg",
+      "/assets/image/products/black-sesame-seeds/4.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -294,8 +393,14 @@ export const AllProduct = [
     product_form: "Powder",
     category: "FRUIT & VEGETABLES",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: false,
+    best_seller: true,
     new_product: false,
+    images: [
+      "/assets/image/products/fruit-vegie/13.jpg",
+      "/assets/image/products/fruit-vegie/20.jpg",
+      "/assets/image/products/fruit-vegie/19.jpg",
+      "/assets/image/products/fruit-vegie/18.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -309,6 +414,7 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/fruit-vegie/14.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -335,6 +441,7 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/fruit-vegie/7.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -348,6 +455,7 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/fruit-vegie/16.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -374,6 +482,10 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
+    images: [
+      "/assets/image/products/fruit-vegie/1.jpg",
+      "/assets/image/products/fruit-vegie/2.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -387,6 +499,7 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/fruit-vegie/22.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -398,8 +511,13 @@ export const AllProduct = [
     product_form: "Powder",
     category: "FRUIT & VEGETABLES",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: false,
+    best_seller: true,
     new_product: false,
+    images: [
+      "/assets/image/products/fruit-vegie/9.jpg",
+      "/assets/image/products/fruit-vegie/10.jpg",
+      "/assets/image/products/fruit-vegie/11.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -414,6 +532,11 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: [
+      "/assets/image/products/anti-microbes/1.jpg",
+      "/assets/image/products/anti-microbes/2.jpg",
+      "/assets/image/products/anti-microbes/3.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -428,6 +551,11 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: [
+      "/assets/image/products/anti-microbes/4.jpg",
+      "/assets/image/products/anti-microbes/5.jpg",
+      "/assets/image/products/anti-microbes/6.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -442,6 +570,11 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: [
+      "/assets/image/products/anti-microbes/7.jpg",
+      "/assets/image/products/anti-microbes/8.jpg",
+      "/assets/image/products/anti-microbes/9.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -456,6 +589,11 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: [
+      "/assets/image/products/anti-microbes/10.jpg",
+      "/assets/image/products/anti-microbes/1.jpg",
+      "/assets/image/products/anti-microbes/2.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -470,6 +608,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/natural-add/1.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -484,6 +623,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/natural-add/2.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -498,6 +638,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/natural-add/3.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -512,6 +653,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/natural-add/4.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -526,6 +668,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/natural-add/5.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -540,6 +683,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/natural-add/6.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -554,6 +698,12 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: [
+      "/assets/image/products/flavor-ench/1.jpg",
+      "/assets/image/products/flavor-ench/2.jpg",
+      "/assets/image/products/flavor-ench/3.jpg",
+      "/assets/image/products/flavor-ench/4.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -568,6 +718,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/dairy/3.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -582,6 +733,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/dairy/5.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -596,6 +748,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/dairy/2.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -610,6 +763,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/other/1.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -624,6 +778,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/other/2.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -638,6 +793,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/other/3.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },

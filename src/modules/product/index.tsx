@@ -29,7 +29,7 @@ const ProductModule = () => {
           </div>
           <div>
             <Image
-              src="/assets/image/background3.jpg"
+              src="/assets/image/products/white-sesame-seeds/2.jpg"
               width={1000}
               height={1000}
               alt="Logo"
@@ -40,14 +40,16 @@ const ProductModule = () => {
       </section>
       <section
         onClick={() => {
-          router.push("product/category?category=fruit+%26+vegetables");
+          router.push(
+            "product/category?category=fruit+%26+vegetables&id=20&productName=Purple+Sweet+Potato"
+          );
         }}
         className="bg-green-white hover:scale-105 duration-300 cursor-pointer"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 pb-32">
           <div>
             <Image
-              src="/assets/image/background3.jpg"
+              src="/assets/image/products/fruit-vegie/13.jpg"
               width={1000}
               height={1000}
               alt="Logo"
@@ -66,13 +68,15 @@ const ProductModule = () => {
       </section>
       <section
         onClick={() => {
-          router.push("product/category?category=natural+sweeteners");
+          router.push(
+            "product/category?category=natural+sweeteners&id=3&productName=Palm+Sugar"
+          );
         }}
         className="hover:scale-105 duration-300 cursor-pointer"
       >
         <div className="relative flex flex-col h-full bg-green-white">
           <Image
-            src="/assets/image/background2.jpg"
+            src="/assets/image/products/brown-sugar/1.jpg"
             width={1000}
             height={1000}
             alt="Logo"
@@ -102,7 +106,7 @@ const ProductModule = () => {
       >
         <div className="relative flex flex-col h-full bg-green-white">
           <Image
-            src="/assets/image/background2.jpg"
+            src="/assets/image/products/anti-microbes/3.jpg"
             width={1000}
             height={1000}
             alt="Logo"
@@ -122,10 +126,15 @@ const ProductModule = () => {
           </div>
         </div>
       </section>
-      <section className="hover:scale-105 duration-300 cursor-pointer">
+      <section
+        onClick={() => {
+          router.push("product/category?category=natural+sweeteners");
+        }}
+        className="hover:scale-105 duration-300 cursor-pointer"
+      >
         <div className="relative flex flex-col h-full bg-green-white">
           <Image
-            src="/assets/image/background2.jpg"
+            src="/assets/image/products/honey/2.jpg"
             width={1000}
             height={1000}
             alt="Logo"
@@ -152,7 +161,12 @@ const ProductModule = () => {
           </div>
         </div>
       </section>
-      <section className="hover:scale-105 duration-300 cursor-pointer">
+      <section
+        onClick={() => {
+          router.push("product/category?category=fruit+%26+vegetables");
+        }}
+        className="hover:scale-105 duration-300 cursor-pointer"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10">
           <div className="flex flex-col justify-center items-center">
             <div className="font-comfortaa font-bold text-2xl md:text-3xl text-primary-green text-center">
@@ -164,7 +178,7 @@ const ProductModule = () => {
           </div>
           <div>
             <Image
-              src="/assets/image/background3.jpg"
+              src="/assets/image/products/fruit-vegie/22.jpg"
               width={1000}
               height={1000}
               alt="Logo"

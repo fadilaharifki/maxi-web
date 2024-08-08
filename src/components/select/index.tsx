@@ -10,16 +10,17 @@ import {
 } from "@/components/ui/select";
 import { twMerge } from "tailwind-merge";
 import { X } from "lucide-react";
+import { toTitleCase } from "@/lib/utils";
 
 interface Option {
   value: string;
-  label?: string;
+  label: string;
   disabel?: boolean;
 }
 
 interface SelectComponentInterface {
   options: Option[];
-  placholder?: string;
+  placeholder?: string;
   classNameSelectTrigger?: string;
   handleChange?: (val: string) => void;
   value?: string | number;
@@ -28,7 +29,7 @@ interface SelectComponentInterface {
 
 export function SelectComponent({
   options = [],
-  placholder = "Select",
+  placeholder = "Select",
   classNameSelectTrigger,
   handleChange = () => {},
   value = "",
@@ -37,24 +38,28 @@ export function SelectComponent({
   return (
     <div className="relative inline-block">
       <Select
-        value={`${value}`} // use controlled component pattern
+        value={`${value}`}
         onValueChange={(e) => {
           handleChange(e);
         }}
       >
         <SelectTrigger className={twMerge("w-[180px]", classNameSelectTrigger)}>
-          <SelectValue placeholder={placholder} />
+          <SelectValue placeholder={placeholder} />
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
-            {options?.map((e: Option, i: number) => {
-              if (e.disabel) {
-                return <SelectLabel key={i}>{e.label || e.value}</SelectLabel>;
+            {(options ?? [])?.map((e: Option, i: number) => {
+              if (e?.disabel) {
+                return (
+                  <SelectLabel key={i}>
+                    {toTitleCase(e.label) || toTitleCase(e.value)}
+                  </SelectLabel>
+                );
               }
 
               return (
                 <SelectItem key={i} value={e.value}>
-                  {e.label || e.value}
+                  {toTitleCase(e.label) || toTitleCase(e.value)}
                 </SelectItem>
               );
             })}

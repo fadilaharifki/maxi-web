@@ -30,7 +30,7 @@ export const CategoryOptions = [
   },
   {
     label: "DAIRY PRODUCTS",
-    value: "diary products",
+    value: "dairy products",
   },
   {
     label: "OTHERS SPECIALTY",

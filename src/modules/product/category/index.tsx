@@ -94,7 +94,7 @@ const CategoryProductModules = () => {
       >
         <div className="flex min-h-80">
           <div className="col-span-4">
-            <div className="grid grid-cols-2 md:grid-cols-5 rounded-2xl mb-5 md:p-5 gap-2">
+            <div className="grid grid-cols-2 md:grid-cols-5 rounded-2xl mb-5 gap-2">
               <Input
                 className="col-span-2 md:col-span-1"
                 placeholder="Search Product"
@@ -112,7 +112,7 @@ const CategoryProductModules = () => {
                   else removeParams("product_form");
                   setCurrentPage(1);
                 }}
-                placholder="Filter By Product Form"
+                placeholder="Filter By Product Form"
                 classNameSelectTrigger="w-full"
               />
               <SelectComponent
@@ -123,7 +123,7 @@ const CategoryProductModules = () => {
                   else removeParams("category");
                   setCurrentPage(1);
                 }}
-                placholder="Filter By Category"
+                placeholder="Filter By Category"
                 classNameSelectTrigger="w-full"
               />
             </div>
@@ -164,7 +164,7 @@ const CategoryProductModules = () => {
                     setItemsPerPage(+e);
                     setCurrentPage(1);
                   }}
-                  placholder="Limit Page"
+                  placeholder="Limit Page"
                   classNameSelectTrigger="w-22"
                   isClean={false}
                 />
@@ -192,7 +192,13 @@ const CategoryProductModules = () => {
             <DialogDescription>{meta?.description}</DialogDescription>
           </DialogHeader>
           <div>
-            <Carousel className="w-full">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
               <CarouselContent>
                 {(meta.images ?? ["/assets/image/not-found.jpg"]).map(
                   (url: string, index: number) => (
