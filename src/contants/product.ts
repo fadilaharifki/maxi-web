@@ -26,6 +26,13 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: true,
     new_product: false,
+    images: [
+      "/assets/image/products/dates/3.jpg",
+      "/assets/image/products/dates/1.jpg",
+      "/assets/image/products/dates/2.jpg",
+      "/assets/image/products/dates/4.jpg",
+      "/assets/image/products/dates/5.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -39,6 +46,16 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: true,
     new_product: false,
+    images: [
+      "/assets/image/products/brown-sugar/1.jpg",
+      "/assets/image/products/brown-sugar/2.jpg",
+      "/assets/image/products/brown-sugar/5.jpg",
+      "/assets/image/products/brown-sugar/6.jpg",
+      "/assets/image/products/brown-sugar/7.jpg",
+      "/assets/image/products/brown-sugar/8.jpg",
+      "/assets/image/products/brown-sugar/3.jpg",
+      "/assets/image/products/brown-sugar/4.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -130,6 +147,13 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: true,
+    images: [
+      "/assets/image/products/adzuki-bean/3.jpg",
+      "/assets/image/products/adzuki-bean/2.jpg",
+      "/assets/image/products/adzuki-bean/1.jpg",
+      "/assets/image/products/adzuki-bean/4.jpg",
+      "/assets/image/products/adzuki-bean/5.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -143,6 +167,13 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: true,
+    images: [
+      "/assets/image/products/cowpeas-bean/5.jpg",
+      "/assets/image/products/cowpeas-bean/1.jpg",
+      "/assets/image/products/cowpeas-bean/2.jpg",
+      "/assets/image/products/cowpeas-bean/3.jpg",
+      "/assets/image/products/cowpeas-bean/4.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -182,6 +213,11 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
+    images: [
+      "/assets/image/products/brown-rice/3.jpg",
+      "/assets/image/products/brown-rice/1.jpg",
+      "/assets/image/products/brown-rice/2.jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },

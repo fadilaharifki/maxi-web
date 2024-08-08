@@ -60,19 +60,19 @@ export const ProductFormOptions = [
 
 export const PerPageOptions = [
   {
-    label: "4",
-    value: "4",
+    label: "5",
+    value: "5",
   },
   {
-    label: "8",
-    value: "8",
+    label: "10",
+    value: "10",
   },
   {
-    label: "12",
-    value: "12",
+    label: "20",
+    value: "20",
   },
   {
-    label: "16",
-    value: "16",
+    label: "40",
+    value: "40",
   },
 ];

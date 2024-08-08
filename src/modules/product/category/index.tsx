@@ -42,7 +42,7 @@ const CategoryProductModules = () => {
   const { keyword, product_form, category, id } = params;
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(8);
+  const [itemsPerPage, setItemsPerPage] = useState(10);
   const [totalPages, setTotalPage] = useState(1);
 
   const currentItems = useMemo(() => {
@@ -176,8 +176,12 @@ const CategoryProductModules = () => {
       <DialogComponent
         open={meta.open}
         handleColse={() => {
-          setMeta({});
-          removeParams(["id", "openDetail"]);
+          removeParams(["id", "openDetail", "productName"]);
+          setMeta({ ...meta, open: false });
+
+          setTimeout(() => {
+            setMeta({});
+          }, 200);
         }}
       >
         <DialogContent className="sm:max-w-[425px]">
