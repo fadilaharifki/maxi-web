@@ -452,7 +452,7 @@ const ModuleHome = () => {
               </div>
             </div>
           </div>
-          <DialogFooter>
+          <div className="flex gap-3 justify-end">
             <Share2Icon
               onClick={() => {
                 copyTextToClipboard(getFullURL());
@@ -474,7 +474,7 @@ const ModuleHome = () => {
                 window.open(whatsappURL, "_blank");
               }}
             />
-          </DialogFooter>
+          </div>
         </DialogContent>
       </DialogComponent>
     </>
