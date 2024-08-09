@@ -293,7 +293,6 @@ const ModuleHome = () => {
                     isBestSeller={product.best_seller}
                     category={product.category}
                     images={product.images}
-                    isLike
                     onDetail={() => {
                       updateParams({
                         unix: product.id,
@@ -321,7 +320,7 @@ const ModuleHome = () => {
             }}
             plugins={[
               Autoplay({
-                delay: 2000,
+                delay: 5000,
               }),
             ]}
           >

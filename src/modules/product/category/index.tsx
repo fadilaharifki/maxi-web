@@ -138,7 +138,6 @@ const CategoryProductModules = () => {
                     isBestSeller={product.best_seller}
                     category={product.category}
                     classNameImage="h-52"
-                    isLike
                     onDetail={() => {
                       updateParams({
                         id: product.id,

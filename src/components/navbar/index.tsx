@@ -47,14 +47,11 @@ const NavBar = () => {
                 width={1000}
                 height={1000}
                 alt="Logo"
-                className="h-10 w-11"
+                className="h-9 w-10"
               />
               <div className="flex justify-between flex-col">
                 <div className="font-montserrat text-primary-green font-semibold text-xl uppercase">
                   Bimantis
-                </div>
-                <div className="font-montserrat text-primary-green font-semibold text-sm uppercase">
-                  PT. Bima Inti Selaras
                 </div>
               </div>
             </div>
@@ -74,14 +71,11 @@ const NavBar = () => {
               width={1000}
               height={1000}
               alt="Logo"
-              className="h-15 w-16"
+              className="h-13 w-14"
             />
             <div className="flex justify-between flex-col">
               <div className="font-montserrat text-primary-green tracking-widest font-semibold text-3xl uppercase">
                 Bimantis
-              </div>
-              <div className="font-montserrat text-primary-green font-semibold text-xl uppercase">
-                PT. Bima Inti Selaras
               </div>
             </div>
           </div>
@@ -107,7 +101,7 @@ const NavBar = () => {
           <div className="flex justify-center">
             <div
               onClick={handleScrollToContact}
-              className="font-comfortaa text-white font-bold bg-orange-500 rounded-full text-sm px-3 py-1 cursor-pointer hover:scale-125 duration-300"
+              className="font-comfortaa text-white font-bold bg-red-500 rounded-full text-lg px-3 py-1 cursor-pointer hover:scale-125 duration-300"
             >
               Contact Us
             </div>
