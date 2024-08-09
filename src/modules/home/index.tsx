@@ -253,6 +253,16 @@ const ModuleHome = () => {
         </div>
       </section>
       <section className="bg-white">
+        {(breakpoint === "sm" || breakpoint === "md") && (
+          <div className="flex flex-col justify-center items-center pt-10">
+            <div className="font-comfortaa font-bold text-3xl text-primary-green">
+              From the Java
+            </div>
+            <div className="font-comfortaa font-bold text-3xl text-primary-green">
+              with Natural Teste
+            </div>
+          </div>
+        )}
         <div className="grid grid-cols-1 md:grid-cols-2 p-10 pb-10 md:pb-32 gap-y-10">
           <div>
             <Image
@@ -263,17 +273,22 @@ const ModuleHome = () => {
               className="w-screen h-42 object-cover rounded-xl"
             />
           </div>
-          <div className="flex flex-col justify-center items-center">
-            <div className="font-comfortaa font-bold text-3xl text-primary-green">
-              From the Java
+          {breakpoint !== "sm" && breakpoint !== "md" && (
+            <div className="flex flex-col justify-center items-center">
+              <div className="font-comfortaa font-bold text-3xl text-primary-green">
+                From the Java
+              </div>
+              <div className="font-comfortaa font-bold text-3xl text-primary-green">
+                with Natural Teste
+              </div>
             </div>
-            <div className="font-comfortaa font-bold text-3xl text-primary-green">
-              with Natural Teste
-            </div>
-          </div>
+          )}
         </div>
       </section>
-      <section id="best-seller" className="m-5 rounded-lg">
+      <section
+        id="best-seller"
+        className="px-5 rounded-lg bg-green-white py-10 md:py-20"
+      >
         <div className="font-comfortaa text-3xl md:text-5xl text-center text-bold text-primary-green pb-10">
           We provide the finest ingredients
         </div>
