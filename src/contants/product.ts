@@ -9,9 +9,9 @@ export const AllProduct = [
     best_seller: true,
     new_product: false,
     images: [
+      "/assets/image/products/honey/1.jpg",
       "/assets/image/products/honey/2.jpg",
       "/assets/image/products/honey/3.jpg",
-      "/assets/image/products/honey/1.jpg",
       "/assets/image/products/honey/4.jpg",
     ],
     description:
@@ -355,7 +355,7 @@ export const AllProduct = [
     product_form: "Whole Grains",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: false,
+    best_seller: true,
     new_product: false,
     images: [
       "/assets/image/products/white-sesame-seeds/2.jpg",
@@ -412,7 +412,7 @@ export const AllProduct = [
     product_form: "Powder",
     category: "FRUIT & VEGETABLES",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: true,
+    best_seller: false,
     new_product: false,
     images: ["/assets/image/products/fruit-vegie/14.jpg"],
     description:
@@ -530,9 +530,9 @@ export const AllProduct = [
     product_form: "Liquid",
     category: "NATURAL PRESERVATIVES / ANTI MICROBES",
     development_bussines: "INTERNATIONAL PARTNERSHIP",
-    best_seller: false,
+    best_seller: true,
     new_product: false,
-    images: ["/assets/image/products/anti-microbes/11.jpg"],
+    images: ["/assets/image/products/anti-microbes/17.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },

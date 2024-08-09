@@ -62,7 +62,15 @@ const ModuleHome = () => {
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      const yOffset = -500;
+      let yOffset = 0;
+      switch (id) {
+        case "best-seller":
+          yOffset = -300;
+          break;
+        default:
+          yOffset = -100;
+          break;
+      }
       const y =
         element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
@@ -267,7 +275,7 @@ const ModuleHome = () => {
       </section>
       <section id="best-seller" className="m-5 rounded-lg">
         <div className="font-comfortaa text-3xl md:text-5xl text-center text-bold text-primary-green pb-10">
-          Best Seller
+          We provide the finest ingredients
         </div>
         <Swiper
           effect={"coverflow"}
@@ -293,6 +301,7 @@ const ModuleHome = () => {
                     isBestSeller={product.best_seller}
                     category={product.category}
                     images={product.images}
+                    classNameImage="md:h-[500px]"
                     onDetail={() => {
                       updateParams({
                         unix: product.id,
@@ -350,8 +359,12 @@ const ModuleHome = () => {
       <DialogComponent
         open={meta.open}
         handleColse={() => {
-          setMeta({});
-          removeParams(["unix", "id", "openDetail", "productName"]);
+          removeParams(["unix", "openDetail", "productName"]);
+          setMeta({ ...meta, open: false });
+
+          setTimeout(() => {
+            setMeta({});
+          }, 200);
         }}
       >
         <DialogContent className="sm:max-w-[425px]">
@@ -388,8 +401,12 @@ const ModuleHome = () => {
                   )
                 )}
               </CarouselContent>
-              <CarouselPrevious className="ml-16" />
-              <CarouselNext className="mr-16" />
+              {meta?.images?.length > 1 && (
+                <>
+                  <CarouselPrevious className="ml-16" />
+                  <CarouselNext className="mr-16" />
+                </>
+              )}
             </Carousel>
             <div className="flex gap-3 my-5">
               <div>

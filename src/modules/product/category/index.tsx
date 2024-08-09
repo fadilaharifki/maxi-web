@@ -217,8 +217,12 @@ const CategoryProductModules = () => {
                   )
                 )}
               </CarouselContent>
-              <CarouselPrevious className="ml-16" />
-              <CarouselNext className="mr-16" />
+              {meta?.images?.length > 1 && (
+                <>
+                  <CarouselPrevious className="ml-16" />
+                  <CarouselNext className="mr-16" />
+                </>
+              )}
             </Carousel>
 
             <div className="flex gap-3 my-5">
