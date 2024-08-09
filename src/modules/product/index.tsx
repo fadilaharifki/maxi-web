@@ -41,7 +41,7 @@ const ProductModule = () => {
       <section
         onClick={() => {
           router.push(
-            "product/category?category=fruit+%26+vegetables&id=20&productName=Purple+Sweet+Potato"
+            "product/category?category=fruit+%26+vegetables&id=21&productName=Sweet+Potato"
           );
         }}
         className="bg-green-white hover:scale-105 duration-300 cursor-pointer"
@@ -49,7 +49,7 @@ const ProductModule = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 pb-32">
           <div>
             <Image
-              src="/assets/image/products/fruit-vegie/13.jpg"
+              src="/assets/image/products/category/14.jpg"
               width={1000}
               height={1000}
               alt="Logo"
@@ -106,7 +106,7 @@ const ProductModule = () => {
       >
         <div className="relative flex flex-col h-full bg-green-white">
           <Image
-            src="/assets/image/products/anti-microbes/3.jpg"
+            src="/assets/image/products/category/1.jpg"
             width={1000}
             height={1000}
             alt="Logo"
@@ -178,7 +178,7 @@ const ProductModule = () => {
           </div>
           <div>
             <Image
-              src="/assets/image/products/fruit-vegie/22.jpg"
+              src="/assets/image/products/category/11.jpg"
               width={1000}
               height={1000}
               alt="Logo"
