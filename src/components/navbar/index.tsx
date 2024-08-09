@@ -34,6 +34,15 @@ const NavBar = () => {
       : []),
   ];
 
+  const activePathName: any = {
+    "/": "/",
+    "/product": "/product",
+    "/contact-us": "/contact-us",
+    "/product/category": "/product",
+  };
+
+  console.log(pathname, "pathname");
+
   const handleScrollToContact = () => {
     router.push("/contact-us");
   };
@@ -103,7 +112,7 @@ const NavBar = () => {
                     <Link
                       className={twMerge(
                         "font-poppins text-primary-green font-normal text-base cursor-pointer hover: relative group",
-                        pathname === menu.slug
+                        activePathName[pathname] === menu.slug
                           ? "pl-5 scale-105 font-semibold"
                           : ""
                       )}
@@ -151,7 +160,9 @@ const NavBar = () => {
                   <div
                     className={twMerge(
                       "border-b-4 py-3 border-transparent duration-300 -mx-2 group-hover:border-primary-green absolute inset-0",
-                      pathname === menu.slug ? "border-primary-green" : ""
+                      activePathName[pathname] === menu.slug
+                        ? "border-primary-green"
+                        : ""
                     )}
                   ></div>
                 </Link>

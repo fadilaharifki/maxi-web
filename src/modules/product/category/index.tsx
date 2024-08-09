@@ -90,7 +90,7 @@ const CategoryProductModules = () => {
     <LayoutComponent>
       <section
         id="all-products"
-        className="min-h-screen px-5 md:mx-20 pb-12 pt-32"
+        className="min-h-screen px-5 md:mx-20 pt-20 md:pt-32 pb-12"
       >
         <div className="flex min-h-80">
           <div className="col-span-4">
