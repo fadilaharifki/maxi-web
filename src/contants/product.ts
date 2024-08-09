@@ -532,11 +532,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
-    images: [
-      "/assets/image/products/anti-microbes/1.jpg",
-      "/assets/image/products/anti-microbes/2.jpg",
-      "/assets/image/products/anti-microbes/3.jpg",
-    ],
+    images: ["/assets/image/products/anti-microbes/11.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -551,11 +547,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
-    images: [
-      "/assets/image/products/anti-microbes/4.jpg",
-      "/assets/image/products/anti-microbes/5.jpg",
-      "/assets/image/products/anti-microbes/6.jpg",
-    ],
+    images: ["/assets/image/products/anti-microbes/11.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -570,11 +562,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
-    images: [
-      "/assets/image/products/anti-microbes/7.jpg",
-      "/assets/image/products/anti-microbes/8.jpg",
-      "/assets/image/products/anti-microbes/9.jpg",
-    ],
+    images: ["/assets/image/products/anti-microbes/11.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
@@ -589,11 +577,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: false,
     new_product: false,
-    images: [
-      "/assets/image/products/anti-microbes/10.jpg",
-      "/assets/image/products/anti-microbes/1.jpg",
-      "/assets/image/products/anti-microbes/2.jpg",
-    ],
+    images: ["/assets/image/products/anti-microbes/11.jpg"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
   },
