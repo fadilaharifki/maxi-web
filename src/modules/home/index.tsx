@@ -1,6 +1,12 @@
 "use client";
 
-import { CoffeeIcon, PhoneIcon, Share2Icon } from "lucide-react";
+import {
+  CoffeeIcon,
+  EyeIcon,
+  ListStartIcon,
+  PhoneIcon,
+  Share2Icon,
+} from "lucide-react";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -36,6 +42,7 @@ const ModuleHome = () => {
   const { params, updateParams, removeParams, getFullURL } = useParamsHook();
 
   const { keyword, product_form, category, unix, id } = params;
+  const flag = false;
 
   const [meta, setMeta] = useState<any>({});
 
@@ -88,40 +95,42 @@ const ModuleHome = () => {
           </div>
         </div>
       </section>
-      <section className="py-10 md:py-32">
-        <div className="grid grid-cols-1 md:grid-cols-3 px-10 gap-10">
-          <div className="flex flex-col gap-5 justify-center">
-            <div className="text-center md:text-start font-comfortaa text-3xl md:text-5xl text-bold text-primary-green">
-              About Us
+      {flag && (
+        <section className="py-10 md:py-32">
+          <div className="grid grid-cols-1 md:grid-cols-3 px-10 gap-10">
+            <div className="flex flex-col gap-5 justify-center">
+              <div className="text-center md:text-start font-comfortaa text-3xl md:text-5xl text-bold text-primary-green">
+                About Us
+              </div>
+              <div className="font-comfortaa text-bold text-primary-green">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                {/*  eslint-disable-next-line react/no-unescaped-entities */}
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </div>
             </div>
-            <div className="font-comfortaa text-bold text-primary-green">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              {/*  eslint-disable-next-line react/no-unescaped-entities */}
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+            <div className="md:col-span-2">
+              <iframe
+                className="w-full h-[600px] rounded-xl"
+                width={"560"}
+                height={"315"}
+                src="https://www.youtube.com/embed/RzVvThhjAKw?si=G0mQi0Sy3abuvUvT"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
-          <div className="md:col-span-2">
-            <iframe
-              className="w-full h-[600px] rounded-xl"
-              width={"560"}
-              height={"315"}
-              src="https://www.youtube.com/embed/RzVvThhjAKw?si=G0mQi0Sy3abuvUvT"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
       <section>
         <div className="relative flex flex-col h-full bg-green-white">
           <Image
@@ -169,7 +178,7 @@ const ModuleHome = () => {
           <div className="flex flex-col gap-10 md:gap-0 font-comfortaa text-primary-green px-10">
             <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-11">
               <div className="md:col-span-5 grid grid-cols-3 md:flex md:flex-col justify-center items-center gap-x-5">
-                <CoffeeIcon className="h-28 w-28" />
+                <ListStartIcon className="h-28 w-28" />
                 <div className="col-span-2 md:flex md:flex-col gap-4">
                   <div>
                     Our journey started on our passion and love for Indonesia
@@ -216,7 +225,7 @@ const ModuleHome = () => {
             </div>
             <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-11">
               <div className="md:col-span-5 grid grid-cols-3 md:flex md:flex-col justify-center items-center gap-x-5">
-                <CoffeeIcon className="h-28 w-28" />
+                <EyeIcon className="h-28 w-28" />
                 <div className="col-span-2 md:flex md:flex-col gap-4">
                   <div>Adding Value. Being Innovated.</div>
                   <div>That’s What We Do</div>

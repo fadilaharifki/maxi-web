@@ -44,7 +44,7 @@ export const AllProduct = [
     product_form: "Liquid & Powder",
     category: "NATURAL SWEETENERS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: false,
+    best_seller: true,
     new_product: false,
     images: [
       "/assets/image/products/brown-sugar/1.jpg",
@@ -115,7 +115,7 @@ export const AllProduct = [
     product_form: "Liquid",
     category: "NATURAL SWEETENERS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: true,
+    best_seller: false,
 
     new_product: true,
     images: [
@@ -140,7 +140,7 @@ export const AllProduct = [
     product_form: "Powder",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: true,
+    best_seller: false,
 
     new_product: true,
     images: [
@@ -264,7 +264,7 @@ export const AllProduct = [
     product_form: "Powder",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: true,
+    best_seller: false,
 
     new_product: false,
     images: [
@@ -319,7 +319,7 @@ export const AllProduct = [
     product_form: "Powder",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: true,
+    best_seller: false,
 
     new_product: false,
     images: [
@@ -374,7 +374,7 @@ export const AllProduct = [
     product_form: "Whole Grains",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: true,
+    best_seller: false,
     new_product: false,
     images: [
       "/assets/image/products/black-sesame-seeds/2.jpg",
@@ -412,7 +412,7 @@ export const AllProduct = [
     product_form: "Powder",
     category: "FRUIT & VEGETABLES",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: false,
+    best_seller: true,
     new_product: false,
     images: ["/assets/image/products/fruit-vegie/14.jpg"],
     description:
@@ -511,7 +511,7 @@ export const AllProduct = [
     product_form: "Powder",
     category: "FRUIT & VEGETABLES",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
-    best_seller: true,
+    best_seller: false,
     new_product: false,
     images: [
       "/assets/image/products/fruit-vegie/9.jpg",

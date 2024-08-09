@@ -71,7 +71,7 @@ const CardComponent = ({
 
         {isBestSeller && (
           <div className="absolute top-4 right-4 bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-            BEST SELLER
+            Finest Product
           </div>
         )}
       </div>
