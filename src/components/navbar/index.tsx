@@ -41,8 +41,6 @@ const NavBar = () => {
     "/product/category": "/product",
   };
 
-  console.log(pathname, "pathname");
-
   const handleScrollToContact = () => {
     router.push("/contact-us");
   };
