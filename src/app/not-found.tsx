@@ -15,13 +15,13 @@ export default function Custom404() {
   }, [router]);
 
   return (
-    <div className="flex justify-center items-center w-screen h-screen ">
+    <div className="flex justify-center items-center w-screen h-screen">
       <Image
         src="/assets/image/page-not-found.jpg"
         width={1000}
         height={1000}
         alt="Logo"
-        className="w-screen "
+        className="w-screen md:h-screen"
       />
     </div>
   );

@@ -96,3 +96,7 @@ export const copyTextToClipboard = async (text: string) => {
     return false;
   }
 };
+
+export function formatQueryURL(value: string): string {
+  return encodeURIComponent(value.toLowerCase().replace(/\s+/g, "+"));
+}

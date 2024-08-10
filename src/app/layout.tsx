@@ -9,12 +9,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-export const metadata: Metadata = {
-  title: "Bimantis",
-  description:
-    "We learnt to behonest and helpful in everything we do to support you",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
