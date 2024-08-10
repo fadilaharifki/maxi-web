@@ -6,7 +6,7 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteMapCategory = CategoryOptions.map((product) => {
     return {
-      url: `https://bimantis.com/product/category?category=${formatQueryURL(
+      url: `https://bimantis-web.vercel.app/product/category?category=${formatQueryURL(
         product?.value
       )}`,
       lastModified: new Date(),
@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const siteMapProduct = AllProduct.map((product) => {
     return {
-      url: `https://bimantis.com/product/category?id=${
+      url: `https://bimantis-web.vercel.app/product/category?id=${
         product.id
       }&amp;productName=${formatQueryURL(product.product_name)}`,
       lastModified: new Date(),
@@ -28,19 +28,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: "https://bimantis.com",
+      url: "https://bimantis-web.vercel.app",
       lastModified: new Date(),
       changeFrequency: "yearly" as const,
       priority: 1,
     },
     {
-      url: "https://bimantis.com/product",
+      url: "https://bimantis-web.vercel.app/product",
       lastModified: new Date(),
       changeFrequency: "daily" as const,
       priority: 1,
     },
     {
-      url: "https://bimantis.com/product/category",
+      url: "https://bimantis-web.vercel.app/product/category",
       lastModified: new Date(),
       changeFrequency: "daily" as const,
       priority: 1,
@@ -48,7 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...siteMapCategory,
     ...siteMapProduct,
     {
-      url: "https://bimantis.com/contact-us",
+      url: "https://bimantis-web.vercel.app/contact-us",
       lastModified: new Date(),
       changeFrequency: "daily" as const,
       priority: 0.5,
