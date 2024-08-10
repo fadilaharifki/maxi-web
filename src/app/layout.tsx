@@ -2,6 +2,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Suspense } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -21,6 +22,7 @@ export default function RootLayout({
         </Suspense>
         <Toaster />
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
