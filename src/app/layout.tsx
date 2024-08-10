@@ -1,9 +1,8 @@
-import type { Metadata } from "next";
-import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Suspense } from "react";
 import { Toaster } from "@/components/ui/sonner";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import "./globals.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -21,6 +20,7 @@ export default function RootLayout({
           <TooltipProvider>{children}</TooltipProvider>
         </Suspense>
         <Toaster />
+        <SpeedInsights />
       </body>
     </html>
   );
