@@ -19,12 +19,20 @@ const ProductModule = () => {
         }}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10">
-          <div className="flex flex-col justify-center items-center">
-            <div className="font-comfortaa font-bold text-2xl md:text-3xl text-primary-green text-center">
-              Sesame Seed
+          <div className="flex flex-col justify-center items-center gap-10">
+            <div>
+              <div className="font-comfortaa font-bold text-2xl md:text-3xl text-primary-green text-center">
+                Grains & Seeds
+              </div>
+              <div className="font-comfortaa font-bold text-lg md:text-xl text-primary-green text-center">
+                Discover our latest innovation by empowering Indonesian source
+                grains and seeds, to shape a better generation
+              </div>
             </div>
-            <div className="font-comfortaa font-bold text-lg md:text-xl text-primary-green text-center">
-              Natur Roasted Character
+            <div className="bg-red-500 hover:bg-red-700 rounded-lg px-10 py-1">
+              <div className="font-comfortaa font-bold text-lg text-white">
+                Go, Discover
+              </div>
             </div>
           </div>
           <div>
@@ -47,21 +55,50 @@ const ProductModule = () => {
         className="bg-green-white hover:scale-105 duration-300 cursor-pointer"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 pb-32">
-          <div>
+          <div className="grid grid-cols-2">
             <Image
               src="/assets/image/products/category/14.jpg"
               width={1000}
               height={1000}
               alt="Logo"
-              className="w-screen h-44 md:h-96 object-cover rounded-xl"
+              className="w-screen h-44 md:h-52 object-cover rounded-xl"
+            />
+            <Image
+              src="/assets/image/products/category/14.jpg"
+              width={1000}
+              height={1000}
+              alt="Logo"
+              className="w-screen h-44 md:h-52 object-cover rounded-xl"
+            />
+            <Image
+              src="/assets/image/products/category/14.jpg"
+              width={1000}
+              height={1000}
+              alt="Logo"
+              className="w-screen h-44 md:h-52 object-cover rounded-xl"
+            />
+            <Image
+              src="/assets/image/products/category/14.jpg"
+              width={1000}
+              height={1000}
+              alt="Logo"
+              className="w-screen h-44 md:h-52 object-cover rounded-xl"
             />
           </div>
-          <div className="flex flex-col justify-center items-center">
-            <div className="font-comfortaa font-bold text-2xl md:text-3xl text-primary-green">
-              Purple Sweet Potato
+          <div className="flex flex-col justify-center items-center gap-10">
+            <div>
+              <div className="font-comfortaa font-bold text-2xl md:text-3xl text-primary-green text-center">
+                Fruit & Vegetables
+              </div>
+              <div className="font-comfortaa font-bold text-lg md:text-xl text-primary-green text-center">
+                We explore the finest from North Asia to Indonesia, as our plan
+                to creating healthier generations
+              </div>
             </div>
-            <div className="font-comfortaa font-bold text-lg md:text-xl text-primary-green text-center">
-              A uniq taste natural color for all aprication in food & drink
+            <div className="bg-red-500 hover:bg-red-700 rounded-lg px-10 py-1">
+              <div className="font-comfortaa font-bold text-lg text-white">
+                Explore our finest
+              </div>
             </div>
           </div>
         </div>

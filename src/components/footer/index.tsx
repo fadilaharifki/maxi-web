@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  Twitter,
-  Facebook,
-  Instagram,
-  Youtube,
-  MapPin,
-  Phone,
-} from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { InputWithButton } from "../ui/input";
 import { useEffect } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
@@ -16,20 +9,6 @@ const FooterComponent = () => {
   const route = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const mediaSocial = [
-    {
-      icon: <Twitter className="text-primary-green" />,
-    },
-    {
-      icon: <Facebook className="text-primary-green" />,
-    },
-    {
-      icon: <Instagram className="text-primary-green" />,
-    },
-    {
-      icon: <Youtube className="text-primary-green" />,
-    },
-  ];
 
   const menus = [
     {
@@ -82,7 +61,7 @@ const FooterComponent = () => {
         </div>
       )}
       <div className="w-screen bg-primary-green">
-        <div className="grid grid-cols-1 md:grid-cols-3 p-10 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 p-10 gap-10">
           <div className="flex flex-col gap-10">
             <div className="font-comfortaa text-xl text-bold text-white">
               Bimantis
@@ -104,25 +83,9 @@ const FooterComponent = () => {
               })}
             </div>
           </div>
-          <div className="flex flex-col gap-10">
-            <div className="font-comfortaa text-xl text-bold text-white">
-              Media Sosial
-            </div>
-            <div className="flex gap-5">
-              {mediaSocial.map((e, index) => {
-                return (
-                  <div
-                    className="flex rounded-full p-2 bg-white cursor-pointer hover:scale-125 duration-300"
-                    key={index}
-                  >
-                    {e.icon}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-          <div className="flex justify-start md:justify-end flex-col items-start md:items-end gap-5 md:gap-10">
-            <div className="font-poppins text-3xl text-bold text-white">
+
+          <div className="flex justify-start md:justify-end flex-col items-start md:items-end gap-2 md:gap-5">
+            <div className="font-montserrat text-white font-semibold text-2xl md:text-3xl uppercase">
               PT. BIMA INTI SELARAS
             </div>
             <div className="flex justify-start md:justify-end  flex-col items-start md:items-end gap-2">

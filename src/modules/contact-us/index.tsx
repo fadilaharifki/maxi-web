@@ -88,9 +88,6 @@ const ContactUsModule = () => {
                       <MapPin className="w-3 h-3 mr-2" /> Jl. Lautze No. 12
                       Jakarta Pusat - Indonesia 10750
                     </div>
-                    <div className="flex items-center font-poppins text-sm text-bold text-white">
-                      <Phone className="w-3 h-3 mr-2" /> : +62 21 639 4547
-                    </div>
                   </div>
 
                   <div className="flex justify-start flex-col items-start">

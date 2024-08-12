@@ -101,8 +101,7 @@ const ModuleHome = () => {
               </div>
             </div>
             <div className="font-comfortaa text-base sm:text-2xl font-bold text-white w-22 sm:w-96 flex-wrap">
-              We learnt to be honest and helpful in everything we do to support
-              you
+              Empowering Nature
             </div>
           </div>
         </div>
@@ -156,10 +155,12 @@ const ModuleHome = () => {
           <div className="absolute inset-0 flex flex-col md:flex-row justify-center items-center gap-20 px-10">
             <div className="flex flex-col text-center gap-3">
               <div className="font-comfortaa text-2xl font-bold text-white">
-                Our To My Started
+                Our Main Values
               </div>
               <div className="font-comfortaa text-base font-bold text-white w-72">
-                On our passion and love Indonesian Nature.
+                In Bimantis, we embrace the spirit of Gotong Royong (mutual
+                collaborations) in empowering Indonesia nature products and
+                local communities.
               </div>
             </div>
             <div className="flex flex-col text-center gap-3">
@@ -167,7 +168,8 @@ const ModuleHome = () => {
                 Our Vision
               </div>
               <div className="font-comfortaa text-base font-bold text-white w-72">
-                The best National Ingradient in the World.
+                Bimantis determine to create innovation for better today and
+                next generation to come.
               </div>
             </div>
             <div className="flex flex-col text-center gap-3">
@@ -175,8 +177,8 @@ const ModuleHome = () => {
                 Our Technology
               </div>
               <div className="font-comfortaa text-base font-bold text-white w-72">
-                Nature is our soul. We aim to use technology that is friendly to
-                nature.
+                We always exploring the complex interrelationship between nature
+                and technology in the evolving modern world
               </div>
             </div>
           </div>
@@ -224,10 +226,13 @@ const ModuleHome = () => {
                   <CoffeeIcon className="h-28 w-28" />
                 )}
                 <div className="col-span-2 md:flex md:flex-col gap-4">
-                  <div>We provide bespoke solutions for customers from</div>
+                  <div>We provide bespoke solutions for customers :</div>
                   <div>
-                    Food & Beverages Industries, Hotel – Restaurant – Café,
-                    Cosmetic Personal Care Industries
+                    Food & Beverage Industries
+                    <br></br>
+                    Cosmetic Personal Care Food & Beverage Industries Industries
+                    <br></br>
+                    Hotel – Restaurants – Café
                   </div>
                 </div>
                 {(breakpoint === "sm" || breakpoint === "md") && (
@@ -258,12 +263,10 @@ const ModuleHome = () => {
       </section>
       <section className="bg-white">
         {(breakpoint === "sm" || breakpoint === "md") && (
-          <div className="flex flex-col justify-center items-center pt-10">
-            <div className="font-comfortaa font-bold text-3xl text-primary-green">
-              From the Java
-            </div>
-            <div className="font-comfortaa font-bold text-3xl text-primary-green">
-              with Natural Teste
+          <div className="flex flex-col justify-center items-center pt-10 px-10">
+            <div className="font-comfortaa text-center font-bold text-xl text-primary-green">
+              From the Glorious Land of Indonesia to the wold, we create the
+              best natural product to improving the quality of life.
             </div>
           </div>
         )}
@@ -278,12 +281,10 @@ const ModuleHome = () => {
             />
           </div>
           {breakpoint !== "sm" && breakpoint !== "md" && (
-            <div className="flex flex-col justify-center items-center">
-              <div className="font-comfortaa font-bold text-3xl text-primary-green">
-                From the Java
-              </div>
-              <div className="font-comfortaa font-bold text-3xl text-primary-green">
-                with Natural Teste
+            <div className="flex flex-col justify-center items-center px-10">
+              <div className="font-comfortaa text-center font-bold text-3xl text-primary-green">
+                From the Glorious Land of Indonesia to the wold, we create the
+                best natural product to improving the quality of life
               </div>
             </div>
           )}

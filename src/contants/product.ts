@@ -2,7 +2,7 @@ export const AllProduct = [
   {
     id: 1,
     product_name: "Honey",
-    source: "Family owned farm - Indonesia",
+    source: "Sumatera, Riau, Borneo / Kalimantan, Java - Indonesia ",
     product_form: "Liquid",
     category: "NATURAL SWEETENERS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
@@ -15,7 +15,7 @@ export const AllProduct = [
       "/assets/image/products/honey/4.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Explore the all series of Indonesia honey to creating a healthier sweetener.",
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ export const AllProduct = [
   {
     id: 3,
     product_name: "Palm Sugar",
-    source: "Family owned farm - Indonesia",
+    source: "Sumatera, Java - Indonesia",
     botanical_name: "",
     product_form: "Liquid & Powder",
     category: "NATURAL SWEETENERS",
@@ -57,7 +57,7 @@ export const AllProduct = [
       "/assets/image/products/brown-sugar/4.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Kick ‘in up your product with the famous Indonesia sugar. Comes with floral aroma, smooth and unique afternote.",
   },
   {
     id: 4,
@@ -137,7 +137,7 @@ export const AllProduct = [
     product_name: "Mung Bean",
     source: "",
     botanical_name: "Vigna radiata",
-    product_form: "Powder",
+    product_form: "Powder, Whole Grains",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
@@ -150,14 +150,14 @@ export const AllProduct = [
       "/assets/image/products/mung-bean/4.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "The famous meal replacer with high protein and fibres contain. Mainly used in soft ice cream, beverages, cake – pastry, and improving the body taste.",
   },
   {
     id: 8,
     product_name: "Red Bean",
     source: "",
     botanical_name: "Phaseolus vulgaris",
-    product_form: "Powder",
+    product_form: "Powder, Whole Grains",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
@@ -170,14 +170,14 @@ export const AllProduct = [
       "/assets/image/products/red-bean/2.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "One of the high sources of protein, dietary fibre. Mainly used in soft ice cream, beverages, cake – pastry, and improving the body taste.",
   },
   {
     id: 9,
     product_name: "Soy Bean",
     source: "",
     botanical_name: "Glycine max",
-    product_form: "Powder",
+    product_form: "Powder, Whole Grains",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
@@ -194,14 +194,14 @@ export const AllProduct = [
       "/assets/image/products/soy-bean/9.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Improving texture with high source of fibre. Mainly used in beverages, cake, and snack",
   },
   {
     id: 10,
     product_name: "Adzuki Bean",
     source: "",
     botanical_name: "Vigna angularis",
-    product_form: "Powder",
+    product_form: "Powder, Whole Grains",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
@@ -214,14 +214,14 @@ export const AllProduct = [
       "/assets/image/products/adzuki-bean/5.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "As a part family of Red Bean, this Adzuki Bean also contains high sources of protein, dietary fibre.  Softer skin profile makes it the best choice for ice cream. Mainly used in soft ice cream, beverages, cake – pastry, and improving the body taste.",
   },
   {
     id: 11,
     product_name: "Cowpeas Bean",
     source: "",
     botanical_name: "Vigna unguiculata",
-    product_form: "Powder",
+    product_form: "Powder, Whole Grains",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
@@ -234,14 +234,14 @@ export const AllProduct = [
       "/assets/image/products/cowpeas-bean/4.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "The highest source of protein in our collection, makes it the best choice as meal replacer. Mainly used in snack, cake – pastry products",
   },
   {
     id: 12,
     product_name: "White Rice",
     source: "",
     botanical_name: "Oryza sativa",
-    product_form: "Powder",
+    product_form: "Powder, Whole Grains",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
@@ -254,7 +254,7 @@ export const AllProduct = [
       "/assets/image/products/w-rice/5.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Mainly used in snack, cake – pastry products to improve the texture and bold taste.",
   },
   {
     id: 13,
@@ -281,7 +281,7 @@ export const AllProduct = [
     product_name: "Brown Rice",
     source: "",
     botanical_name: "Oryza sativa L.",
-    product_form: "Powder",
+    product_form: "Powder, Whole Grains",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
@@ -292,14 +292,14 @@ export const AllProduct = [
       "/assets/image/products/brown-rice/2.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "The better sides of rice with higher source of fibre. Mainly used for meal replacer, beverage, and cake - pastry",
   },
   {
     id: 15,
     product_name: "White Glutinous Rice",
     source: "",
     botanical_name: "Oryza sativa var. glutinosa",
-    product_form: "Powder",
+    product_form: "Powder, Whole Grains",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
@@ -309,14 +309,14 @@ export const AllProduct = [
       "/assets/image/products/white-glutin/2.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Mainly used in cake – pastry products.",
   },
   {
     id: 16,
     product_name: "Black Glutinous Rice",
     source: "",
     botanical_name: "Oryza sativa var. glutinosa",
-    product_form: "Powder",
+    product_form: "Powder, Whole Grains ",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
@@ -327,14 +327,14 @@ export const AllProduct = [
       "/assets/image/products/black-glutin/2.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Not only for cake-pastry products, our product can be used for beverage, and meal replacement with high fibre contents.",
   },
   {
     id: 17,
     product_name: "Corn",
     source: "",
     botanical_name: "Zea mays",
-    product_form: "Powder",
+    product_form: "Powder, Whole Grains",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
@@ -345,14 +345,14 @@ export const AllProduct = [
       "/assets/image/products/corn/2.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Mainly used in snack , cake – pastry products.",
   },
   {
     id: 18,
     product_name: "White Sesame Seeds",
     source: "",
     botanical_name: "Sesamum indicum",
-    product_form: "Whole Grains",
+    product_form: "Whole Grains, Roasted, Raw",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: true,
@@ -364,14 +364,14 @@ export const AllProduct = [
       "/assets/image/products/white-sesame-seeds/4.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Enrich your taste and aroma just with couple drops. Available in White series.",
   },
   {
     id: 19,
     product_name: "Black Sesame Seeds",
     source: "",
     botanical_name: "Sesamum indicum",
-    product_form: "Whole Grains",
+    product_form: "Whole Grains, Roasted, Raw",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
@@ -383,7 +383,7 @@ export const AllProduct = [
       "/assets/image/products/black-sesame-seeds/4.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Enrich your taste and aroma just with couple drops. Available in Black series.",
   },
   {
     id: 20,
@@ -402,7 +402,7 @@ export const AllProduct = [
       "/assets/image/products/fruit-vegie/18.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "The richest nutritional benefit to improve your healthier meals.  Without any preservatives and colouring agent added. Mainly used in beverage, ice cream, cake – pastry, and cream filling.",
   },
   {
     id: 21,
@@ -534,7 +534,7 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/anti-microbes/17.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Improving your product shelf life, and taste along with nutritional added.",
   },
   {
     id: 30,
@@ -564,7 +564,7 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/anti-microbes/11.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Improving your product shelf life, and taste along with nutritional added.",
   },
   {
     id: 32,
