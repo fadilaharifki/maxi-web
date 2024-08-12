@@ -1,6 +1,10 @@
 "use client";
 
 import {
+  ChevronLeft,
+  ChevronLeftCircle,
+  ChevronRight,
+  ChevronRightCircle,
   CoffeeIcon,
   EyeIcon,
   ListStartIcon,
@@ -297,6 +301,10 @@ const ModuleHome = () => {
           grabCursor={true}
           centeredSlides={true}
           loop={true}
+          navigation={{
+            nextEl: ".custom-next",
+            prevEl: ".custom-prev",
+          }}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
@@ -307,28 +315,33 @@ const ModuleHome = () => {
           slidesPerView={breakpoint === "sm" || breakpoint === "md" ? 2 : 3}
         >
           {AllProduct.filter((product) => product.best_seller).map(
-            (product, i) => {
-              return (
-                <SwiperSlide key={i}>
-                  <CardComponent
-                    productName={product.product_name}
-                    description={product.description}
-                    isBestSeller={product.best_seller}
-                    category={product.category}
-                    images={product.images}
-                    classNameImage="md:h-[500px]"
-                    onDetail={() => {
-                      updateParams({
-                        unix: product.id,
-                        productName: product.product_name,
-                        id: "best-seller",
-                      });
-                    }}
-                  />
-                </SwiperSlide>
-              );
-            }
+            (product, i) => (
+              <SwiperSlide key={i}>
+                <CardComponent
+                  productName={product.product_name}
+                  description={product.description}
+                  isBestSeller={product.best_seller}
+                  category={product.category}
+                  images={product.images}
+                  classNameImage="md:h-[500px]"
+                  onDetail={() => {
+                    updateParams({
+                      unix: product.id,
+                      productName: product.product_name,
+                      id: "best-seller",
+                    });
+                  }}
+                />
+              </SwiperSlide>
+            )
           )}
+          {/* Custom Next and Previous buttons with Lucide React icons */}
+          <div className="custom-next absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full mr-5">
+            <ChevronRightCircle className="w-10 h-10 text-red-500" />
+          </div>
+          <div className="custom-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full ml-5">
+            <ChevronLeftCircle className="w-10 h-10 text-red-500" />
+          </div>
         </Swiper>
       </section>
       <section>

@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/dialog";
 import { DialogComponent } from "@/components/dialog";
 import Image from "next/image";
-import { PhoneIcon, Share2Icon } from "lucide-react";
+import { MoveLeftIcon, PhoneIcon, Share2Icon } from "lucide-react";
 import {
   CategoryOptions,
   PerPageOptions,
@@ -34,9 +34,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useRouter } from "next/navigation";
 
 const CategoryProductModules = () => {
   const { params, updateParams, removeParams, getFullURL } = useParamsHook();
+  const router = useRouter();
   const [meta, setMeta] = useState<any>({});
 
   const { keyword, product_form, category, id } = params;
@@ -94,6 +96,15 @@ const CategoryProductModules = () => {
       >
         <div className="flex min-h-80">
           <div className="col-span-4">
+            <div
+              className="flex gap-2 pb-5 cursor-pointer"
+              onClick={() => router.replace("/product")}
+            >
+              <div className="hover:scale-110">
+                <MoveLeftIcon />
+              </div>
+              <div className="font-comfortaa hover:scale-110">Back</div>
+            </div>
             <div className="grid grid-cols-2 md:grid-cols-5 rounded-2xl mb-5 gap-2">
               <Input
                 className="col-span-2 md:col-span-1"
