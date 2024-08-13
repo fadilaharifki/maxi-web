@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://bimantis-web.vercel.app/sitemap.xml",
+    sitemap: "https://bimantis.com/sitemap.xml",
   };
 }
