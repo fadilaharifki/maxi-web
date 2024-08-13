@@ -10,11 +10,10 @@ import { Input } from "@/components/ui/input";
 import useParamsHook from "@/hooks/useParamsHook";
 
 import { twMerge } from "tailwind-merge";
-import { copyTextToClipboard, toTitleCase } from "@/lib/utils";
+import { copyTextToClipboard } from "@/lib/utils";
 import {
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
@@ -36,16 +35,26 @@ import {
 } from "@/components/ui/carousel";
 import { useRouter } from "next/navigation";
 
-const CategoryProductModules = () => {
-  const { params, updateParams, removeParams, getFullURL } = useParamsHook();
+const CategoryProductModules = (params: any) => {
+  const { updateParams, removeParams, getFullURL } = useParamsHook();
   const router = useRouter();
   const [meta, setMeta] = useState<any>({});
 
-  const { keyword, product_form, category, id } = params;
+  const {
+    keyword: keywordParams,
+    product_form: product_formParams,
+    category: categoryParams,
+    id,
+  } = params.queryParams;
 
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(10);
   const [totalPages, setTotalPage] = useState(1);
+  const [keyword, setKeyword] = useState(keywordParams as string);
+  const [product_form, setProduct_form] = useState(
+    product_formParams as string
+  );
+  const [category, setCategory] = useState(categoryParams as string);
 
   const currentItems = useMemo(() => {
     const filteredProducts = AllProduct.filter((product) => {
@@ -107,11 +116,17 @@ const CategoryProductModules = () => {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-5 rounded-2xl mb-5 gap-2">
               <Input
+                value={keyword ?? ""}
                 className="col-span-2 md:col-span-1"
                 placeholder="Search Product"
                 onChange={(e) => {
-                  if (e.target.value) updateParams({ keyword: e.target.value });
-                  else removeParams("keyword");
+                  if (e.target.value) {
+                    setKeyword(e.target.value);
+                    updateParams({ keyword: e.target.value });
+                  } else {
+                    setKeyword(e.target.value);
+                    removeParams("keyword");
+                  }
                   setCurrentPage(1);
                 }}
               />
@@ -119,8 +134,13 @@ const CategoryProductModules = () => {
                 options={ProductFormOptions}
                 value={product_form}
                 handleChange={(e) => {
-                  if (e) updateParams({ product_form: e });
-                  else removeParams("product_form");
+                  if (e) {
+                    setProduct_form(e);
+                    updateParams({ product_form: e });
+                  } else {
+                    removeParams("product_form");
+                    setProduct_form("");
+                  }
                   setCurrentPage(1);
                 }}
                 placeholder="Filter By Product Form"
@@ -130,8 +150,13 @@ const CategoryProductModules = () => {
                 options={CategoryOptions}
                 value={category}
                 handleChange={(e) => {
-                  if (e) updateParams({ category: e });
-                  else removeParams("category");
+                  if (e) {
+                    setCategory(e);
+                    updateParams({ category: e });
+                  } else {
+                    removeParams("category");
+                    setCategory("");
+                  }
                   setCurrentPage(1);
                 }}
                 placeholder="Filter By Category"

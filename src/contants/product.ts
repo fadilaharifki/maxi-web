@@ -16,6 +16,11 @@ export const AllProduct = [
     ],
     description:
       "Explore the all series of Indonesia honey to creating a healthier sweetener.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 2,
@@ -35,6 +40,11 @@ export const AllProduct = [
     ],
     description:
       "Mainly used in beverage, cake – pastry products, cream filling.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 3,
@@ -58,6 +68,11 @@ export const AllProduct = [
     ],
     description:
       "Kick ‘in up your product with the famous Indonesia sugar. Comes with floral aroma, smooth and unique afternote. Mainly used in beverage, snack, ice cream, and cake – pastry products.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 4,
@@ -82,6 +97,11 @@ export const AllProduct = [
     ],
     description:
       "Mainly used in beverage, ice cream, and cake – pastry products.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 5,
@@ -106,6 +126,11 @@ export const AllProduct = [
     ],
     description:
       "Mainly used in beverage, ice cream, and cake – pastry products.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 6,
@@ -130,6 +155,11 @@ export const AllProduct = [
     ],
     description:
       "Mainly used in beverage, ice cream, and cake – pastry products.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 7,
@@ -150,6 +180,11 @@ export const AllProduct = [
     ],
     description:
       "The famous meal replacer with high protein and fibres contain. Mainly used in soft ice cream, beverages, cake – pastry, and improving the body taste.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 8,
@@ -170,6 +205,11 @@ export const AllProduct = [
     ],
     description:
       "One of the high sources of protein, dietary fibre. Mainly used in soft ice cream, beverages, cake – pastry, and improving the body taste.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 9,
@@ -194,6 +234,11 @@ export const AllProduct = [
     ],
     description:
       "Improving texture with high source of fibre. Mainly used in beverages, cake, and snack",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 10,
@@ -213,7 +258,12 @@ export const AllProduct = [
       "/assets/image/products/adzuki-bean/5.jpg",
     ],
     description:
-      "As a part family of Red Bean, this Adzuki Bean also contains high sources of protein, dietary fibre.  Softer skin profile makes it the best choice for ice cream. Mainly used in soft ice cream, beverages, cake – pastry, and improving the body taste.",
+      "As a part family of Red Bean, this Adzuki Bean also contains high sources of protein, dietary fibre. Softer skin profile makes it the best choice for ice cream. Mainly used in soft ice cream, beverages, cake – pastry, and improving the body taste.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 11,
@@ -234,6 +284,11 @@ export const AllProduct = [
     ],
     description:
       "The highest source of protein in our collection, makes it the best choice as meal replacer. Mainly used in snack, cake – pastry products",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 12,
@@ -254,6 +309,11 @@ export const AllProduct = [
     ],
     description:
       "Mainly used in snack, cake – pastry products to improve the texture and bold taste.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 13,
@@ -272,8 +332,12 @@ export const AllProduct = [
       "/assets/image/products/red-rice/3.jpg",
       "/assets/image/products/red-rice/4.jpg",
     ],
-    description:
-      "",
+    description: "",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 14,
@@ -292,6 +356,11 @@ export const AllProduct = [
     ],
     description:
       "The better sides of rice with higher source of fibre. Mainly used for meal replacer, beverage, and cake - pastry",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 15,
@@ -307,15 +376,19 @@ export const AllProduct = [
       "/assets/image/products/white-glutin/1.jpg",
       "/assets/image/products/white-glutin/2.jpg",
     ],
-    description:
-      "Mainly used in cake – pastry products.",
+    description: "Mainly used in cake – pastry products.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 16,
     product_name: "Black Glutinous Rice",
     source: "",
     botanical_name: "Oryza sativa var. glutinosa",
-    product_form: "Powder, Whole Grains ",
+    product_form: "Powder, Whole Grains",
     category: "BEANS & GRAINS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
@@ -327,6 +400,11 @@ export const AllProduct = [
     ],
     description:
       "Not only for cake-pastry products, our product can be used for beverage, and meal replacement with high fibre contents.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 17,
@@ -343,8 +421,12 @@ export const AllProduct = [
       "/assets/image/products/corn/1.jpg",
       "/assets/image/products/corn/2.jpg",
     ],
-    description:
-      "Mainly used in snack , cake – pastry products.",
+    description: "Mainly used in snack , cake – pastry products.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 18,
@@ -364,6 +446,11 @@ export const AllProduct = [
     ],
     description:
       "Enrich your taste and aroma just with couple drops. Available in White series.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 19,
@@ -383,6 +470,11 @@ export const AllProduct = [
     ],
     description:
       "Enrich your taste and aroma just with couple drops. Available in Black series.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 20,
@@ -401,7 +493,12 @@ export const AllProduct = [
       "/assets/image/products/fruit-vegie/18.jpg",
     ],
     description:
-      "The richest nutritional benefit to improve your healthier meals.  Without any preservatives and colouring agent added. Mainly used in beverage, ice cream, cake – pastry, and cream filling.",
+      "The richest nutritional benefit to improve your healthier meals. Without any preservatives and colouring agent added. Mainly used in beverage, ice cream, cake – pastry, and cream filling.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 21,
@@ -415,7 +512,12 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/fruit-vegie/14.jpg"],
     description:
-      "The richest nutritional benefit to improve your healthier meals.  Without any preservatives and colouring agent added. Mainly used in beverage, ice cream, cake – pastry, and cream filling.",
+      "The richest nutritional benefit to improve your healthier meals. Without any preservatives and colouring agent added. Mainly used in beverage, ice cream, cake – pastry, and cream filling.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 22,
@@ -430,6 +532,11 @@ export const AllProduct = [
     images: ["/assets/image/products/fruit-vegie/23.jpg"],
     description:
       "Mainly used in beverage, ice cream, cake – pastry, and snack products",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 23,
@@ -444,6 +551,11 @@ export const AllProduct = [
     images: ["/assets/image/products/fruit-vegie/7.jpg"],
     description:
       "Boost your colour appearance with natural red colour from our red yeast rice. Mainly used in beverage, ice cream, cake – pastry.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 24,
@@ -458,6 +570,11 @@ export const AllProduct = [
     images: ["/assets/image/products/fruit-vegie/24.jpg"],
     description:
       "The famous healthy ginseng are available in our collection. Mainly used in beverage, and healthy drinks.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 25,
@@ -472,6 +589,11 @@ export const AllProduct = [
     images: ["/assets/image/products/fruit-vegie/25.jpg"],
     description:
       "The most powerful antioxidant components. Mainly used in beverage products.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 26,
@@ -487,8 +609,12 @@ export const AllProduct = [
       "/assets/image/products/fruit-vegie/1.jpg",
       "/assets/image/products/fruit-vegie/2.jpg",
     ],
-    description:
-      "Mainly used in beverage, cake – pastry products.",
+    description: "Mainly used in beverage, cake – pastry products.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 27,
@@ -503,6 +629,11 @@ export const AllProduct = [
     images: ["/assets/image/products/fruit-vegie/26.jpg"],
     description:
       "Mainly used in beverage, ice cream, and cake – pastry products.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 28,
@@ -521,6 +652,11 @@ export const AllProduct = [
     ],
     description:
       "Mainly used in beverage, ice cream, and cake – pastry products.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 29,
@@ -536,6 +672,11 @@ export const AllProduct = [
     images: ["/assets/image/products/anti-microbes/17.jpg"],
     description:
       "Mainly used in seasoning, beverage, ice cream, yoghurt, and cosmetic personal care products.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 30,
@@ -549,8 +690,12 @@ export const AllProduct = [
     best_seller: false,
     new_product: false,
     images: ["/assets/image/products/anti-microbes/11.jpg"],
-    description:
-      "Mainly used in hard candy, beverage, ice cream, yoghurt.",
+    description: "Mainly used in hard candy, beverage, ice cream, yoghurt.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 31,
@@ -566,6 +711,11 @@ export const AllProduct = [
     images: ["/assets/image/products/anti-microbes/11.jpg"],
     description:
       "Mainly used in seasoning, beverage, ice cream, yoghurt, and cosmetic personal care products.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 32,
@@ -579,8 +729,12 @@ export const AllProduct = [
     best_seller: false,
     new_product: false,
     images: ["/assets/image/products/anti-microbes/11.jpg"],
-    description:
-      "Mainly used in beverage, dessert, and dairy products.",
+    description: "Mainly used in beverage, dessert, and dairy products.",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 33,
@@ -594,8 +748,12 @@ export const AllProduct = [
     best_seller: false,
     new_product: false,
     images: ["/assets/image/products/natural-add/1.jpg"],
-    description:
-      "",
+    description: "",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 34,
@@ -609,8 +767,12 @@ export const AllProduct = [
     best_seller: false,
     new_product: false,
     images: ["/assets/image/products/natural-add/2.jpg"],
-    description:
-      "",
+    description: "",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 35,
@@ -624,8 +786,12 @@ export const AllProduct = [
     best_seller: false,
     new_product: false,
     images: ["/assets/image/products/natural-add/3.jpg"],
-    description:
-      "",
+    description: "",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 36,
@@ -639,8 +805,12 @@ export const AllProduct = [
     best_seller: false,
     new_product: false,
     images: ["/assets/image/products/natural-add/4.jpg"],
-    description:
-      "",
+    description: "",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 37,
@@ -654,8 +824,12 @@ export const AllProduct = [
     best_seller: false,
     new_product: false,
     images: ["/assets/image/products/natural-add/5.jpg"],
-    description:
-      "",
+    description: "",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 38,
@@ -669,8 +843,12 @@ export const AllProduct = [
     best_seller: false,
     new_product: false,
     images: ["/assets/image/products/natural-add/6.jpg"],
-    description:
-      "",
+    description: "",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 39,
@@ -689,8 +867,12 @@ export const AllProduct = [
       "/assets/image/products/flavor-ench/3.jpg",
       "/assets/image/products/flavor-ench/4.jpg",
     ],
-    description:
-      "assasa",
+    description: "assasa",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 40,
@@ -704,8 +886,12 @@ export const AllProduct = [
     best_seller: false,
     new_product: false,
     images: ["/assets/image/products/dairy/3.jpg"],
-    description:
-      "",
+    description: "",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 41,
@@ -719,8 +905,12 @@ export const AllProduct = [
     best_seller: false,
     new_product: false,
     images: ["/assets/image/products/dairy/5.jpg"],
-    description:
-      "",
+    description: "",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 42,
@@ -734,8 +924,12 @@ export const AllProduct = [
     best_seller: false,
     new_product: false,
     images: ["/assets/image/products/dairy/2.jpg"],
-    description:
-      "",
+    description: "",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 43,
@@ -749,8 +943,12 @@ export const AllProduct = [
     best_seller: false,
     new_product: false,
     images: ["/assets/image/products/other/1.jpg"],
-    description:
-      "",
+    description: "",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 44,
@@ -764,8 +962,12 @@ export const AllProduct = [
     best_seller: false,
     new_product: false,
     images: ["/assets/image/products/other/2.jpg"],
-    description:
-      "",
+    description: "",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
   {
     id: 45,
@@ -779,7 +981,11 @@ export const AllProduct = [
     best_seller: false,
     new_product: false,
     images: ["/assets/image/products/other/3.jpg"],
-    description:
-      "",
+    description: "",
+    seo: {
+      title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
+      keyword: "", //ex: Fruits, Vegetable, etc
+      description: "", //min 150 character, max 220 character
+    },
   },
 ];
