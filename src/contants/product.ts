@@ -273,7 +273,7 @@ export const AllProduct = [
       "/assets/image/products/red-rice/4.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "",
   },
   {
     id: 14,
@@ -750,7 +750,7 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/other/1.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "",
   },
   {
     id: 44,
@@ -765,7 +765,7 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/other/2.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "",
   },
   {
     id: 45,
@@ -780,6 +780,6 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/other/3.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "",
   },
 ];
