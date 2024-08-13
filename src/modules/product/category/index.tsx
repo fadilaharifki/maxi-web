@@ -275,7 +275,7 @@ const CategoryProductModules = () => {
               <PhoneIcon
                 className=" cursor-pointer"
                 onClick={() => {
-                  const phoneNumber = "6289505822191";
+                  const phoneNumber = "628118168199";
 
                   const fullURL = getFullURL();
 

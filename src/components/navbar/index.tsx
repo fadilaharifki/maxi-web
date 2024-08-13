@@ -181,7 +181,7 @@ const NavBar = () => {
         <TooltipTrigger asChild>
           <div
             className="fixed z-50 bottom-10 right-10 cursor-pointer hover:scale-125 duration-300"
-            onClick={() => window.open("https://wa.me/62895488123", "_blank")}
+            onClick={() => window.open("https://wa.me/628118168199", "_blank")}
           >
             <div className="bg-primary-green rounded-full p-2">
               <div className="p-3 border-2 border-white rounded-full">
