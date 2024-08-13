@@ -34,7 +34,7 @@ export const AllProduct = [
       "/assets/image/products/dates/5.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Mainly used in beverage, cake – pastry products, cream filling.",
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ export const AllProduct = [
       "/assets/image/products/brown-sugar/4.jpg",
     ],
     description:
-      "Kick ‘in up your product with the famous Indonesia sugar. Comes with floral aroma, smooth and unique afternote.",
+      "Kick ‘in up your product with the famous Indonesia sugar. Comes with floral aroma, smooth and unique afternote. Mainly used in beverage, snack, ice cream, and cake – pastry products.",
   },
   {
     id: 4,
@@ -81,7 +81,7 @@ export const AllProduct = [
       "/assets/image/products/fructose-glucose-maltose/9.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Mainly used in beverage, ice cream, and cake – pastry products.",
   },
   {
     id: 5,
@@ -105,7 +105,7 @@ export const AllProduct = [
       "/assets/image/products/fructose-glucose-maltose/3.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Mainly used in beverage, ice cream, and cake – pastry products.",
   },
   {
     id: 6,
@@ -116,7 +116,6 @@ export const AllProduct = [
     category: "NATURAL SWEETENERS",
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
-
     new_product: true,
     images: [
       "/assets/image/products/fructose-glucose-maltose/7.jpg",
@@ -130,7 +129,7 @@ export const AllProduct = [
       "/assets/image/products/fructose-glucose-maltose/6.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Mainly used in beverage, ice cream, and cake – pastry products.",
   },
   {
     id: 7,
@@ -416,7 +415,7 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/fruit-vegie/14.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "The richest nutritional benefit to improve your healthier meals.  Without any preservatives and colouring agent added. Mainly used in beverage, ice cream, cake – pastry, and cream filling.",
   },
   {
     id: 22,
@@ -428,8 +427,9 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/fruit-vegie/23.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Mainly used in beverage, ice cream, cake – pastry, and snack products",
   },
   {
     id: 23,
@@ -443,7 +443,7 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/fruit-vegie/7.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Boost your colour appearance with natural red colour from our red yeast rice. Mainly used in beverage, ice cream, cake – pastry.",
   },
   {
     id: 24,
@@ -455,9 +455,9 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
-    images: ["/assets/image/products/fruit-vegie/16.jpg"],
+    images: ["/assets/image/products/fruit-vegie/24.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "The famous healthy ginseng are available in our collection. Mainly used in beverage, and healthy drinks.",
   },
   {
     id: 25,
@@ -469,8 +469,9 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
+    images: ["/assets/image/products/fruit-vegie/25.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "The most powerful antioxidant components. Mainly used in beverage products.",
   },
   {
     id: 26,
@@ -487,7 +488,7 @@ export const AllProduct = [
       "/assets/image/products/fruit-vegie/2.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Mainly used in beverage, cake – pastry products.",
   },
   {
     id: 27,
@@ -499,9 +500,9 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
-    images: ["/assets/image/products/fruit-vegie/22.jpg"],
+    images: ["/assets/image/products/fruit-vegie/26.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Mainly used in beverage, ice cream, and cake – pastry products.",
   },
   {
     id: 28,
@@ -519,7 +520,7 @@ export const AllProduct = [
       "/assets/image/products/fruit-vegie/11.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Mainly used in beverage, ice cream, and cake – pastry products.",
   },
   {
     id: 29,

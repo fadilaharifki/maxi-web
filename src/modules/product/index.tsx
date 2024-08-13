@@ -13,13 +13,13 @@ const ProductModule = () => {
   return (
     <LayoutComponent>
       <section
-        className="pt-16 md:pt-32 hover:scale-105 duration-300 cursor-pointer bg-rose-gold"
+        className="md:h-screen px-10 py-32 md:px-0 md:py-0 flex justify-center items-center hover:scale-105 duration-300 cursor-pointer bg-rose-gold"
         onClick={() => {
           router.push("product/category?category=beans+%26+grains");
         }}
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10">
-          <div className="flex flex-col justify-center items-center gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="flex flex-col justify-center items-center gap-10 px-10">
             <div>
               <div className="font-comfortaa font-bold text-2xl md:text-3xl text-primary-green text-center">
                 Grains & Seeds
@@ -41,44 +41,42 @@ const ProductModule = () => {
               width={1000}
               height={1000}
               alt="Logo"
-              className="w-screen h-44 md:h-96 object-cover rounded-xl"
+              className="w-screen md:h-screen object-cover rounded-xl"
             />
           </div>
         </div>
       </section>
       <section
         onClick={() => {
-          router.push(
-            "product/category?category=fruit+%26+vegetables&id=21&productName=Sweet+Potato"
-          );
+          router.push("product/category?category=fruit+%26+vegetables");
         }}
         className="bg-green-white hover:scale-105 duration-300 cursor-pointer"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 pb-32">
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-2 gap-5">
             <Image
-              src="/assets/image/products/category/14.jpg"
+              src="/assets/image/products/fruit-vegie/13.jpg"
               width={1000}
               height={1000}
               alt="Logo"
               className="w-screen h-44 md:h-52 object-cover rounded-xl"
             />
             <Image
-              src="/assets/image/products/category/14.jpg"
+              src="/assets/image/products/fruit-vegie/2.jpg"
               width={1000}
               height={1000}
               alt="Logo"
               className="w-screen h-44 md:h-52 object-cover rounded-xl"
             />
             <Image
-              src="/assets/image/products/category/14.jpg"
+              src="/assets/image/products/fruit-vegie/11.jpg"
               width={1000}
               height={1000}
               alt="Logo"
               className="w-screen h-44 md:h-52 object-cover rounded-xl"
             />
             <Image
-              src="/assets/image/products/category/14.jpg"
+              src="/assets/image/products/fruit-vegie/24.jpg"
               width={1000}
               height={1000}
               alt="Logo"
@@ -105,30 +103,46 @@ const ProductModule = () => {
       </section>
       <section
         onClick={() => {
-          router.push(
-            "product/category?category=natural+sweeteners&id=3&productName=Palm+Sugar"
-          );
+          router.push("product/category?category=natural+sweeteners");
         }}
-        className="hover:scale-105 duration-300 cursor-pointer"
+        className="hover:scale-105 duration-300 cursor-pointer min-h-screen"
       >
         <div className="relative flex flex-col h-full bg-green-white">
-          <Image
-            src="/assets/image/products/brown-sugar/1.jpg"
-            width={1000}
-            height={1000}
-            alt="Logo"
-            className="w-screen h-96 md:h-[550px] object-cover"
-          />
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <Image
+              src="/assets/image/products/brown-sugar/1.jpg"
+              width={1000}
+              height={1000}
+              alt="Logo"
+              className="w-screen h-6/12 md:h-screen object-cover"
+            />
+            <Image
+              src="/assets/image/products/honey/4.jpg"
+              width={1000}
+              height={1000}
+              alt="Logo"
+              className="w-screen h-6/12 md:h-screen object-cover"
+            />
+          </div>
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10 md:px-20">
             <div>
               <div className="font-comfortaa text-2xl md:text-5xl font-bold text-white uppercase">
-                Palm Sugar
+                Natural Sweeteners
               </div>
             </div>
-            <div className="font-comfortaa text-base md:text-xl font-bold text-white w-5/6 md:w-96 flex-wrap">
-              We learnt to be honest and helpful in everything we do to support
-              you
+            <div className="flex flex-col justify-start items-start gap-10">
+              <div className="font-comfortaa text-base md:text-xl font-bold text-white w-5/6 md:w-3/6 flex-wrap">
+                Take a look on our widest collection of indonesia’s best natural
+                sweeteners that you never seen before
+              </div>
+              <div>
+                <div className="bg-red-500 hover:bg-red-700 min-w-10 rounded-lg px-10 py-1">
+                  <div className="font-comfortaa font-bold text-lg text-white">
+                    Go, Discover
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

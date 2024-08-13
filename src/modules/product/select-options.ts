@@ -44,6 +44,7 @@ export const ProductFormOptions = [
     value: "",
     disabel: true,
   },
+
   {
     label: "Liquid & Powder",
     value: "liquid & powder",
@@ -51,6 +52,10 @@ export const ProductFormOptions = [
   {
     label: "Liquid",
     value: "liquid",
+  },
+  {
+    label: "Powder, Whole Grains",
+    value: "powder, whole grains",
   },
   {
     label: "Powder",
