@@ -535,7 +535,7 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/anti-microbes/17.jpg"],
     description:
-      "Improving your product shelf life, and taste along with nutritional added.",
+      "Mainly used in seasoning, beverage, ice cream, yoghurt, and cosmetic personal care products.",
   },
   {
     id: 30,
@@ -550,7 +550,7 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/anti-microbes/11.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Mainly used in hard candy, beverage, ice cream, yoghurt.",
   },
   {
     id: 31,
@@ -565,7 +565,7 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/anti-microbes/11.jpg"],
     description:
-      "Improving your product shelf life, and taste along with nutritional added.",
+      "Mainly used in seasoning, beverage, ice cream, yoghurt, and cosmetic personal care products.",
   },
   {
     id: 32,
@@ -580,14 +580,14 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/anti-microbes/11.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "Mainly used in beverage, dessert, and dairy products.",
   },
   {
     id: 33,
     product_name: "Creatine Monohydrate",
     source: "",
     botanical_name: "",
-    manufacture: "Shanghai Passiono",
+    manufacture: "",
     product_form: "Powder",
     category: "NATURAL ADDITIVES",
     development_bussines: "INTERNATIONAL PARTNERSHIP",
@@ -595,14 +595,14 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/natural-add/1.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "",
   },
   {
     id: 34,
     product_name: "Glucosamine",
     source: "",
     botanical_name: "",
-    manufacture: "Shanghai Passiono",
+    manufacture: "",
     product_form: "Powder",
     category: "NATURAL ADDITIVES",
     development_bussines: "INTERNATIONAL PARTNERSHIP",
@@ -610,14 +610,14 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/natural-add/2.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "",
   },
   {
     id: 35,
     product_name: "Lycopene",
     source: "",
     botanical_name: "",
-    manufacture: "Shanghai Passiono",
+    manufacture: "",
     product_form: "Powder",
     category: "NATURAL ADDITIVES",
     development_bussines: "INTERNATIONAL PARTNERSHIP",
@@ -625,14 +625,14 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/natural-add/3.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "",
   },
   {
     id: 36,
     product_name: "L-Carmoisine",
     source: "",
     botanical_name: "",
-    manufacture: "Shanghai Passiono",
+    manufacture: "",
     product_form: "Powder",
     category: "NATURAL ADDITIVES",
     development_bussines: "INTERNATIONAL PARTNERSHIP",
@@ -640,14 +640,14 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/natural-add/4.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "",
   },
   {
     id: 37,
     product_name: "L-Lysine",
     source: "",
     botanical_name: "",
-    manufacture: "Shanghai Passiono",
+    manufacture: "",
     product_form: "Powder",
     category: "NATURAL ADDITIVES",
     development_bussines: "INTERNATIONAL PARTNERSHIP",
@@ -655,7 +655,7 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/natural-add/5.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "",
   },
   {
     id: 38,
@@ -670,7 +670,7 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/natural-add/6.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "",
   },
   {
     id: 39,
@@ -690,14 +690,14 @@ export const AllProduct = [
       "/assets/image/products/flavor-ench/4.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "assasa",
   },
   {
     id: 40,
     product_name: "Whey Permeate",
     source: "",
     botanical_name: "",
-    manufacture: "Proliant Dairy",
+    manufacture: "",
     product_form: "Powder",
     category: "DAIRY PRODUCTS",
     development_bussines: "INTERNATIONAL PARTNERSHIP",
@@ -705,14 +705,14 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/dairy/3.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "",
   },
   {
     id: 41,
     product_name: "Non Dairy Creamer",
     source: "",
     botanical_name: "",
-    manufacture: "Food Excellence Specialist",
+    manufacture: "",
     product_form: "Powder",
     category: "DAIRY PRODUCTS",
     development_bussines: "INTERNATIONAL PARTNERSHIP",
@@ -720,14 +720,14 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/dairy/5.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "",
   },
   {
     id: 42,
     product_name: "Sodium Casseinate",
     source: "",
     botanical_name: "",
-    manufacture: "Tatura",
+    manufacture: "",
     product_form: "Powder",
     category: "DAIRY PRODUCTS",
     development_bussines: "INTERNATIONAL PARTNERSHIP",
@@ -735,7 +735,7 @@ export const AllProduct = [
     new_product: false,
     images: ["/assets/image/products/dairy/2.jpg"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+      "",
   },
   {
     id: 43,
