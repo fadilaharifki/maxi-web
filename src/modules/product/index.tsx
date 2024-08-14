@@ -8,7 +8,6 @@ import { useRouter } from "next/navigation";
 
 const ProductModule = () => {
   const router = useRouter();
-  const { params, updateParams, removeParams, getFullURL } = useParamsHook();
 
   return (
     <LayoutComponent>

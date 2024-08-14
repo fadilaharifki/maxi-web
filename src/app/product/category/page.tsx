@@ -28,7 +28,7 @@ export async function generateMetadata({
       "We learnt to be honest and helpful in everything we do to support you",
     keywords: "bimantis, fruits",
     icons: {
-      icon: "/assets/image/favicon.ico",
+      icon: "https://bimantis.com/favicon.ico",
     },
     openGraph: {
       title: `Bimantis - ${categoryName}`,
