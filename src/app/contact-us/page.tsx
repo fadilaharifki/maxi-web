@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://www.bimantis.com",
     images: [
       {
-        url: "/assets/image/og-image.jpg",
+        url: "https://bimantis.com/favicon.ico",
         width: 800,
         height: 600,
         alt: "Bimantis",
