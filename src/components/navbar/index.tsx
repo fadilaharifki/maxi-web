@@ -46,7 +46,7 @@ const NavBar = () => {
   };
 
   return (
-    <>
+    <nav>
       {breakpoint === "sm" || breakpoint === "md" ? (
         <>
           <div className="grid grid-cols-6 justify-around items-center py-3 fixed px-5 z-50 w-screen bg-white">
@@ -104,24 +104,25 @@ const NavBar = () => {
                   : "-translate-y-full opacity-0 pointer-events-none"
               )}
             >
-              <div className="px-10 py-3 flex flex-col gap-2">
+              <ul className="px-10 py-3 flex flex-col gap-2">
                 {menus.map((menu, idx) => {
                   return (
-                    <Link
-                      className={twMerge(
-                        "font-poppins text-primary-green font-normal text-base cursor-pointer hover: relative group",
-                        activePathName[pathname] === menu.slug
-                          ? "pl-5 scale-105 font-semibold"
-                          : ""
-                      )}
-                      key={idx}
-                      href={menu.slug}
-                    >
-                      {menu.name}
-                    </Link>
+                    <li key={idx}>
+                      <Link
+                        className={twMerge(
+                          "font-poppins text-primary-green font-normal text-base cursor-pointer hover: relative group",
+                          activePathName[pathname] === menu.slug
+                            ? "pl-5 scale-105 font-semibold"
+                            : ""
+                        )}
+                        href={menu.slug}
+                      >
+                        {menu.name}
+                      </Link>
+                    </li>
                   );
                 })}
-              </div>
+              </ul>
             </div>
           )}
         </>
@@ -146,35 +147,33 @@ const NavBar = () => {
               </div>
             </div>
           </div>
-          <div className="flex justify-center gap-10">
+          <ul className="flex justify-center gap-10">
             {menus.map((menu, idx) => {
               return (
-                <Link
-                  className="font-comfortaa text-primary-green font-bold text-sm cursor-pointer relative group"
-                  key={idx}
-                  href={menu.slug}
-                >
-                  {menu.name}
-                  <div
-                    className={twMerge(
-                      "border-b-4 py-3 border-transparent duration-300 -mx-2 group-hover:border-primary-green absolute inset-0",
-                      activePathName[pathname] === menu.slug
-                        ? "border-primary-green"
-                        : ""
-                    )}
-                  ></div>
-                </Link>
+                <li key={idx}>
+                  <Link
+                    className="font-comfortaa text-primary-green font-bold text-sm cursor-pointer relative group"
+                    href={menu.slug}
+                  >
+                    {menu.name}
+                    <div
+                      className={twMerge(
+                        "border-b-4 py-3 border-transparent duration-300 -mx-2 group-hover:border-primary-green absolute inset-0",
+                        activePathName[pathname] === menu.slug
+                          ? "border-primary-green"
+                          : ""
+                      )}
+                    ></div>
+                  </Link>
+                </li>
               );
             })}
-          </div>
-          <div className="flex justify-center">
-            <div
-              onClick={handleScrollToContact}
-              className="font-comfortaa text-white font-bold bg-red-500 rounded-full text-lg px-3 py-1 cursor-pointer hover:scale-125 duration-300"
-            >
-              Contact Us
-            </div>
-          </div>
+          </ul>
+          <ul className="flex justify-center">
+            <li className="font-comfortaa text-white font-bold bg-red-500 rounded-full text-lg px-3 py-1 cursor-pointer hover:scale-125 duration-300">
+              <Link href="/contact-us">Contact Us</Link>
+            </li>
+          </ul>
         </div>
       )}
       <Tooltip>
@@ -194,7 +193,7 @@ const NavBar = () => {
           <p>Contact us</p>
         </TooltipContent>
       </Tooltip>
-    </>
+    </nav>
   );
 };
 
