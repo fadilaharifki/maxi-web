@@ -95,9 +95,13 @@ const ProductModule = () => {
               </div>
             </div>
             <div className="flex flex-col justify-start items-start gap-10">
-              <div className="font-comfortaa text-base md:text-xl font-bold text-white w-5/6 md:w-3/6 flex-wrap">
-                We explore the finest from North Asia to Indonesia, as our plan
-                to creating healthier generations
+              <div className="w-5/6 md:w-3/6 ">
+                <div className="font-comfortaa text-base md:text-xl font-bold text-white  flex-wrap">
+                  We explore the finest from North Asia to Indonesia,
+                </div>
+                <div className="font-comfortaa text-base md:text-xl font-bold text-white  flex-wrap">
+                  As our plan to creating healthier generations
+                </div>
               </div>
               <div>
                 <div className="bg-red-500 hover:bg-red-700 min-w-10 rounded-lg px-10 py-1">
@@ -141,9 +145,13 @@ const ProductModule = () => {
               </div>
             </div>
             <div className="flex flex-col justify-start items-start gap-10">
-              <div className="font-comfortaa text-base md:text-xl font-bold text-white w-5/6 md:w-3/6 flex-wrap">
-                Take a look on our widest collection of indonesia’s best natural
-                sweeteners that you never seen before
+              <div className="w-5/6 md:w-3/6 ">
+                <div className="font-comfortaa text-base md:text-xl font-bold text-white flex-wrap">
+                  Take a look on our widest collection of indonesia’s best
+                </div>
+                <div className="font-comfortaa text-base md:text-xl font-bold text-white flex-wrap">
+                  Natural sweeteners that you never seen before
+                </div>
               </div>
               <div>
                 <div className="bg-red-500 hover:bg-red-700 min-w-10 rounded-lg px-10 py-1">
@@ -166,7 +174,7 @@ const ProductModule = () => {
       >
         <div className="relative flex flex-col h-full bg-green-white">
           <Image
-            src="/assets/image/products/category/1.jpg"
+            src="/assets/image/products/anti-microbes/13.jpg"
             width={1000}
             height={1000}
             alt="Logo"
@@ -188,7 +196,7 @@ const ProductModule = () => {
             </div>
             <div>
               <div className="font-comfortaa text-2xl md:text-5xl font-bold text-white uppercase">
-                Galatic
+                Galactic
               </div>
             </div>
             <div className="flex flex-col justify-start items-start gap-10">
@@ -254,7 +262,7 @@ const ProductModule = () => {
       >
         <div className="relative flex flex-col h-full bg-green-white">
           <Image
-            src="/assets/image/products/dairy/3.jpg"
+            src="/assets/image/products/dairy/6.jpg"
             width={1000}
             height={1000}
             alt="Logo"

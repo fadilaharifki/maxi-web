@@ -226,11 +226,10 @@ const ModuleHome = () => {
                   <CoffeeIcon className="h-28 w-28" />
                 )}
                 <div className="col-span-2 md:flex md:flex-col gap-4">
-                  <div>We provide bespoke solutions for customers :</div>
                   <div>
-                    Food & Beverage Industries
+                    Food & beverage Industries
                     <br></br>
-                    Cosmetic Personal Care Food & Beverage Industries Industries
+                    Cosmetic, Personal Care Industries
                     <br></br>
                     Hotel – Restaurants – Café
                   </div>
@@ -265,8 +264,11 @@ const ModuleHome = () => {
         {(breakpoint === "sm" || breakpoint === "md") && (
           <div className="flex flex-col justify-center items-center pt-10 px-10">
             <div className="font-comfortaa text-center font-bold text-xl text-primary-green">
-              From the Glorious Land of Indonesia to the wold, we create the
-              best natural product to improving the quality of life.
+              From the Glorious Land of Indonesia to the world.
+            </div>
+            <div className="font-comfortaa text-center font-bold text-xl text-primary-green">
+              we create the best natural product to improving the quality of
+              life.
             </div>
           </div>
         )}
@@ -283,8 +285,11 @@ const ModuleHome = () => {
           {breakpoint !== "sm" && breakpoint !== "md" && (
             <div className="flex flex-col justify-center items-center px-10">
               <div className="font-comfortaa text-center font-bold text-3xl text-primary-green">
-                From the Glorious Land of Indonesia to the wold, we create the
-                best natural product to improving the quality of life
+                From the Glorious Land of Indonesia to the world.
+              </div>
+              <div className="font-comfortaa text-center font-bold text-3xl text-primary-green">
+                We create the best natural product to improving the quality of
+                life.
               </div>
             </div>
           )}
@@ -438,32 +443,41 @@ const ModuleHome = () => {
               )}
             </Carousel>
             <div className="flex gap-3 my-5">
-              <div>
-                <DialogDescription>Product Form</DialogDescription>
-                <DialogDescription>Category</DialogDescription>
-                {meta?.source && <DialogDescription>Source</DialogDescription>}
-                {meta?.botanical_name && (
-                  <DialogDescription>Botanical Name</DialogDescription>
-                )}
-                {meta?.manufacture && (
-                  <DialogDescription>Manufacture</DialogDescription>
-                )}
-              </div>
-              <div>
-                <DialogDescription>: {meta?.product_form}</DialogDescription>
-                <DialogDescription>: {meta?.category}</DialogDescription>
-                {meta?.source && (
-                  <DialogDescription>: {meta?.source}</DialogDescription>
-                )}
-                {meta?.botanical_name && (
-                  <DialogDescription>
-                    : {meta?.botanical_name}
-                  </DialogDescription>
-                )}
-                {meta?.manufacture && (
-                  <DialogDescription>: {meta?.manufacture}</DialogDescription>
-                )}
-              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td className="w-32 pb-1">Product Form</td>
+                    <td className="pb-1">:</td>
+                    <td className="pl-2 pb-1">{meta?.product_form}</td>
+                  </tr>
+                  <tr>
+                    <td className="w-32 pb-1">Category</td>
+                    <td className="pb-1">:</td>
+                    <td className="pl-2 pb-1">{meta?.category}</td>
+                  </tr>
+                  {meta?.source && (
+                    <tr>
+                      <td className="w-32 pb-1">Source</td>
+                      <td className="pb-1">:</td>
+                      <td className="pl-2 pb-1">{meta?.source}</td>
+                    </tr>
+                  )}
+                  {meta?.botanical_name && (
+                    <tr>
+                      <td className="w-32 pb-1">Botanical Name</td>
+                      <td className="pb-1">:</td>
+                      <td className="pl-2 pb-1">{meta?.botanical_name}</td>
+                    </tr>
+                  )}
+                  {meta?.manufacture && (
+                    <tr>
+                      <td className="w-32 pb-1">Manufacture</td>
+                      <td className="pb-1">:</td>
+                      <td className="pl-2 pb-1">{meta?.manufacture}</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
             </div>
           </div>
           <div className="flex gap-3 justify-end">

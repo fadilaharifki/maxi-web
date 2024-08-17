@@ -867,7 +867,7 @@ export const AllProduct = [
       "/assets/image/products/flavor-ench/3.jpg",
       "/assets/image/products/flavor-ench/4.jpg",
     ],
-    description: "assasa",
+    description: "",
     seo: {
       title: "", //existing combine Bimantis with product name. ex: Bimantis - Honey
       keyword: "", //ex: Fruits, Vegetable, etc

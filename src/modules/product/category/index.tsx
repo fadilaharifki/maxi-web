@@ -262,32 +262,41 @@ const CategoryProductModules = (params: any) => {
             </Carousel>
 
             <div className="flex gap-3 my-5">
-              <div>
-                <DialogDescription>Product Form</DialogDescription>
-                <DialogDescription>Category</DialogDescription>
-                {meta?.source && <DialogDescription>Source</DialogDescription>}
-                {meta?.botanical_name && (
-                  <DialogDescription>Botanical Name</DialogDescription>
-                )}
-                {meta?.manufacture && (
-                  <DialogDescription>Manufacture</DialogDescription>
-                )}
-              </div>
-              <div>
-                <DialogDescription>: {meta?.product_form}</DialogDescription>
-                <DialogDescription>: {meta?.category}</DialogDescription>
-                {meta?.source && (
-                  <DialogDescription>: {meta?.source}</DialogDescription>
-                )}
-                {meta?.botanical_name && (
-                  <DialogDescription>
-                    : {meta?.botanical_name}
-                  </DialogDescription>
-                )}
-                {meta?.manufacture && (
-                  <DialogDescription>: {meta?.manufacture}</DialogDescription>
-                )}
-              </div>
+              <table>
+                <tbody>
+                  <tr>
+                    <td className="w-32 pb-1">Product Form</td>
+                    <td className="pb-1">:</td>
+                    <td className="pl-2 pb-1">{meta?.product_form}</td>
+                  </tr>
+                  <tr>
+                    <td className="w-32 pb-1">Category</td>
+                    <td className="pb-1">:</td>
+                    <td className="pl-2 pb-1">{meta?.category}</td>
+                  </tr>
+                  {meta?.source && (
+                    <tr>
+                      <td className="w-32 pb-1">Source</td>
+                      <td className="pb-1">:</td>
+                      <td className="pl-2 pb-1">{meta?.source}</td>
+                    </tr>
+                  )}
+                  {meta?.botanical_name && (
+                    <tr>
+                      <td className="w-32 pb-1">Botanical Name</td>
+                      <td className="pb-1">:</td>
+                      <td className="pl-2 pb-1">{meta?.botanical_name}</td>
+                    </tr>
+                  )}
+                  {meta?.manufacture && (
+                    <tr>
+                      <td className="w-32 pb-1">Manufacture</td>
+                      <td className="pb-1">:</td>
+                      <td className="pl-2 pb-1">{meta?.manufacture}</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
             </div>
 
             <div className="flex gap-3 justify-end">
