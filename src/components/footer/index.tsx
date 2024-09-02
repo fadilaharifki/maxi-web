@@ -93,11 +93,14 @@ const FooterComponent = () => {
                 Global Sales Office :
               </div>
               <div className="flex items-center font-poppins text-sm text-bold text-white">
-                <MapPin className="w-3 h-3 mr-2" /> Ruko Mahkota Mas Blok J
-                57-60 Jl. M.H. Thamrin
+                <MapPin className="w-3 h-3 mr-2" /> Jl. M.H. Thamrin
               </div>
               <div className="flex items-center font-poppins text-sm text-bold text-white">
-                <MapPin className=" opacity-0 w-3 h-3 mr-2" /> Kota Tangerang -
+                <MapPin className=" opacity-0 w-3 h-3 mr-2" /> Mahkota Mas
+                Complex, Block J 57-6
+              </div>
+              <div className="flex items-center font-poppins text-sm text-bold text-white">
+                <MapPin className=" opacity-0 w-3 h-3 mr-2" /> Tangerang -
                 Indonesia 15117
               </div>
               <div className="flex items-center font-poppins text-sm text-bold text-white">

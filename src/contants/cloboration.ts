@@ -38,4 +38,10 @@ export const logoCustomers = [
   {
     url: "/assets/image/dbff.png",
   },
+  {
+    url: "/assets/image/h2o.jpeg",
+  },
+  {
+    url: "/assets/image/frizy.jpeg",
+  },
 ];
