@@ -44,4 +44,7 @@ export const logoCustomers = [
   {
     url: "/assets/image/frizy.jpeg",
   },
+  {
+    url: "/assets/image/agua.png",
+  },
 ];
