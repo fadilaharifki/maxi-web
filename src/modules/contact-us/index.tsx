@@ -61,7 +61,7 @@ const ContactUsModule = () => {
       <section>
         <div className="relative flex flex-col h-full bg-green-white">
           <Image
-            src="/assets/image/banner/2.jpg"
+            src="/assets/image/products/montain.jpeg"
             width={1000}
             height={1000}
             alt="Logo"
@@ -74,10 +74,16 @@ const ContactUsModule = () => {
                 <div className="col-span-3 flex justify-start flex-col items-start gap-10">
                   <div>
                     <div className="font-poppins text-3xl text-bold text-white">
-                      Maxi
+                      <Image
+                        src="/assets/image/logo1.png"
+                        width={1000}
+                        height={1000}
+                        alt="Logo"
+                        className="w-64 h-40 rounded-lg"
+                      />
                     </div>
                     <div className="font-poppins text-3xl text-bold text-white">
-                      PT. BIMA INTI SELARAS
+                      PT. Maxi
                     </div>
                   </div>
                   <div className="flex justify-start flex-col items-start">
@@ -150,7 +156,7 @@ const ContactUsModule = () => {
                   </div>
                   <Button
                     type="submit"
-                    className="px-4 py-2 bg-primary-green text-white rounded-md"
+                    className="px-4 py-2 bg-primary-blue text-white rounded-md"
                   >
                     Submit
                   </Button>
