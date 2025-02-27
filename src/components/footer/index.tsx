@@ -4,6 +4,7 @@ import { MapPin, Phone } from "lucide-react";
 import { InputWithButton } from "../ui/input";
 import { useEffect } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import Image from "next/image";
 
 const FooterComponent = () => {
   const route = useRouter();
@@ -20,6 +21,11 @@ const FooterComponent = () => {
       name: "Product",
       id: "product",
       slug: "/product",
+    },
+    {
+      name: "About Us",
+      id: "product",
+      slug: "/about-us",
     },
   ];
 
@@ -42,51 +48,55 @@ const FooterComponent = () => {
     }
   };
 
-  const flag = false;
+  const flag = true;
 
   return (
     <div>
       {flag && (
         <div
           id="contact-us"
-          className="grid grid-cols-2 px-10 bg-green-white py-5 gap-x-32"
+          className="grid grid-cols-1 md:grid-cols-2 gap-5 px-10 bg-gradient-to-tr from-white to-orange-500 py-5 gap-x-32"
         >
-          <div className="font-comfortaa text-primary-green">
+          <div className=" text-primary-blue">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry?
           </div>
-          <div className="font-comfortaa">
+          <div className="">
             <InputWithButton placeholder="Enter your email" />
           </div>
         </div>
       )}
-      <div className="w-screen bg-primary-green">
-        <div className="grid grid-cols-1 md:grid-cols-2 p-10 gap-10">
+      <div className="w-screen bg-primary-blue">
+        <div className="grid grid-cols-1 md:grid-cols-4 px-10 py-4 gap-10 justify-center items-center">
           <div className="flex flex-col gap-10">
-            <div className="font-comfortaa text-xl text-bold text-white">
-              Bimantis
-            </div>
-            <div className="flex flex-col text-white gap-3">
-              {menus.map((menu, i) => {
-                return (
-                  <div
-                    className="hover:pl-5 duration-300 cursor-pointer"
-                    key={i}
-                    onClick={() => {
-                      if (pathname === menu.slug) handleScroll(menu.id);
-                      else route.push(menu.slug);
-                    }}
-                  >
-                    {menu.name}
-                  </div>
-                );
-              })}
-            </div>
+            <Image
+              src="/assets/image/logo1.png"
+              width={1000}
+              height={1000}
+              alt="Logo"
+              className="w-64 h-40 rounded-lg"
+            />
           </div>
-
+          <div className="flex flex-col text-white gap-3">
+            {menus.map((menu, i) => {
+              return (
+                <div
+                  className="hover:pl-5 duration-300 cursor-pointer"
+                  key={i}
+                  onClick={() => {
+                    if (pathname === menu.slug) handleScroll(menu.id);
+                    else route.push(menu.slug);
+                  }}
+                >
+                  {menu.name}
+                </div>
+              );
+            })}
+          </div>
+          <div></div>
           <div className="flex justify-start md:justify-end flex-col items-start md:items-end gap-2 md:gap-5">
-            <div className="font-montserrat text-white font-semibold text-2xl md:text-3xl uppercase">
-              PT. BIMA INTI SELARAS
+            <div className="text-white font-semibold text-2xl md:text-3xl uppercase">
+              PT. MAXI
             </div>
             <div className="flex justify-start md:justify-end  flex-col items-start md:items-end gap-2">
               <div className="font-poppins text-xl text-bold text-white">

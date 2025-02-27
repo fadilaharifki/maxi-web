@@ -29,18 +29,18 @@ const ProductModule = () => {
 
           <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10 md:px-20">
             <div>
-              <div className="font-comfortaa text-2xl md:text-5xl font-bold text-white uppercase">
+              <div className=" text-2xl md:text-5xl font-bold text-white uppercase">
                 Grains & Seeds
               </div>
             </div>
             <div className="flex flex-col justify-start items-start gap-10">
-              <div className="font-comfortaa text-base md:text-xl font-bold text-white w-5/6 md:w-3/6 flex-wrap">
+              <div className=" text-base md:text-xl font-bold text-white w-5/6 md:w-3/6 flex-wrap">
                 Discover our latest innovation by empowering Indonesian source
                 grains and seeds, to shape a better generation
               </div>
               <div>
                 <div className="bg-red-500 hover:bg-red-700 min-w-10 rounded-lg px-10 py-1">
-                  <div className="font-comfortaa font-bold text-lg text-white">
+                  <div className=" font-bold text-lg text-white">
                     Go, Discover
                   </div>
                 </div>
@@ -90,22 +90,22 @@ const ProductModule = () => {
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10 md:px-20">
             <div>
-              <div className="font-comfortaa text-2xl md:text-5xl font-bold text-white uppercase">
+              <div className=" text-2xl md:text-5xl font-bold text-white uppercase">
                 Fruit & Vegetables
               </div>
             </div>
             <div className="flex flex-col justify-start items-start gap-10">
               <div className="w-5/6 md:w-3/6 ">
-                <div className="font-comfortaa text-base md:text-xl font-bold text-white  flex-wrap">
+                <div className=" text-base md:text-xl font-bold text-white  flex-wrap">
                   We explore the finest from North Asia to Indonesia,
                 </div>
-                <div className="font-comfortaa text-base md:text-xl font-bold text-white  flex-wrap">
+                <div className=" text-base md:text-xl font-bold text-white  flex-wrap">
                   As our plan to creating healthier generations
                 </div>
               </div>
               <div>
                 <div className="bg-red-500 hover:bg-red-700 min-w-10 rounded-lg px-10 py-1">
-                  <div className="font-comfortaa font-bold text-lg text-white">
+                  <div className=" font-bold text-lg text-white">
                     Explore our finest
                   </div>
                 </div>
@@ -140,22 +140,22 @@ const ProductModule = () => {
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10 md:px-20">
             <div>
-              <div className="font-comfortaa text-2xl md:text-5xl font-bold text-white uppercase">
+              <div className=" text-2xl md:text-5xl font-bold text-white uppercase">
                 Natural Sweeteners
               </div>
             </div>
             <div className="flex flex-col justify-start items-start gap-10">
               <div className="w-5/6 md:w-3/6 ">
-                <div className="font-comfortaa text-base md:text-xl font-bold text-white flex-wrap">
+                <div className=" text-base md:text-xl font-bold text-white flex-wrap">
                   Take a look on our widest collection of indonesia’s best
                 </div>
-                <div className="font-comfortaa text-base md:text-xl font-bold text-white flex-wrap">
+                <div className=" text-base md:text-xl font-bold text-white flex-wrap">
                   Natural sweeteners that you never seen before
                 </div>
               </div>
               <div>
                 <div className="bg-red-500 hover:bg-red-700 min-w-10 rounded-lg px-10 py-1">
-                  <div className="font-comfortaa font-bold text-lg text-white">
+                  <div className=" font-bold text-lg text-white">
                     Go, Discover
                   </div>
                 </div>
@@ -195,19 +195,19 @@ const ProductModule = () => {
               </div>
             </div>
             <div>
-              <div className="font-comfortaa text-2xl md:text-5xl font-bold text-white uppercase">
+              <div className=" text-2xl md:text-5xl font-bold text-white uppercase">
                 Galactic
               </div>
             </div>
             <div className="flex flex-col justify-start items-start gap-10">
-              <div className="font-comfortaa text-base md:text-xl font-bold text-white w-5/6 md:w-3/6 flex-wrap">
+              <div className=" text-base md:text-xl font-bold text-white w-5/6 md:w-3/6 flex-wrap">
                 Discover our collaboration with Galactic, S.A (Belgium & China)
                 to improving your product quality, shelf life, and better taste
                 experience
               </div>
               <div>
                 <div className="bg-red-500 hover:bg-red-700 min-w-10 rounded-lg px-10 py-1">
-                  <div className="font-comfortaa font-bold text-lg text-white">
+                  <div className=" font-bold text-lg text-white">
                     Go Discover Now
                   </div>
                 </div>
@@ -234,18 +234,18 @@ const ProductModule = () => {
 
           <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10 md:px-20">
             <div>
-              <div className="font-comfortaa text-2xl md:text-5xl font-bold text-white uppercase">
+              <div className=" text-2xl md:text-5xl font-bold text-white uppercase">
                 Natural Additives
               </div>
             </div>
             <div className="flex flex-col justify-start items-start gap-10">
-              <div className="font-comfortaa text-base md:text-xl font-bold text-white w-5/6 md:w-3/6 flex-wrap">
+              <div className=" text-base md:text-xl font-bold text-white w-5/6 md:w-3/6 flex-wrap">
                 Take a look on our collection to support your product even
                 better
               </div>
               <div>
                 <div className="bg-red-500 hover:bg-red-700 min-w-10 rounded-lg px-10 py-1">
-                  <div className="font-comfortaa font-bold text-lg text-white">
+                  <div className=" font-bold text-lg text-white">
                     Go Discover Now
                   </div>
                 </div>
@@ -272,18 +272,18 @@ const ProductModule = () => {
 
           <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10 md:px-20">
             <div>
-              <div className="font-comfortaa text-2xl md:text-5xl font-bold text-white uppercase">
+              <div className=" text-2xl md:text-5xl font-bold text-white uppercase">
                 Dairy Products
               </div>
             </div>
             <div className="flex flex-col justify-start items-start gap-10">
-              <div className="font-comfortaa text-base md:text-xl font-bold text-white w-5/6 md:w-3/6 flex-wrap">
+              <div className=" text-base md:text-xl font-bold text-white w-5/6 md:w-3/6 flex-wrap">
                 Not just for creamy taste but we can help to lowering your
                 production cost
               </div>
               <div>
                 <div className="bg-red-500 hover:bg-red-700 min-w-10 rounded-lg px-10 py-1">
-                  <div className="font-comfortaa font-bold text-lg text-white">
+                  <div className=" font-bold text-lg text-white">
                     Go Discover More
                   </div>
                 </div>

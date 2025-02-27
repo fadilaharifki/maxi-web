@@ -8,12 +8,7 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: true,
     new_product: false,
-    images: [
-      "/assets/image/products/honey/1.jpg",
-      "/assets/image/products/honey/2.jpg",
-      "/assets/image/products/honey/3.jpg",
-      "/assets/image/products/honey/4.jpg",
-    ],
+    images: ["/assets/image/products/product1.jpeg"],
     description:
       "Explore the all series of Indonesia honey to creating a healthier sweetener.",
     seo: {
@@ -31,13 +26,7 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
-    images: [
-      "/assets/image/products/dates/3.jpg",
-      "/assets/image/products/dates/1.jpg",
-      "/assets/image/products/dates/2.jpg",
-      "/assets/image/products/dates/4.jpg",
-      "/assets/image/products/dates/5.jpg",
-    ],
+    images: ["/assets/image/products/product6.jpeg"],
     description:
       "Mainly used in beverage, cake – pastry products, cream filling.",
     seo: {
@@ -56,16 +45,7 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: true,
     new_product: false,
-    images: [
-      "/assets/image/products/brown-sugar/1.jpg",
-      "/assets/image/products/brown-sugar/2.jpg",
-      "/assets/image/products/brown-sugar/5.jpg",
-      "/assets/image/products/brown-sugar/6.jpg",
-      "/assets/image/products/brown-sugar/7.jpg",
-      "/assets/image/products/brown-sugar/8.jpg",
-      "/assets/image/products/brown-sugar/3.jpg",
-      "/assets/image/products/brown-sugar/4.jpg",
-    ],
+    images: ["/assets/image/products/product2.jpeg"],
     description:
       "Kick ‘in up your product with the famous Indonesia sugar. Comes with floral aroma, smooth and unique afternote. Mainly used in beverage, snack, ice cream, and cake – pastry products.",
     seo: {
@@ -438,12 +418,7 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: true,
     new_product: false,
-    images: [
-      "/assets/image/products/white-sesame-seeds/2.jpg",
-      "/assets/image/products/white-sesame-seeds/3.jpg",
-      "/assets/image/products/white-sesame-seeds/1.jpg",
-      "/assets/image/products/white-sesame-seeds/4.jpg",
-    ],
+    images: ["/assets/image/products/product4.jpeg"],
     description:
       "Enrich your taste and aroma just with couple drops. Available in White series.",
     seo: {
@@ -486,12 +461,7 @@ export const AllProduct = [
     development_bussines: "100% NATURAL FROM OUR FAMILY OWNED FARM",
     best_seller: true,
     new_product: false,
-    images: [
-      "/assets/image/products/fruit-vegie/13.jpg",
-      "/assets/image/products/fruit-vegie/20.jpg",
-      "/assets/image/products/fruit-vegie/19.jpg",
-      "/assets/image/products/fruit-vegie/18.jpg",
-    ],
+    images: ["/assets/image/products/product10.jpeg"],
     description:
       "The richest nutritional benefit to improve your healthier meals. Without any preservatives and colouring agent added. Mainly used in beverage, ice cream, cake – pastry, and cream filling.",
     seo: {
@@ -669,7 +639,7 @@ export const AllProduct = [
     development_bussines: "INTERNATIONAL PARTNERSHIP",
     best_seller: true,
     new_product: false,
-    images: ["/assets/image/products/anti-microbes/17.jpg"],
+    images: ["/assets/image/products/product9.jpeg"],
     description:
       "Mainly used in seasoning, beverage, ice cream, yoghurt, and cosmetic personal care products.",
     seo: {

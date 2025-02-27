@@ -74,7 +74,7 @@ const ContactUsModule = () => {
                 <div className="col-span-3 flex justify-start flex-col items-start gap-10">
                   <div>
                     <div className="font-poppins text-3xl text-bold text-white">
-                      BIMANTIS
+                      Maxi
                     </div>
                     <div className="font-poppins text-3xl text-bold text-white">
                       PT. BIMA INTI SELARAS

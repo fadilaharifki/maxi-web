@@ -22,20 +22,20 @@ export async function generateMetadata({
   });
 
   return {
-    title: `Bimantis - ${categoryName}`,
+    title: `Maxi - ${categoryName}`,
     description:
       findProduct?.description ??
       "We learnt to be honest and helpful in everything we do to support you",
-    keywords: "bimantis, fruits",
+    keywords: "maxi, water",
     icons: {
-      icon: "https://bimantis.com/favicon.ico",
+      icon: "https://maxi.com/favicon.ico",
     },
     openGraph: {
-      title: `Bimantis - ${categoryName}`,
+      title: `Maxi - ${categoryName}`,
       description:
         findProduct?.description ??
         "We learnt to be honest and helpful in everything we do to support you",
-      url: `https://www.bimantis.com/category?${categoryName}`,
+      url: `https://www.maxi.com/category?${categoryName}`,
       images: [
         {
           url:
@@ -43,10 +43,10 @@ export async function generateMetadata({
             "/assets/image/products/adzuki-bean/3.jpg",
           width: 800,
           height: 600,
-          alt: `Bimantis - ${categoryName}`,
+          alt: `Maxi - ${categoryName}`,
         },
       ],
-      siteName: "Bimantis",
+      siteName: "Maxi",
     },
   };
 }

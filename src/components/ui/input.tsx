@@ -38,7 +38,7 @@ export const InputWithButton = React.forwardRef<HTMLInputElement, InputProps>(
         <Input type={type} className={className} ref={ref} {...props} />
         <button
           type="button"
-          className="h-10 px-4 py-2 text-sm font-medium text-white bg-primary-green rounded-md hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-primary-gbg-primary-green focus:ring-offset-2 "
+          className="h-10 px-4 py-2 text-sm font-medium text-white bg-primary-blue rounded-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-primary-gbg-primary-green focus:ring-offset-2 "
         >
           Subscribe
         </button>

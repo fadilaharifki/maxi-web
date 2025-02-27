@@ -76,15 +76,11 @@ const CardComponent = ({
         )}
       </div>
       <div className="p-4">
-        <h2 className="text-lg font-semibold leading-none text-gray-800 font-comfortaa">
+        <h2 className="text-lg font-semibold leading-none text-gray-800 ">
           {productName}
         </h2>
 
-        {category && (
-          <span className="text-xs font-comfortaa">
-            {toTitleCase(category)}
-          </span>
-        )}
+        {category && <span className="text-xs ">{toTitleCase(category)}</span>}
 
         {price && (
           <div className="flex items-center mt-2">
@@ -96,7 +92,7 @@ const CardComponent = ({
         )}
 
         {description && (
-          <p className="text-gray-500 mt-4 text-sm font-comfortaa line-clamp-3">
+          <p className="text-gray-500 mt-4 text-sm  line-clamp-3">
             {description}
           </p>
         )}

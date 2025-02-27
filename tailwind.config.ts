@@ -23,8 +23,8 @@ const config: Config = {
           "0 4px 6px -1px rgba(0, 128, 0, 0.1), 0 2px 4px -1px rgba(0, 128, 0, 0.06)",
       },
       fontFamily: {
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
         comfortaa: ["Comfortaa", ...defaultTheme.fontFamily.sans],
-        poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
         josefinSans: ["Josefin Sans", ...defaultTheme.fontFamily.sans],
         bebasNeue: ["Bebas Neue", ...defaultTheme.fontFamily.sans],
         montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
@@ -38,6 +38,7 @@ const config: Config = {
       },
       colors: {
         "primary-green": "#0E462B",
+        "primary-blue": "#013D93",
         "green-white": "#F8FAF5",
         "rose-gold": "#feeae1",
         border: "hsl(var(--border))",

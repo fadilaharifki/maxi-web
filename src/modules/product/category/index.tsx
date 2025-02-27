@@ -112,7 +112,7 @@ const CategoryProductModules = (params: any) => {
               <div className="hover:scale-110">
                 <MoveLeftIcon />
               </div>
-              <div className="font-comfortaa hover:scale-110">Back</div>
+              <div className=" hover:scale-110">Back</div>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-5 rounded-2xl mb-5 gap-2">
               <Input
@@ -191,7 +191,7 @@ const CategoryProductModules = (params: any) => {
                 handlePageChange={handlePageChange}
               />
               <div className="flex gap-2 justify-center items-center md:w-56">
-                <span className="font-comfortaa text-sm">Per Page</span>
+                <span className=" text-sm">Per Page</span>
                 <SelectComponent
                   options={PerPageOptions}
                   value={itemsPerPage}
@@ -221,7 +221,7 @@ const CategoryProductModules = (params: any) => {
       >
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
-            <DialogTitle className=" font-comfortaa text-2xl">
+            <DialogTitle className="  text-2xl">
               {meta?.product_name}
             </DialogTitle>
             <DialogDescription>{meta?.description}</DialogDescription>
@@ -309,7 +309,7 @@ const CategoryProductModules = (params: any) => {
               <PhoneIcon
                 className=" cursor-pointer"
                 onClick={() => {
-                  const phoneNumber = "628118168199";
+                  const phoneNumber = "62811432844";
 
                   const fullURL = getFullURL();
 

@@ -40,8 +40,23 @@ import { logoCustomers } from "@/contants/cloboration";
 import { useSearchParams } from "next/navigation";
 import useScreenSize from "@/hooks/useScreenSize";
 import { twMerge } from "tailwind-merge";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const ModuleHome = () => {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
+  const { ref: refVision, inView: inViewVision } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+  const { ref: refProduct, inView: inProduct } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+  const { ref: refCust, inView: inCust } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
   const { width, breakpoint } = useScreenSize();
   const { params, updateParams, removeParams, getFullURL } = useParamsHook();
 
@@ -82,27 +97,78 @@ const ModuleHome = () => {
     }
   };
 
+  const visionDescription = [
+    {
+      title: "Our Main Values",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+    },
+    {
+      title: "Our Vision",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+    },
+    {
+      title: "Our Technology",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+    },
+  ];
+
   return (
-    <>
-      <section className="h-screen" id="our-company">
-        <div className="relative flex flex-col h-full bg-green-white">
-          <Image
-            src="/assets/image/banner/1.jpg"
-            width={1000}
-            height={1000}
-            alt="Logo"
-            className="w-screen h-screen object-cover"
-          />
-          <div className="absolute inset-0 bg-black opacity-10"></div>
-          <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10">
-            <div>
-              <div className="font-comfortaa text-2xl sm:text-7xl font-bold text-white uppercase">
-                Bimantis
-              </div>
+    <section>
+      <section className="fixed h-screen w-screen bg-gradient-to-tr from-blue-500 to-orange-500 -z-50"></section>
+      <section className="min-h-screen" id="our-company">
+        <div className="relative flex flex-col h-full">
+          {breakpoint !== "sm" && (
+            <div className="flex justify-end">
+              <motion.img
+                src="/assets/image/products/product3.jpeg"
+                width={1000}
+                height={1000}
+                alt="Logo"
+                className="w-1/2 h-[90vh] object-cover mt-24 rounded-lg"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+              />
             </div>
-            <div className="font-comfortaa text-base sm:text-2xl font-bold text-white w-22 sm:w-96 flex-wrap">
-              Empowering Nature
-            </div>
+          )}
+          <div className="absolute mt-[500px] md:mt-0 inset-0 flex flex-col justify-center gap-5 px-10 ">
+            <motion.img
+              src="/assets/image/logo1.png"
+              width={1000}
+              height={1000}
+              alt="Logo"
+              className="w-64 h-40 rounded-lg"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            />
+
+            <motion.div
+              className="text-base text-white w-22 sm:w-[500px]"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industrys standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </motion.div>
+
+            {breakpoint === "sm" && (
+              <motion.img
+                src="/assets/image/products/product3.jpeg"
+                width={1000}
+                height={1000}
+                alt="Logo"
+                className="h-[90vh] object-cover rounded-lg mb-10"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+              />
+            )}
           </div>
         </div>
       </section>
@@ -110,10 +176,10 @@ const ModuleHome = () => {
         <section className="py-10 md:py-32">
           <div className="grid grid-cols-1 md:grid-cols-3 px-10 gap-10">
             <div className="flex flex-col gap-5 justify-center">
-              <div className="text-center md:text-start font-comfortaa text-3xl md:text-5xl text-bold text-primary-green">
+              <div className="text-center md:text-start  text-3xl md:text-5xl text-bold text-primary-green">
                 About Us
               </div>
-              <div className="font-comfortaa text-bold text-primary-green">
+              <div className=" text-bold text-primary-green">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 {/*  eslint-disable-next-line react/no-unescaped-entities */}
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -142,165 +208,106 @@ const ModuleHome = () => {
           </div>
         </section>
       )}
-      <section>
-        <div className="relative flex flex-col h-full bg-green-white">
-          <Image
-            src="/assets/image/banner/3.jpg"
+      <section className="my-10">
+        <div className="relative flex flex-col h-full ">
+          <motion.img
+            ref={refVision}
+            src="/assets/image/products/montain.jpeg"
             width={1000}
             height={1000}
             alt="Logo"
             className="w-screen h-screen object-cover"
+            initial={{ opacity: 0, y: 50 }}
+            animate={inViewVision ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.1 }}
           />
-          <div className="absolute inset-0 bg-black opacity-50"></div>
-          <div className="absolute inset-0 flex flex-col md:flex-row justify-center items-center gap-20 px-10">
-            <div className="flex flex-col text-center gap-3">
-              <div className="font-comfortaa text-2xl font-bold text-white">
-                Our Main Values
-              </div>
-              <div className="font-comfortaa text-base font-bold text-white w-72">
-                In Bimantis, we embrace the spirit of Gotong Royong (mutual
-                collaborations) in empowering Indonesia nature products and
-                local communities.
-              </div>
-            </div>
-            <div className="flex flex-col text-center gap-3">
-              <div className="font-comfortaa text-2xl font-bold text-white">
-                Our Vision
-              </div>
-              <div className="font-comfortaa text-base font-bold text-white w-72">
-                Bimantis determine to create innovation for better today and
-                next generation to come.
-              </div>
-            </div>
-            <div className="flex flex-col text-center gap-3">
-              <div className="font-comfortaa text-2xl font-bold text-white">
-                Our Technology
-              </div>
-              <div className="font-comfortaa text-base font-bold text-white w-72">
-                We always exploring the complex interrelationship between nature
-                and technology in the evolving modern world
-              </div>
+          <div className="absolute inset-0 bg-black opacity-30"></div>
+          <div className="absolute w-screen h-screen flex justify-center items-center ">
+            <div
+              ref={refVision}
+              className="inset-0 flex flex-col md:flex-row justify-center items-start gap-20 px-10"
+            >
+              {visionDescription.map((item, index) => (
+                <motion.div
+                  key={index}
+                  className="flex flex-col text-center gap-3"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={inViewVision ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, delay: index * 0.3 }}
+                >
+                  <div className="text-2xl font-bold text-white">
+                    {item.title}
+                  </div>
+                  <div className="text-base text-white w-72">{item.text}</div>
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
       </section>
-      <section className="bg-green-white">
-        <div className="flex flex-col justify-center items-center py-32 gap-20">
-          <div className="font-comfortaa text-3xl md:text-5xl text-bold text-center text-primary-green">
-            We begin our stories on 2018
-          </div>
-          <div className="flex flex-col gap-10 md:gap-0 font-comfortaa text-primary-green px-10">
-            <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-11">
-              <div className="md:col-span-5 grid grid-cols-3 md:flex md:flex-col justify-center items-center gap-x-5">
-                <ListStartIcon className="h-28 w-28" />
-                <div className="col-span-2 md:flex md:flex-col gap-4">
-                  <div>
-                    Our journey started on our passion and love for Indonesia
-                    Nature.
-                  </div>
-                  <div>The best ingredients in the world</div>
-                </div>
-              </div>
-              {breakpoint !== "sm" && breakpoint !== "md" && (
-                <>
-                  <div className="relative flex justify-center">
-                    <div className="h-full w-[2px] bg-primary-green"></div>
-                    <div className="absolute top-1/2 transform -translate-y-1/2 h-5 w-5 bg-primary-green rounded-full"></div>
-                  </div>
-                  <div className="col-span-5"></div>
-                </>
-              )}
-            </div>
-            <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-11">
-              {breakpoint !== "sm" && breakpoint !== "md" && (
-                <>
-                  <div className="col-span-5"></div>
-                  <div className="relative flex justify-center">
-                    <div className="h-full w-[2px] bg-primary-green"></div>
-                    <div className="absolute top-1/2 transform -translate-y-1/2 h-5 w-5 bg-primary-green rounded-full"></div>
-                  </div>
-                </>
-              )}
-              <div className="md:col-span-5 grid grid-cols-3 md:flex md:flex-col justify-center items-center">
-                {breakpoint !== "sm" && breakpoint !== "md" && (
-                  <CoffeeIcon className="h-28 w-28" />
-                )}
-                <div className="col-span-2 md:flex md:flex-col gap-4">
-                  <div>
-                    Food & beverage Industries
-                    <br></br>
-                    Cosmetic, Personal Care Industries
-                    <br></br>
-                    Hotel – Restaurants – Café
-                  </div>
-                </div>
-                {(breakpoint === "sm" || breakpoint === "md") && (
-                  <CoffeeIcon className="h-28 w-28" />
-                )}
-              </div>
-            </div>
-            <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-11">
-              <div className="md:col-span-5 grid grid-cols-3 md:flex md:flex-col justify-center items-center gap-x-5">
-                <EyeIcon className="h-28 w-28" />
-                <div className="col-span-2 md:flex md:flex-col gap-4">
-                  <div>Adding Value. Being Innovated.</div>
-                  <div>That’s What We Do</div>
-                </div>
-              </div>
-              {breakpoint !== "sm" && breakpoint !== "md" && (
-                <>
-                  <div className="relative flex justify-center">
-                    <div className="h-full w-[2px] bg-primary-green"></div>
-                    <div className="absolute top-1/2 transform -translate-y-1/2 h-5 w-5 bg-primary-green rounded-full"></div>
-                  </div>
-                  <div className="col-span-5"></div>
-                </>
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="bg-white">
+
+      <section className="">
         {(breakpoint === "sm" || breakpoint === "md") && (
           <div className="flex flex-col justify-center items-center pt-10 px-10">
-            <div className="font-comfortaa text-center font-bold text-xl text-primary-green">
+            <div className=" text-center font-bold text-xl text-primary-green">
               From the Glorious Land of Indonesia to the world.
             </div>
-            <div className="font-comfortaa text-center font-bold text-xl text-primary-green">
+            <div className=" text-center font-bold text-xl text-primary-green">
               we create the best natural product to improving the quality of
               life.
             </div>
           </div>
         )}
         <div className="grid grid-cols-1 md:grid-cols-2 p-10 pb-10 md:pb-32 gap-y-10">
-          <div>
-            <Image
-              src="/assets/image/banner/2.jpg"
+          <div className="flex justify-center">
+            <motion.img
+              ref={ref}
+              src="/assets/image/products/product6.jpeg"
               width={1000}
               height={1000}
               alt="Logo"
-              className="w-screen h-42 object-cover rounded-xl"
+              className="w-[50vh] h-[70vh] rounded-xl"
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5 }}
             />
           </div>
           {breakpoint !== "sm" && breakpoint !== "md" && (
-            <div className="flex flex-col justify-center items-center px-10">
-              <div className="font-comfortaa text-center font-bold text-3xl text-primary-green">
+            <div
+              ref={ref}
+              className="flex flex-col justify-center items-center px-10"
+            >
+              <motion.div
+                className="text-center font-bold text-3xl text-white"
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5 }}
+              >
                 From the Glorious Land of Indonesia to the world.
-              </div>
-              <div className="font-comfortaa text-center font-bold text-3xl text-primary-green">
+              </motion.div>
+              <motion.div
+                className="text-center text-xl text-white"
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
                 We create the best natural product to improving the quality of
                 life.
-              </div>
+              </motion.div>
             </div>
           )}
         </div>
       </section>
-      <section
+      <motion.section
+        ref={refProduct}
         id="best-seller"
-        className="px-5 rounded-lg bg-green-white py-10 md:py-20"
+        className="px-5 rounded-lg py-10 md:py-20"
+        initial={{ opacity: 0, y: 50 }}
+        animate={inProduct ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 2 }}
       >
-        <div className="font-comfortaa text-3xl md:text-5xl text-center text-bold text-primary-green pb-10">
-          We provide the finest ingredients
+        <div className=" text-3xl md:text-5xl text-center text-bold text-white pb-10">
+          We Provide the Purest Mineral Water
         </div>
         <Swiper
           effect={"coverflow"}
@@ -343,16 +350,21 @@ const ModuleHome = () => {
           )}
           {/* Custom Next and Previous buttons with Lucide React icons */}
           <div className="custom-next absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full mr-5">
-            <ChevronRightCircle className="w-10 h-10 text-red-500" />
+            <ChevronRightCircle className="w-10 h-10 cursor-pointer text-primary-blue" />
           </div>
           <div className="custom-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full ml-5">
-            <ChevronLeftCircle className="w-10 h-10 text-red-500" />
+            <ChevronLeftCircle className="w-10 h-10 cursor-pointer text-primary-blue" />
           </div>
         </Swiper>
-      </section>
-      <section>
-        <div className="flex flex-col justify-center items-center py-32 gap-20">
-          <div className="text-center font-comfortaa text-3xl md:text-5xl text-bold text-primary-green">
+      </motion.section>
+      <section ref={refCust}>
+        <motion.div
+          className="flex flex-col justify-center items-center py-10 gap-20 bg-white"
+          initial={{ opacity: 0, y: 50 }}
+          animate={inCust ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          <div className="text-center  text-3xl md:text-5xl text-bold text-primary-green">
             Our active customers..
           </div>
           <Carousel
@@ -388,7 +400,7 @@ const ModuleHome = () => {
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
-        </div>
+        </motion.div>
       </section>
       <DialogComponent
         open={meta.open}
@@ -403,7 +415,7 @@ const ModuleHome = () => {
       >
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
-            <DialogTitle className=" font-comfortaa text-2xl">
+            <DialogTitle className="  text-2xl">
               {meta?.product_name}
             </DialogTitle>
             <DialogDescription>{meta?.description}</DialogDescription>
@@ -490,7 +502,7 @@ const ModuleHome = () => {
             <PhoneIcon
               className=" cursor-pointer"
               onClick={() => {
-                const phoneNumber = "628118168199";
+                const phoneNumber = "62811432844";
 
                 const fullURL = getFullURL();
 
@@ -505,7 +517,7 @@ const ModuleHome = () => {
           </div>
         </DialogContent>
       </DialogComponent>
-    </>
+    </section>
   );
 };
 

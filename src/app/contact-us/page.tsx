@@ -2,27 +2,27 @@ import ContactUsModule from "@/modules/contact-us";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bimantis - Contact Us",
+  title: "Maxi - Contact Us",
   description:
     "We learnt to be honest and helpful in everything we do to support you",
-  keywords: "bimantis, fruits",
+  keywords: "maxi, water",
   icons: {
-    icon: "https://bimantis.com/favicon.ico",
+    icon: "https://maxi.com/favicon.ico",
   },
   openGraph: {
-    title: "Bimantis",
+    title: "Maxi",
     description:
       "We learnt to be honest and helpful in everything we do to support you",
-    url: "https://www.bimantis.com",
+    url: "https://www.maxi.com",
     images: [
       {
-        url: "https://bimantis.com/favicon.ico",
+        url: "https://maxi.com/favicon.ico",
         width: 800,
         height: 600,
-        alt: "Bimantis",
+        alt: "Maxi",
       },
     ],
-    siteName: "Bimantis",
+    siteName: "Maxi",
   },
 };
 
