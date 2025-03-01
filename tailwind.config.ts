@@ -38,7 +38,7 @@ const config: Config = {
       },
       colors: {
         "primary-green": "#0E462B",
-        "primary-blue": "#013D93",
+        "primary-blue": "#0164B5",
         "green-white": "#F8FAF5",
         "rose-gold": "#feeae1",
         border: "hsl(var(--border))",

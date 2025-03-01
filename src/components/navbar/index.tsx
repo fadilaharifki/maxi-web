@@ -8,6 +8,9 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import { twMerge } from "tailwind-merge";
 import useScreenSize from "@/hooks/useScreenSize";
 import { useState } from "react";
+import { Drawer, DrawerContent, DrawerHeader, DrawerTitle } from "../ui/drawer";
+import { Button } from "../ui/button";
+import clsx from "clsx";
 
 const NavBar = () => {
   const pathname = usePathname();
@@ -53,12 +56,12 @@ const NavBar = () => {
     <nav>
       {breakpoint === "sm" || breakpoint === "md" ? (
         <>
-          <div className="grid grid-cols-6 justify-around bg-gradient-to-tr from-blue-500/50 to-orange-500/50 backdrop-blur-md items-center py-3 fixed px-5 z-50 w-screen bg-white">
+          <div className="grid grid-cols-6 justify-around backdrop-blur-md items-center py-3 fixed px-5 z-50 w-screen bg-white/50">
             <div
               onClick={() => {
                 setOpen(!open);
               }}
-              className="relative w-10 h-10 flex items-center justify-center"
+              className="relative w-5 h-5 flex items-center justify-center"
             >
               <div
                 className={twMerge(
@@ -66,7 +69,7 @@ const NavBar = () => {
                   open ? "rotate-45 opacity-0" : "rotate-0 opacity-100"
                 )}
               >
-                <MenuIcon className="w-8 h-8" />
+                <MenuIcon className="w-6 h-6" />
               </div>
               <div
                 className={twMerge(
@@ -74,7 +77,7 @@ const NavBar = () => {
                   open ? "rotate-0 opacity-100" : "-rotate-45 opacity-0"
                 )}
               >
-                <XIcon className="w-8 h-8" />
+                <XIcon className="w-6 h-6" />
               </div>
             </div>
             <div className="col-span-4">
@@ -89,44 +92,51 @@ const NavBar = () => {
                   width={1000}
                   height={1000}
                   alt="Logo"
-                  className="h-16 w-32"
+                  className="h-14 w-24"
                 />
               </div>
             </div>
           </div>
           {open && (
-            <div
-              className={twMerge(
-                "bg-white pt-[80px] pb-8 fixed left-0 w-full z-40 transform transition-all duration-500 ease-in-out flex justify-between",
-                open
-                  ? "translate-y-0 opacity-100"
-                  : "-translate-y-full opacity-0 pointer-events-none"
-              )}
-            >
-              <ul className="px-10 py-3 flex flex-col gap-2">
-                {menus.map((menu, idx) => {
-                  return (
-                    <li key={idx}>
-                      <Link
-                        className={twMerge(
-                          "font-poppins text-primary-blue font-normal text-base cursor-pointer hover: relative group",
-                          activePathName[pathname] === menu.slug
-                            ? "pl-5 scale-105 font-semibold"
-                            : ""
-                        )}
-                        href={menu.slug}
-                      >
-                        {menu.name}
+            <Drawer direction="left" open={open} onOpenChange={setOpen}>
+              <DrawerContent className="left-0 w-[80%] h-full rounded-none bg-white shadow-lg">
+                <div className="mx-auto w-full max-w-sm">
+                  <DrawerHeader>
+                    <DrawerTitle className="flex justify-center">
+                      <Image
+                        src="/assets/image/logo.png"
+                        width={1000}
+                        height={1000}
+                        alt="Logo"
+                        className="h-20 w-36"
+                      />
+                    </DrawerTitle>
+                  </DrawerHeader>
+                  <nav className="px-4 space-y-1">
+                    {menus.map((menu, index) => (
+                      <Link key={index} href={menu.slug}>
+                        <Button
+                          variant="ghost"
+                          className={clsx(
+                            "w-full justify-start text-sm",
+                            activePathName[pathname] === menu.slug
+                              ? "text-primary-blue"
+                              : "text-gray-500"
+                          )}
+                          onClick={() => setOpen(false)}
+                        >
+                          {menu.name}
+                        </Button>
                       </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
+                    ))}
+                  </nav>
+                </div>
+              </DrawerContent>
+            </Drawer>
           )}
         </>
       ) : (
-        <div className="grid grid-cols-3 justify-around items-center py-3 fixed z-50 w-screen bg-gradient-to-tr from-blue-500/50 to-orange-500/50 backdrop-blur-md shadow-md">
+        <div className="grid grid-cols-3 justify-around items-center py-3 fixed z-50 w-screen bg-white/30 backdrop-blur-md shadow-md">
           <div
             className="flex justify-center items-center gap-3 cursor-pointer hover:scale-125 duration-300"
             onClick={() => {
