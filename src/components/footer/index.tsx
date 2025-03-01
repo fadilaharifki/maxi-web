@@ -48,16 +48,16 @@ const FooterComponent = () => {
     }
   };
 
-  const flag = true;
+  const flag = false;
 
   return (
     <div>
       {flag && (
         <div
           id="contact-us"
-          className="grid grid-cols-1 md:grid-cols-2 gap-5 px-10 bg-gradient-to-tr from-white to-orange-500 py-5 gap-x-32"
+          className="grid grid-cols-1 md:grid-cols-2 gap-5 px-10 bg-gradient-to-tr from-white to-primary-blue py-5 gap-x-32"
         >
-          <div className=" text-primary-blue">
+          <div className=" text-primary-green text-xl">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry?
           </div>
@@ -66,7 +66,7 @@ const FooterComponent = () => {
           </div>
         </div>
       )}
-      <div className="w-screen bg-primary-blue">
+      <div className="w-screen bg-primary-blue py-2">
         <div className="grid grid-cols-1 md:grid-cols-4 px-10 py-4 gap-10 justify-center items-center">
           <div className="flex flex-col gap-10">
             <Image
@@ -118,6 +118,11 @@ const FooterComponent = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="w-screen bg-secondary-blue h-10 flex items-center">
+        <div className="text-white px-10">
+          © 2021-2025 PT. MAXI All Rights Reserved
         </div>
       </div>
     </div>

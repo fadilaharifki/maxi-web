@@ -58,16 +58,16 @@ const ContactUsModule = () => {
 
   return (
     <LayoutComponent>
-      <section>
+      <section className="pt-20">
         <div className="relative flex flex-col h-full bg-green-white">
           <Image
-            src="/assets/image/products/montain.jpeg"
+            src="/assets/image/dummy.png"
             width={1000}
             height={1000}
             alt="Logo"
             className="w-screen h-[150vh] md:h-screen object-cover"
           />
-          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="absolute inset-0 bg-primary-blue opacity-50"></div>
           <div className="absolute inset-0 flex flex-col justify-center gap-5 px-5 md:px-10">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="flex justify-center items-center">

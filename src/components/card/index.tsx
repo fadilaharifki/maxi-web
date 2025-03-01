@@ -54,7 +54,7 @@ const CardComponent = ({
     >
       <div className="relative">
         <Image
-          src={images?.[0] ?? "/assets/image/products/palm-sugar.png"}
+          src={images?.[0] ?? "/assets/image/dummy.png"}
           alt="Product Image"
           width={400}
           height={300}
@@ -92,7 +92,7 @@ const CardComponent = ({
         )}
 
         {description && (
-          <p className="text-gray-500 mt-4 text-sm  line-clamp-3">
+          <p className="text-gray-500 mt-4 text-sm line-clamp-3">
             {description}
           </p>
         )}

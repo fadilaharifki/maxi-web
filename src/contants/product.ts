@@ -959,3 +959,64 @@ export const AllProduct = [
     },
   },
 ];
+
+export const products = [
+  {
+    id: 1,
+    product_name: "Lorem Ipsum",
+    source: "Lorem, Ipsum, Dolor - Sit Amet",
+    product_form: "Lorem",
+    category: "LOREM CATEGORY",
+    development_bussines: "100% LOREM FROM OUR FAMILY OWNED FARM",
+    best_seller: false,
+    new_product: false,
+    images: ["/assets/image/dummy.png"],
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
+    seo: {
+      title: "Bimantis - Lorem Ipsum",
+      keyword: "Lorem, Ipsum, Dolor",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.",
+    },
+  },
+  {
+    id: 2,
+    product_name: "Dolor Sit",
+    source: "Lorem & Ipsum Varieties",
+    product_form: "Dolor",
+    category: "LOREM CATEGORY",
+    development_bussines: "100% LOREM FROM OUR FAMILY OWNED FARM",
+    best_seller: false,
+    new_product: false,
+    images: ["/assets/image/dummy.png"],
+    description:
+      "Cras venenatis euismod malesuada. Curabitur sit amet magna quam. Duis ut risus eget massa volutpat viverra.",
+    seo: {
+      title: "Bimantis - Dolor Sit",
+      keyword: "Dolor, Sit, Amet",
+      description:
+        "Cras venenatis euismod malesuada. Curabitur sit amet magna quam. Duis ut risus eget massa volutpat viverra. Integer consectetur suscipit sapien.",
+    },
+  },
+  {
+    id: 3,
+    product_name: "Amet Consectetur",
+    source: "Lorem, Ipsum - Dolor",
+    botanical_name: "Botanical Lorem",
+    product_form: "Amet & Consectetur",
+    category: "LOREM CATEGORY",
+    development_bussines: "100% LOREM FROM OUR FAMILY OWNED FARM",
+    best_seller: false,
+    new_product: false,
+    images: ["/assets/image/dummy.png"],
+    description:
+      "Integer consectetur suscipit sapien ut ultrices. Suspendisse potenti. Phasellus eu risus urna.",
+    seo: {
+      title: "Bimantis - Amet Consectetur",
+      keyword: "Amet, Consectetur, Adipiscing",
+      description:
+        "Integer consectetur suscipit sapien ut ultrices. Suspendisse potenti. Phasellus eu risus urna. Nullam et augue id risus facilisis sollicitudin non nec lectus.",
+    },
+  },
+];

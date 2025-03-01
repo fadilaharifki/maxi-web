@@ -1,13 +1,8 @@
 "use client";
 
 import {
-  ChevronLeft,
   ChevronLeftCircle,
-  ChevronRight,
   ChevronRightCircle,
-  CoffeeIcon,
-  EyeIcon,
-  ListStartIcon,
   PhoneIcon,
   Share2Icon,
 } from "lucide-react";
@@ -28,16 +23,14 @@ import {
 import {
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "../../components/ui/dialog";
 import { DialogComponent } from "@/components/dialog";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { copyTextToClipboard } from "@/lib/utils";
-import { AllProduct } from "@/contants/product";
+import { AllProduct, products } from "@/contants/product";
 import { logoCustomers } from "@/contants/cloboration";
-import { useSearchParams } from "next/navigation";
 import useScreenSize from "@/hooks/useScreenSize";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
@@ -114,8 +107,38 @@ const ModuleHome = () => {
 
   return (
     <section>
-      <section className="fixed h-screen w-screen bg-gradient-to-tr from-blue-500 to-orange-500 -z-50"></section>
-      <section className="min-h-screen" id="our-company">
+      <section className="min-h-screen pt-20" id="our-company">
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 5000,
+            }),
+          ]}
+          className="w-screen h-screen"
+        >
+          <CarouselContent>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <CarouselItem key={index} className="w-screen h-screen">
+                <motion.img
+                  src="/assets/image/dummy.png"
+                  width={1000}
+                  height={1000}
+                  alt="Logo"
+                  className="h-[90vh] w-screen object-cover"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      </section>
+      {/* <section className="h-screen" id="our-company">
         <div className="relative flex flex-col h-full">
           {breakpoint !== "sm" && (
             <div className="flex justify-end">
@@ -171,7 +194,7 @@ const ModuleHome = () => {
             )}
           </div>
         </div>
-      </section>
+      </section> */}
       {flag && (
         <section className="py-10 md:py-32">
           <div className="grid grid-cols-1 md:grid-cols-3 px-10 gap-10">
@@ -208,11 +231,44 @@ const ModuleHome = () => {
           </div>
         </section>
       )}
+      <section className="py-10 px-5 md:px-32">
+        <div>
+          <motion.img
+            src="/assets/image/dummy.png"
+            width={1000}
+            height={1000}
+            alt="Logo"
+            className=" h-80 w-screen object-cover rounded-lg"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 py-10">
+          {products.map((product, i) => (
+            <CardComponent
+              key={i}
+              productName={product.product_name}
+              description={product.description}
+              isBestSeller={product.best_seller}
+              category={product.category}
+              images={product.images}
+              onDetail={() => {
+                updateParams({
+                  unix: product.id,
+                  productName: product.product_name,
+                  id: "best-seller",
+                });
+              }}
+            />
+          ))}
+        </div>
+      </section>
       <section className="my-10">
         <div className="relative flex flex-col h-full ">
           <motion.img
             ref={refVision}
-            src="/assets/image/products/montain.jpeg"
+            src="/assets/image/dummy.png"
             width={1000}
             height={1000}
             alt="Logo"
@@ -249,10 +305,10 @@ const ModuleHome = () => {
       <section className="">
         {(breakpoint === "sm" || breakpoint === "md") && (
           <div className="flex flex-col justify-center items-center pt-10 px-10">
-            <div className=" text-center font-bold text-xl text-primary-green">
+            <div className=" text-center font-bold text-xl text-secondary-blue">
               From the Glorious Land of Indonesia to the world.
             </div>
-            <div className=" text-center font-bold text-xl text-primary-green">
+            <div className=" text-center font-bold text-xl text-gray-500">
               we create the best natural product to improving the quality of
               life.
             </div>
@@ -262,7 +318,7 @@ const ModuleHome = () => {
           <div className="flex justify-center">
             <motion.img
               ref={ref}
-              src="/assets/image/products/product6.jpeg"
+              src="/assets/image/dummy.png"
               width={1000}
               height={1000}
               alt="Logo"
@@ -278,7 +334,7 @@ const ModuleHome = () => {
               className="flex flex-col justify-center items-center px-10"
             >
               <motion.div
-                className="text-center font-bold text-3xl text-white"
+                className="text-center font-bold text-3xl text-secondary-blue"
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5 }}
@@ -286,7 +342,7 @@ const ModuleHome = () => {
                 From the Glorious Land of Indonesia to the world.
               </motion.div>
               <motion.div
-                className="text-center text-xl text-white"
+                className="text-center text-xl text-gray-500"
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.2 }}
@@ -301,7 +357,7 @@ const ModuleHome = () => {
       <motion.section
         ref={refProduct}
         id="best-seller"
-        className="px-5 rounded-lg py-10 md:py-20"
+        className="px-5 rounded-lg py-10 md:py-20 bg-primary-blue"
         initial={{ opacity: 0, y: 50 }}
         animate={inProduct ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 2 }}
@@ -364,7 +420,7 @@ const ModuleHome = () => {
           animate={inCust ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <div className="text-center  text-3xl md:text-5xl text-bold text-primary-green">
+          <div className="text-center  text-3xl md:text-5xl text-bold text-secondary-blue">
             Our active customers..
           </div>
           <Carousel

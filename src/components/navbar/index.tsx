@@ -56,7 +56,7 @@ const NavBar = () => {
     <nav>
       {breakpoint === "sm" || breakpoint === "md" ? (
         <>
-          <div className="grid grid-cols-6 justify-around backdrop-blur-md items-center py-3 fixed px-5 z-50 w-screen bg-white/50">
+          <div className="grid grid-cols-6 justify-around items-center py-3 fixed px-5 z-50 w-screen bg-white/70 backdrop-blur-md">
             <div
               onClick={() => {
                 setOpen(!open);
@@ -121,7 +121,7 @@ const NavBar = () => {
                             "w-full justify-start text-sm",
                             activePathName[pathname] === menu.slug
                               ? "text-primary-blue"
-                              : "text-gray-500"
+                              : "text-gray-900"
                           )}
                           onClick={() => setOpen(false)}
                         >
@@ -136,7 +136,7 @@ const NavBar = () => {
           )}
         </>
       ) : (
-        <div className="grid grid-cols-3 justify-around items-center py-3 fixed z-50 w-screen bg-white/30 backdrop-blur-md shadow-md">
+        <div className="grid grid-cols-3 justify-around items-center py-3 fixed z-50 w-screen bg-white/70 backdrop-blur-md shadow-md">
           <div
             className="flex justify-center items-center gap-3 cursor-pointer hover:scale-125 duration-300"
             onClick={() => {
@@ -148,7 +148,7 @@ const NavBar = () => {
               width={1000}
               height={1000}
               alt="Logo"
-              className="h-20 w-40"
+              className="h-14 w-28"
             />
           </div>
           <ul className="flex justify-center gap-10">
@@ -156,7 +156,12 @@ const NavBar = () => {
               return (
                 <li key={idx}>
                   <Link
-                    className="text-white cursor-pointer relative group"
+                    className={twMerge(
+                      "text-white cursor-pointer relative group",
+                      activePathName[pathname] === menu.slug
+                        ? "text-primary-blue"
+                        : "text-gray-900"
+                    )}
                     href={menu.slug}
                   >
                     {menu.name}
@@ -164,8 +169,8 @@ const NavBar = () => {
                       className={twMerge(
                         "border-b-2 py-3 border-transparent duration-300 -mx-2 group-hover:border-primary-blue absolute inset-0",
                         activePathName[pathname] === menu.slug
-                          ? "border-whtext-white"
-                          : ""
+                          ? "text-primary-blue border-b-2 py-3 border-primary-blue"
+                          : "text-gray-900"
                       )}
                     ></div>
                   </Link>
@@ -174,7 +179,7 @@ const NavBar = () => {
             })}
           </ul>
           <ul className="flex justify-center">
-            <li className=" text-white font-bold bg-gradient-to-tr from-blue-500 to-orange-500 rounded-full text-lg px-3 py-1 cursor-pointer hover:scale-125 duration-300">
+            <li className=" text-white bg-primary-blue rounded-lg text-base px-3 py-1 cursor-pointer hover:scale-125 duration-300">
               <Link href="/contact-us">Contact Us</Link>
             </li>
           </ul>
