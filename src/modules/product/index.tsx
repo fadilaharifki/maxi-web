@@ -12,7 +12,7 @@ const ProductModule = () => {
   return (
     <LayoutComponent>
       <section
-        className="hover:scale-105 duration-300 cursor-pointer h-screen pt-20"
+        className="hover:scale-105 duration-300 cursor-pointer h-screen"
         onClick={() => {
           router.push("product/category?category=beans+%26+grains");
         }}

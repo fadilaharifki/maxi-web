@@ -5,29 +5,14 @@ import { InputWithButton } from "../ui/input";
 import { useEffect } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
+import { menus } from "@/contants/navigation";
 
 const FooterComponent = () => {
   const route = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const menus = [
-    {
-      name: "Our Company",
-      id: "our-company",
-      slug: "/",
-    },
-    {
-      name: "Product",
-      id: "product",
-      slug: "/product",
-    },
-    {
-      name: "About Us",
-      id: "product",
-      slug: "/about-us",
-    },
-  ];
+  const yerasNow = new Date().getFullYear();
 
   useEffect(() => {
     const hash = window.location.hash;
@@ -120,9 +105,9 @@ const FooterComponent = () => {
           </div>
         </div>
       </div>
-      <div className="w-screen bg-secondary-blue h-10 flex items-center">
-        <div className="text-white px-10">
-          © 2021-2025 PT. MAXI All Rights Reserved
+      <div className="w-screen bg-secondary-blue min-h-10 flex items-center">
+        <div className="text-white px-4 md:px-10 py-2">
+          © 2021 - {yerasNow} PT. MAXI All Rights Reserved
         </div>
       </div>
     </div>

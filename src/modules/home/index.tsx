@@ -35,6 +35,7 @@ import useScreenSize from "@/hooks/useScreenSize";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import LayoutComponent from "@/components/layout";
 
 const ModuleHome = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
@@ -106,8 +107,8 @@ const ModuleHome = () => {
   ];
 
   return (
-    <section>
-      <section className="min-h-screen pt-20" id="our-company">
+    <LayoutComponent>
+      <section className="min-h-screen" id="our-company">
         <Carousel
           opts={{
             align: "start",
@@ -573,7 +574,7 @@ const ModuleHome = () => {
           </div>
         </DialogContent>
       </DialogComponent>
-    </section>
+    </LayoutComponent>
   );
 };
 

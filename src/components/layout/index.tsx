@@ -4,9 +4,14 @@ import { useEffect } from "react";
 import FooterComponent from "../footer";
 import NavBar from "../navbar";
 import { useSearchParams } from "next/navigation";
+import BottomNavigation from "../bottom-navigation";
+import useScreenSize from "@/hooks/useScreenSize";
+import { cn } from "@/lib/utils";
 
 const LayoutComponent = ({ children }: any) => {
   const searchParams = useSearchParams();
+  const { breakpoint } = useScreenSize();
+  const isBottomNavgation = true;
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -24,9 +29,12 @@ const LayoutComponent = ({ children }: any) => {
 
   return (
     <main>
-      <NavBar></NavBar>
+      <NavBar isBottomNavgation={isBottomNavgation}></NavBar>
       {children}
-      <FooterComponent />
+      <div className={cn(isBottomNavgation ? "mb-16" : "m-0")}>
+        <FooterComponent />
+      </div>
+      {isBottomNavgation && breakpoint === "sm" && <BottomNavigation />}
     </main>
   );
 };
