@@ -134,7 +134,12 @@ const NavBar = ({ isBottomNavgation }: { isBottomNavgation: boolean }) => {
           )}
         </>
       ) : (
-        <div className="grid grid-cols-3 justify-around items-center py-3 fixed z-50 w-screen bg-white/70 backdrop-blur-md shadow-md -mt-20">
+        <div
+          className={cn(
+            isHidden ? "opacity-0 translate-y-5" : "opacity-100 translate-y-0",
+            "grid grid-cols-3 justify-around items-center py-3 fixed z-50 w-screen bg-white/70 backdrop-blur-md shadow-md -mt-20"
+          )}
+        >
           <div
             className="flex justify-center items-center gap-3 cursor-pointer hover:scale-125 duration-300"
             onClick={() => {

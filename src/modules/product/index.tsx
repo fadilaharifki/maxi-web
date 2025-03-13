@@ -3,47 +3,34 @@
 import LayoutComponent from "@/components/layout";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-const products = [
-  {
-    id: 1,
-    name: "220 ML",
-    description:
-      "Ukuran kecil yang praktis dan mudah dibawa. Cocok untuk konsumsi satu kali minum, acara pertemuan, seminar, atau perjalanan singkat.",
-    image: "/assets/image/products/product4-removebg-preview.png",
-    benefits: [
-      "Kemasan ringkas, mudah dibawa",
-      "Ideal untuk konsumsi sekali minum",
-      "Aman dan higienis",
-    ],
-  },
-  {
-    id: 2,
-    name: "330 ML, 600 ML, 750 ML",
-    description:
-      "Ukuran yang pas untuk aktivitas sehari-hari. Cocok bagi yang aktif dan membutuhkan hidrasi lebih lama saat bekerja, olahraga, atau bepergian.",
-    image: "/assets/image/products/product5-removebg-preview.png",
-    benefits: [
-      "Ukuran ideal untuk dibawa ke kantor, sekolah, atau olahraga",
-      "Botol ergonomis yang nyaman digenggam",
-      "Menyediakan hidrasi yang cukup untuk waktu lebih lama",
-    ],
-  },
-  {
-    id: 3,
-    name: "Galon (19L)",
-    description:
-      "Pilihan ekonomis untuk kebutuhan rumah tangga, kantor, dan usaha. Dilengkapi tutup segel untuk menjaga kebersihan dan kualitas air.",
-    image: "/assets/image/products/product10-removebg-preview.png",
-    benefits: [
-      "Kapasitas besar untuk penggunaan jangka panjang",
-      "Hemat dan lebih ramah lingkungan",
-      "Cocok untuk dispenser di rumah dan kantor",
-    ],
-  },
-];
+import { useEffect } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { productsKnowledge } from "@/contants/product";
 
 const ProductModule = () => {
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const scrollToSection = () => {
+      const hash = window.location.hash.replace("#", "");
+      if (hash) {
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }, 100);
+      }
+    };
+
+    scrollToSection();
+    window.addEventListener("hashchange", scrollToSection);
+
+    return () => {
+      window.removeEventListener("hashchange", scrollToSection);
+    };
+  }, [pathname, searchParams]);
   return (
     <LayoutComponent>
       <div className="bg-primary-blue">
@@ -63,9 +50,10 @@ const ProductModule = () => {
             />
           </div>
         </motion.section>
-        {products.map((product) => (
+        {productsKnowledge.map((product) => (
           <motion.section
             key={product.id}
+            id={product.name}
             className="h-auto md:h-screen grid grid-cols-1 md:grid-cols-2 pb-12"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

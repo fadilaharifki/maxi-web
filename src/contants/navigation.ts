@@ -24,6 +24,6 @@ export const menus = [
 
 export const activePathName: any = {
   "/": "/",
-  "/product": "/product-knowledge",
+  "/product-knowledge": "/product-knowledge",
   "/product/category": "/product-knowledge",
 };

@@ -29,7 +29,7 @@ import {
 import { DialogComponent } from "@/components/dialog";
 import { useEffect, useState } from "react";
 import { copyTextToClipboard } from "@/lib/utils";
-import { AllProduct, products } from "@/contants/product";
+import { products } from "@/contants/product";
 import { logoCustomers } from "@/contants/cloboration";
 import useScreenSize from "@/hooks/useScreenSize";
 import { twMerge } from "tailwind-merge";
@@ -52,22 +52,22 @@ const ModuleHome = () => {
     triggerOnce: true,
     threshold: 0.5,
   });
-  const { width, breakpoint } = useScreenSize();
+  const { breakpoint } = useScreenSize();
   const { params, updateParams, removeParams, getFullURL } = useParamsHook();
 
-  const { keyword, product_form, category, unix, id } = params;
+  const { id } = params;
   const flag = false;
 
   const [meta, setMeta] = useState<any>({});
 
-  useEffect(() => {
-    if (unix) {
-      setMeta({
-        open: true,
-        ...AllProduct.find((e) => e.id.toString() === unix),
-      });
-    }
-  }, [unix]);
+  // useEffect(() => {
+  //   if (unix) {
+  //     setMeta({
+  //       open: true,
+  //       ...AllProduct.find((e) => e.id.toString() === unix),
+  //     });
+  //   }
+  // }, [unix]);
 
   useEffect(() => {
     handleScroll(id);
@@ -266,7 +266,7 @@ const ModuleHome = () => {
           ))}
         </div>
       </section>
-      <section className="my-10">
+      <section className="mt-10">
         <div className="relative flex flex-col h-full ">
           <motion.img
             ref={refVision}
@@ -304,19 +304,19 @@ const ModuleHome = () => {
         </div>
       </section>
 
-      <section className="">
+      <section className="bg-blue-50">
         {(breakpoint === "sm" || breakpoint === "md") && (
           <div className="flex flex-col justify-center items-center pt-10 px-10">
-            <div className=" text-center font-bold text-xl text-secondary-blue">
+            <div className="text-center font-bold text-xl text-secondary-blue">
               From the Glorious Land of Indonesia to the world.
             </div>
-            <div className=" text-center font-bold text-xl text-gray-500">
+            <div className="text-center text-base text-gray-500">
               we create the best natural product to improving the quality of
               life.
             </div>
           </div>
         )}
-        <div className="grid grid-cols-1 md:grid-cols-2 p-10 pb-10 md:pb-32 gap-y-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 p-10 md:pt-20 pb-10 md:pb-32 gap-y-10">
           <div className="flex justify-center">
             <motion.img
               ref={ref}
@@ -386,8 +386,9 @@ const ModuleHome = () => {
             modules={[EffectCoverflow, Pagination, Navigation]}
             slidesPerView={breakpoint === "sm" || breakpoint === "md" ? 2 : 3}
           >
-            {AllProduct.filter((product) => product.best_seller).map(
-              (product, i) => (
+            {products
+              .filter((product) => product.best_seller)
+              .map((product, i) => (
                 <SwiperSlide key={i}>
                   <CardComponent
                     productName={product.product_name}
@@ -405,8 +406,7 @@ const ModuleHome = () => {
                     }}
                   />
                 </SwiperSlide>
-              )
-            )}
+              ))}
             {/* Custom Next and Previous buttons with Lucide React icons */}
             <div className="custom-next absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full mr-5">
               <ChevronRightCircle className="w-10 h-10 cursor-pointer text-primary-blue" />
@@ -424,7 +424,7 @@ const ModuleHome = () => {
           animate={inCust ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <div className="text-center  text-3xl md:text-5xl text-bold text-secondary-blue">
+          <div className="text-center text-3xl md:text-5xl text-bold text-secondary-blue">
             Our active customers..
           </div>
           <Carousel

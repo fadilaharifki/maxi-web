@@ -2,30 +2,39 @@ import HomePage from "./_home";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Maxi",
+  title: "Maxi - Home",
   description:
-    "We learnt to be honest and helpful in everything we do to support you",
-  keywords: "maxi, water",
+    "Maxi provides high-quality mineral water that is pure and refreshing. Discover the best hydration for your daily needs!",
+  keywords:
+    "maxi, mineral water, hydration, health, clean water, healthy drink",
   icons: {
     icon: "https://maxi.com/favicon.ico",
   },
   openGraph: {
-    title: "Maxi",
+    title: "Maxi - Premium Mineral Water",
     description:
-      "We learnt to be honest and helpful in everything we do to support you",
+      "Enjoy natural freshness with Maxi. Pure and safe mineral water for the whole family.",
     url: "https://www.maxi.com",
     images: [
       {
-        url: "https://maxi.com/favicon.ico",
-        width: 800,
-        height: 600,
-        alt: "maxi",
+        url: "https://maxi.com/assets/banner/BANNER-01.webp",
+        width: 1200,
+        height: 630,
+        alt: "Maxi - Premium Mineral Water",
       },
     ],
-    siteName: "maxi",
+    siteName: "Maxi",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@maxiofficial",
+    title: "Maxi - Premium Mineral Water",
+    description:
+      "Get the best hydration with Maxi, pure and refreshing mineral water for your health!",
+    images: ["https://maxi.com/assets/banner/BANNER-01.webp"],
   },
 };
-
 export default function Home() {
   return <HomePage />;
 }

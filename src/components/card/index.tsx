@@ -2,18 +2,6 @@ import { toTitleCase } from "@/lib/utils";
 import { HeartIcon } from "lucide-react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
-import { DialogComponent } from "../dialog";
-import { useEffect, useState } from "react";
-import {
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from "../ui/dialog";
-import { Button } from "../ui/button";
-import useParamsHook from "@/hooks/useParamsHook";
-import { AllProduct } from "@/contants/product";
 
 interface CardComponentInterface {
   classNameImage?: string;

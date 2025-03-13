@@ -1,25 +1,10 @@
-import { AllProduct } from "@/contants/product";
-import { formatQueryURL } from "@/lib/utils";
-import { CategoryOptions } from "@/modules/product/select-options";
+import { productsKnowledge } from "@/contants/product";
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteMapCategory = CategoryOptions.map((product) => {
+  const siteMapProductKnowledge = productsKnowledge.map((product) => {
     return {
-      url: `https://maxi.com/product/category?category=${formatQueryURL(
-        product?.value
-      )}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.5,
-    };
-  });
-
-  const siteMapProduct = AllProduct.map((product) => {
-    return {
-      url: `https://maxi.com/product/category?id=${
-        product.id
-      }&amp;productName=${formatQueryURL(product.product_name)}`,
+      url: `https://maxi.com/product-knowledge#${product.name}`,
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: 0.5,
@@ -34,24 +19,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: "https://maxi.com/product",
+      url: "https://maxi.com/product-knowledge",
       lastModified: new Date(),
       changeFrequency: "daily" as const,
       priority: 1,
     },
-    {
-      url: "https://maxi.com/product/category",
-      lastModified: new Date(),
-      changeFrequency: "daily" as const,
-      priority: 1,
-    },
-    ...siteMapCategory,
-    ...siteMapProduct,
-    {
-      url: "https://maxi.com/contact-us",
-      lastModified: new Date(),
-      changeFrequency: "daily" as const,
-      priority: 0.5,
-    },
+    ...siteMapProductKnowledge,
   ];
 }
