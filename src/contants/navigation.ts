@@ -10,20 +10,20 @@ export const menus = [
   },
   {
     name: "Product",
-    slug: "/product",
+    slug: "/product-knowledge",
     id: "product",
     icon: Package,
   },
-  {
-    name: "About Us",
-    slug: "/about-us",
-    id: "about-us",
-    icon: Info,
-  },
+  // {
+  //   name: "About Us",
+  //   slug: "/about-us",
+  //   id: "about-us",
+  //   icon: Info,
+  // },
 ];
 
 export const activePathName: any = {
   "/": "/",
-  "/product": "/product",
-  "/product/category": "/product",
+  "/product": "/product-knowledge",
+  "/product/category": "/product-knowledge",
 };

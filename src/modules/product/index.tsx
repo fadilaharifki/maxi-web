@@ -1,160 +1,124 @@
 "use client";
 
 import LayoutComponent from "@/components/layout";
-
-import useParamsHook from "@/hooks/useParamsHook";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
+
+const products = [
+  {
+    id: 1,
+    name: "220 ML",
+    description:
+      "Ukuran kecil yang praktis dan mudah dibawa. Cocok untuk konsumsi satu kali minum, acara pertemuan, seminar, atau perjalanan singkat.",
+    image: "/assets/image/products/product4-removebg-preview.png",
+    benefits: [
+      "Kemasan ringkas, mudah dibawa",
+      "Ideal untuk konsumsi sekali minum",
+      "Aman dan higienis",
+    ],
+  },
+  {
+    id: 2,
+    name: "330 ML, 600 ML, 750 ML",
+    description:
+      "Ukuran yang pas untuk aktivitas sehari-hari. Cocok bagi yang aktif dan membutuhkan hidrasi lebih lama saat bekerja, olahraga, atau bepergian.",
+    image: "/assets/image/products/product5-removebg-preview.png",
+    benefits: [
+      "Ukuran ideal untuk dibawa ke kantor, sekolah, atau olahraga",
+      "Botol ergonomis yang nyaman digenggam",
+      "Menyediakan hidrasi yang cukup untuk waktu lebih lama",
+    ],
+  },
+  {
+    id: 3,
+    name: "Galon (19L)",
+    description:
+      "Pilihan ekonomis untuk kebutuhan rumah tangga, kantor, dan usaha. Dilengkapi tutup segel untuk menjaga kebersihan dan kualitas air.",
+    image: "/assets/image/products/product10-removebg-preview.png",
+    benefits: [
+      "Kapasitas besar untuk penggunaan jangka panjang",
+      "Hemat dan lebih ramah lingkungan",
+      "Cocok untuk dispenser di rumah dan kantor",
+    ],
+  },
+];
 
 const ProductModule = () => {
-  const router = useRouter();
-
   return (
     <LayoutComponent>
-      <section
-        className="hover:scale-105 duration-300 cursor-pointer h-screen"
-        onClick={() => {
-          router.push("product/category?category=beans+%26+grains");
-        }}
-      >
-        <div className="relative flex flex-col h-full bg-green-white">
-          <Image
-            src="/assets/image/dummy.png"
-            width={1000}
-            height={1000}
-            alt="Logo"
-            className="w-screen h-screen object-cover rounded-xl"
-          />
-          <div className="absolute inset-0 bg-black opacity-30"></div>
-
-          <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10 md:px-20">
-            <div>
-              <div className=" text-2xl md:text-5xl font-bold text-white uppercase">
-                Lorem Ipsum
-              </div>
-            </div>
-            <div className="flex flex-col justify-start items-start gap-10">
-              <div className="text-base md:text-xl text-white w-5/6 md:w-3/6 flex-wrap">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        onClick={() => {
-          router.push("product/category?category=fruit+%26+vegetables");
-        }}
-        className="hover:scale-105 duration-300 cursor-pointer h-screen"
-      >
-        <div className="relative flex flex-col bg-green-white">
-          <div className="grid grid-cols-2 grid-rows-2 h-screen">
+      <div className="bg-primary-blue">
+        <motion.section
+          className="md:h-screen"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <div className="relative flex flex-col h-full bg-green-white">
             <Image
-              src="/assets/image/dummy.png"
+              src="/assets/image/banner/BANNER-01.webp"
               width={1000}
               height={1000}
               alt="Logo"
-              className="w-full h-full object-cover aspect-square"
-            />
-            <Image
-              src="/assets/image/dummy.png"
-              width={1000}
-              height={1000}
-              alt="Logo"
-              className="w-full h-full object-cover aspect-square"
-            />
-            <Image
-              src="/assets/image/dummy.png"
-              width={1000}
-              height={1000}
-              alt="Logo"
-              className="w-full h-full object-cover aspect-square"
-            />
-            <Image
-              src="/assets/image/dummy.png"
-              width={1000}
-              height={1000}
-              alt="Logo"
-              className="w-full h-full object-cover aspect-square"
+              className="w-screen md:h-screen"
             />
           </div>
-
-          <div className="absolute inset-0 bg-black opacity-30"></div>
-          <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10 md:px-20">
-            <div>
-              <div className=" text-2xl md:text-5xl font-bold text-white uppercase">
-                Lorem ipsum dolor
-              </div>
-            </div>
-            <div className="flex flex-col justify-start items-start gap-10">
-              <div className="w-5/6 md:w-3/6 ">
-                <div className=" text-base md:text-xl text-white  flex-wrap">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </div>
-              </div>
+        </motion.section>
+        {products.map((product) => (
+          <motion.section
+            key={product.id}
+            className="h-auto md:h-screen grid grid-cols-1 md:grid-cols-2 pb-12"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <motion.div
+              className="flex flex-col w-full justify-center items-center p-5 md:p-20"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
               <div>
-                <div className="bg-red-500 hover:bg-red-700 min-w-10 rounded-lg px-10 py-1">
-                  <div className=" font-bold text-lg text-white">
-                    Explore our finest
-                  </div>
-                </div>
+                <h2 className="text-4xl font-semibold text-white mb-12">
+                  {product.name}
+                </h2>
+                <p className="mb-4 text-white">{product.description}</p>
+                <ul className="list-disc pl-5 text-gray-700">
+                  {product.benefits.map((benefit, index) => (
+                    <motion.li
+                      className="text-white"
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: index * 0.2 }}
+                    >
+                      {benefit}
+                    </motion.li>
+                  ))}
+                </ul>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        onClick={() => {
-          router.push("product/category?category=natural+sweeteners");
-        }}
-        className="hover:scale-105 duration-300 cursor-pointer min-h-screen"
-      >
-        <div className="relative flex flex-col h-full bg-green-white">
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            <Image
-              src="/assets/image/dummy.png"
-              width={1000}
-              height={1000}
-              alt="Logo"
-              className="w-screen h-6/12 md:h-screen object-cover"
-            />
-            <Image
-              src="/assets/image/dummy.png"
-              width={1000}
-              height={1000}
-              alt="Logo"
-              className="w-screen h-6/12 md:h-screen object-cover"
-            />
-          </div>
-          <div className="absolute inset-0 bg-black opacity-30"></div>
-          <div className="absolute inset-0 flex flex-col justify-center gap-5 px-10 md:px-20">
-            <div>
-              <div className=" text-2xl md:text-5xl font-bold text-white uppercase">
-                Lorem ipsum dolor
+            </motion.div>
+            <motion.div
+              className="w-full flex justify-center items-center"
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <div className="w-[200px] h-[300px] md:w-2/3 md:h-2/3 relative">
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="rounded-xl object-contain"
+                />
               </div>
-            </div>
-            <div className="flex flex-col justify-start items-start gap-10">
-              <div className="w-5/6 md:w-3/6 ">
-                <div className=" text-base md:text-xl text-white flex-wrap">
-                  Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem
-                  ipsum dolor
-                </div>
-                <div className=" text-base md:text-xl text-white flex-wrap">
-                  Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem
-                  ipsum dolor
-                </div>
-              </div>
-              <div>
-                <div className="bg-red-500 hover:bg-red-700 min-w-10 rounded-lg px-10 py-1">
-                  <div className=" font-bold text-lg text-white">
-                    Go, Discover
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </motion.div>
+          </motion.section>
+        ))}
+      </div>
     </LayoutComponent>
   );
 };

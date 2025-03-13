@@ -31,7 +31,7 @@ const LayoutComponent = ({ children }: any) => {
     <main>
       <NavBar isBottomNavgation={isBottomNavgation}></NavBar>
       {children}
-      <div className={cn(isBottomNavgation ? "mb-16" : "m-0")}>
+      <div className={cn(isBottomNavgation ? "mb-16 md:m-0" : "m-0")}>
         <FooterComponent />
       </div>
       {isBottomNavgation && breakpoint === "sm" && <BottomNavigation />}

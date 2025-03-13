@@ -970,7 +970,9 @@ export const products = [
     development_bussines: "100% LOREM FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
-    images: ["/assets/image/dummy.png"],
+    images: [
+      "/assets/image/products/realistic-water-drop-with-ecosystem (1).jpg",
+    ],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.",
     seo: {
@@ -989,7 +991,9 @@ export const products = [
     development_bussines: "100% LOREM FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
-    images: ["/assets/image/dummy.png"],
+    images: [
+      "/assets/image/products/pouring-water-from-bottle-into-glass-with-blue-light.jpg",
+    ],
     description:
       "Cras venenatis euismod malesuada. Curabitur sit amet magna quam. Duis ut risus eget massa volutpat viverra.",
     seo: {
@@ -1009,7 +1013,7 @@ export const products = [
     development_bussines: "100% LOREM FROM OUR FAMILY OWNED FARM",
     best_seller: false,
     new_product: false,
-    images: ["/assets/image/dummy.png"],
+    images: ["/assets/image/products/clear-glass-with-water.jpg"],
     description:
       "Integer consectetur suscipit sapien ut ultrices. Suspendisse potenti. Phasellus eu risus urna.",
     seo: {

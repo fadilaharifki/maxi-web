@@ -36,6 +36,7 @@ import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import LayoutComponent from "@/components/layout";
+import { banners } from "@/contants/banner";
 
 const ModuleHome = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
@@ -108,7 +109,7 @@ const ModuleHome = () => {
 
   return (
     <LayoutComponent>
-      <section className="min-h-screen" id="our-company">
+      <section className="md:min-h-screen" id="our-company">
         <Carousel
           opts={{
             align: "start",
@@ -116,20 +117,20 @@ const ModuleHome = () => {
           }}
           plugins={[
             Autoplay({
-              delay: 5000,
+              delay: 3000,
             }),
           ]}
-          className="w-screen h-screen"
+          className="w-screen md:h-screen"
         >
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index} className="w-screen h-screen">
+            {banners.map((banner, index) => (
+              <CarouselItem key={index} className="w-screen md:h-screen">
                 <motion.img
-                  src="/assets/image/dummy.png"
+                  src={banner}
                   width={1000}
                   height={1000}
                   alt="Logo"
-                  className="h-[90vh] w-screen object-cover"
+                  className="md:h-[90vh] w-screen object-cover"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
@@ -235,7 +236,7 @@ const ModuleHome = () => {
       <section className="py-10 px-5 md:px-32">
         <div>
           <motion.img
-            src="/assets/image/dummy.png"
+            src="/assets/image/products/beverage-factory-conveyor-belt-with-juice-bottles.jpg"
             width={1000}
             height={1000}
             alt="Logo"
@@ -269,7 +270,7 @@ const ModuleHome = () => {
         <div className="relative flex flex-col h-full ">
           <motion.img
             ref={refVision}
-            src="/assets/image/dummy.png"
+            src="/assets/image/products/water-surface-with-ripples-drop-falling.jpg"
             width={1000}
             height={1000}
             alt="Logo"
@@ -319,7 +320,7 @@ const ModuleHome = () => {
           <div className="flex justify-center">
             <motion.img
               ref={ref}
-              src="/assets/image/dummy.png"
+              src="/assets/image/products/sotol-drink-still-life.jpg"
               width={1000}
               height={1000}
               alt="Logo"
@@ -355,65 +356,67 @@ const ModuleHome = () => {
           )}
         </div>
       </section>
-      <motion.section
-        ref={refProduct}
-        id="best-seller"
-        className="px-5 rounded-lg py-10 md:py-20 bg-primary-blue"
-        initial={{ opacity: 0, y: 50 }}
-        animate={inProduct ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 2 }}
-      >
-        <div className=" text-3xl md:text-5xl text-center text-bold text-white pb-10">
-          We Provide the Purest Mineral Water
-        </div>
-        <Swiper
-          effect={"coverflow"}
-          grabCursor={true}
-          centeredSlides={true}
-          loop={true}
-          navigation={{
-            nextEl: ".custom-next",
-            prevEl: ".custom-prev",
-          }}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 2.5,
-          }}
-          modules={[EffectCoverflow, Pagination, Navigation]}
-          slidesPerView={breakpoint === "sm" || breakpoint === "md" ? 2 : 3}
+      {flag && (
+        <motion.section
+          ref={refProduct}
+          id="best-seller"
+          className="px-5 rounded-lg py-10 md:py-20 bg-primary-blue"
+          initial={{ opacity: 0, y: 50 }}
+          animate={inProduct ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 2 }}
         >
-          {AllProduct.filter((product) => product.best_seller).map(
-            (product, i) => (
-              <SwiperSlide key={i}>
-                <CardComponent
-                  productName={product.product_name}
-                  description={product.description}
-                  isBestSeller={product.best_seller}
-                  category={product.category}
-                  images={product.images}
-                  classNameImage="md:h-[500px]"
-                  onDetail={() => {
-                    updateParams({
-                      unix: product.id,
-                      productName: product.product_name,
-                      id: "best-seller",
-                    });
-                  }}
-                />
-              </SwiperSlide>
-            )
-          )}
-          {/* Custom Next and Previous buttons with Lucide React icons */}
-          <div className="custom-next absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full mr-5">
-            <ChevronRightCircle className="w-10 h-10 cursor-pointer text-primary-blue" />
+          <div className=" text-3xl md:text-5xl text-center text-bold text-white pb-10">
+            We Provide the Purest Mineral Water
           </div>
-          <div className="custom-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full ml-5">
-            <ChevronLeftCircle className="w-10 h-10 cursor-pointer text-primary-blue" />
-          </div>
-        </Swiper>
-      </motion.section>
+          <Swiper
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            loop={true}
+            navigation={{
+              nextEl: ".custom-next",
+              prevEl: ".custom-prev",
+            }}
+            coverflowEffect={{
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 2.5,
+            }}
+            modules={[EffectCoverflow, Pagination, Navigation]}
+            slidesPerView={breakpoint === "sm" || breakpoint === "md" ? 2 : 3}
+          >
+            {AllProduct.filter((product) => product.best_seller).map(
+              (product, i) => (
+                <SwiperSlide key={i}>
+                  <CardComponent
+                    productName={product.product_name}
+                    description={product.description}
+                    isBestSeller={product.best_seller}
+                    category={product.category}
+                    images={product.images}
+                    classNameImage="md:h-[500px]"
+                    onDetail={() => {
+                      updateParams({
+                        unix: product.id,
+                        productName: product.product_name,
+                        id: "best-seller",
+                      });
+                    }}
+                  />
+                </SwiperSlide>
+              )
+            )}
+            {/* Custom Next and Previous buttons with Lucide React icons */}
+            <div className="custom-next absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full mr-5">
+              <ChevronRightCircle className="w-10 h-10 cursor-pointer text-primary-blue" />
+            </div>
+            <div className="custom-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full ml-5">
+              <ChevronLeftCircle className="w-10 h-10 cursor-pointer text-primary-blue" />
+            </div>
+          </Swiper>
+        </motion.section>
+      )}
       <section ref={refCust}>
         <motion.div
           className="flex flex-col justify-center items-center py-10 gap-20 bg-white"
