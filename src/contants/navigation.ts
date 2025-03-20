@@ -1,12 +1,19 @@
-import { Home, Info, Package } from "lucide-react";
+import { Component, Home, Info, Package } from "lucide-react";
 
 export const menus = [
   {
-    name: "Our Company",
+    name: "Home",
     label: "Home",
     slug: "/",
     id: "our-company",
-    icon: Home,
+    icon: Component,
+  },
+  {
+    name: "Our Company",
+    label: "Our Company",
+    slug: "/our-company",
+    id: "our-company",
+    icon: Component,
   },
   {
     name: "Product",
@@ -24,6 +31,7 @@ export const menus = [
 
 export const activePathName: any = {
   "/": "/",
+  "/our-company": "/our-company",
   "/product-knowledge": "/product-knowledge",
   "/product/category": "/product-knowledge",
 };
