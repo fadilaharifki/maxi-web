@@ -1,4 +1,4 @@
-import { Component, Home, Info, Package } from "lucide-react";
+import { Component, Home, Package } from "lucide-react";
 
 export const menus = [
   {
@@ -6,7 +6,7 @@ export const menus = [
     label: "Home",
     slug: "/",
     id: "our-company",
-    icon: Component,
+    icon: Home,
   },
   {
     name: "Our Company",

@@ -186,12 +186,12 @@ const NavBar = ({ isBottomNavgation }: { isBottomNavgation: boolean }) => {
       <Tooltip>
         <TooltipTrigger asChild>
           <div
-            className="fixed z-50 bottom-20 md:bottom-10 right-10 cursor-pointer hover:scale-125 duration-300"
+            className="fixed z-50 bottom-20 md:bottom-10 right-5 md:right-10 cursor-pointer hover:scale-125 duration-300"
             onClick={() => window.open("https://wa.me/62811432844", "_blank")}
           >
             <div className="bg-gradient-to-tr from-blue-500 to-orange-500 rounded-full p-2">
               <div className="p-3 border-2 border-white rounded-full">
-                <PhoneIcon className="text-white" />
+                <PhoneIcon className="text-white" size={20} />
               </div>
             </div>
           </div>

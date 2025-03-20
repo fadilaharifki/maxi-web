@@ -77,7 +77,9 @@ const ModuleHome = () => {
   const bestSellerInView = useInView(bestSellerRef, {
     margin: "-100px",
   });
-  const csrInView = useInView(csrRef, { margin: "-100px" });
+  const csrInView = useInView(csrRef, {
+    margin: "-100px",
+  });
 
   const csrActivities = [
     {
@@ -272,13 +274,12 @@ const ModuleHome = () => {
               </div>
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={csrInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="p-8 lg:p-12"
-            >
+            <motion.div className="p-8 lg:p-12">
               <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
                 plugins={[Autoplay({ delay: 3000 })]}
                 className="w-full"
               >

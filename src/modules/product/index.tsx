@@ -90,7 +90,7 @@ const ProductModule = () => {
             </motion.div>
             <motion.div
               className="w-full flex justify-center items-center"
-              initial={{ x: 50, opacity: 0 }}
+              initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}

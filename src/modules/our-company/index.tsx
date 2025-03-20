@@ -37,6 +37,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import LayoutComponent from "@/components/layout";
 import { banners } from "@/contants/banner";
+import { Timeline } from "@/components/ui/timeline";
 
 const ModuleOurCompany = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
@@ -53,21 +54,161 @@ const ModuleOurCompany = () => {
     threshold: 0.5,
   });
   const { breakpoint } = useScreenSize();
-  const { params, updateParams, removeParams, getFullURL } = useParamsHook();
+  const { params, updateParams } = useParamsHook();
 
   const { id } = params;
   const flag = false;
 
-  const [meta, setMeta] = useState<any>({});
-
-  // useEffect(() => {
-  //   if (unix) {
-  //     setMeta({
-  //       open: true,
-  //       ...AllProduct.find((e) => e.id.toString() === unix),
-  //     });
-  //   }
-  // }, [unix]);
+  const data = [
+    {
+      title: "2022",
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industrys standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/assets/image/products/placeholder.png"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/assets/image/products/placeholder.png"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/assets/image/products/placeholder.png"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/assets/image/products/placeholder.png"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "2023",
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            I usually run out of copy, but when I see content this big, I try to
+            integrate lorem ipsum.
+          </p>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            Lorem ipsum is for people who are too lazy to write copy. But we are
+            not. Here are some more example of beautiful designs I built.
+          </p>
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/assets/image/products/placeholder.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/assets/image/products/placeholder.png"
+              alt="feature template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/assets/image/products/placeholder.png"
+              alt="bento template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/assets/image/products/placeholder.png"
+              alt="cards template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "2024",
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industrys standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
+          <div className="mb-8">
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+              ✅ Lorem Ipsum is simply
+            </div>
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+              ✅ Lorem Ipsum is simply
+            </div>
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+              ✅ Lorem Ipsum is simply
+            </div>
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+              ✅ Lorem Ipsum is simply
+            </div>
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
+              ✅ Lorem Ipsum is simply
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/assets/image/products/placeholder.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/assets/image/products/placeholder.png"
+              alt="feature template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/assets/image/products/placeholder.png"
+              alt="bento template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+            <Image
+              src="/assets/image/products/placeholder.png"
+              alt="cards template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            />
+          </div>
+        </div>
+      ),
+    },
+  ];
 
   useEffect(() => {
     handleScroll(id);
@@ -130,7 +271,7 @@ const ModuleOurCompany = () => {
                   width={1000}
                   height={1000}
                   alt="Logo"
-                  className="h-screen w-screen object-cover"
+                  className="md:h-screen w-screen object-cover"
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
@@ -209,9 +350,9 @@ const ModuleOurCompany = () => {
               <div className=" text-bold text-primary-green">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 {/*  eslint-disable-next-line react/no-unescaped-entities */}
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
+                industry. Lorem Ipsum has been the industrys standard dummy text
+                ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book. It has
                 survived not only five centuries, but also the leap into
                 electronic typesetting, remaining essentially unchanged. It was
                 popularised in the 1960s with the release of Letraset sheets
@@ -237,7 +378,7 @@ const ModuleOurCompany = () => {
       )}
 
       <section>
-        <div className="relative flex flex-col h-full ">
+        <div className="relative flex flex-col h-full">
           <motion.img
             ref={refVision}
             src="/assets/image/products/water-surface-with-ripples-drop-falling.jpg"
@@ -434,121 +575,14 @@ const ModuleOurCompany = () => {
           </motion.div>
         </section>
       )}
-      <DialogComponent
-        open={meta.open}
-        handleColse={() => {
-          removeParams(["unix", "openDetail", "productName"]);
-          setMeta({ ...meta, open: false });
 
-          setTimeout(() => {
-            setMeta({});
-          }, 200);
-        }}
-      >
-        <DialogContent className="sm:max-w-[425px]">
-          <DialogHeader>
-            <DialogTitle className="  text-2xl">
-              {meta?.product_name}
-            </DialogTitle>
-            <DialogDescription>{meta?.description}</DialogDescription>
-          </DialogHeader>
-          <div>
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              className="w-full"
-            >
-              <CarouselContent>
-                {(meta.images ?? ["/assets/image/not-found.jpg"]).map(
-                  (url: string, index: number) => (
-                    <CarouselItem key={index}>
-                      <div className="p-1">
-                        <Image
-                          src={url}
-                          alt="Product Image"
-                          width={400}
-                          height={300}
-                          className={twMerge(
-                            "object-cover w-full h-72 rounded-2xl"
-                          )}
-                        />
-                      </div>
-                    </CarouselItem>
-                  )
-                )}
-              </CarouselContent>
-              {meta?.images?.length > 1 && (
-                <>
-                  <CarouselPrevious className="ml-16" />
-                  <CarouselNext className="mr-16" />
-                </>
-              )}
-            </Carousel>
-            <div className="flex gap-3 my-5">
-              <table>
-                <tbody>
-                  <tr>
-                    <td className="w-32 pb-1">Product Form</td>
-                    <td className="pb-1">:</td>
-                    <td className="pl-2 pb-1">{meta?.product_form}</td>
-                  </tr>
-                  <tr>
-                    <td className="w-32 pb-1">Category</td>
-                    <td className="pb-1">:</td>
-                    <td className="pl-2 pb-1">{meta?.category}</td>
-                  </tr>
-                  {meta?.source && (
-                    <tr>
-                      <td className="w-32 pb-1">Source</td>
-                      <td className="pb-1">:</td>
-                      <td className="pl-2 pb-1">{meta?.source}</td>
-                    </tr>
-                  )}
-                  {meta?.botanical_name && (
-                    <tr>
-                      <td className="w-32 pb-1">Botanical Name</td>
-                      <td className="pb-1">:</td>
-                      <td className="pl-2 pb-1">{meta?.botanical_name}</td>
-                    </tr>
-                  )}
-                  {meta?.manufacture && (
-                    <tr>
-                      <td className="w-32 pb-1">Manufacture</td>
-                      <td className="pb-1">:</td>
-                      <td className="pl-2 pb-1">{meta?.manufacture}</td>
-                    </tr>
-                  )}
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div className="flex gap-3 justify-end">
-            <Share2Icon
-              onClick={() => {
-                copyTextToClipboard(getFullURL());
-              }}
-              className=" cursor-pointer"
-            />
-            <PhoneIcon
-              className=" cursor-pointer"
-              onClick={() => {
-                const phoneNumber = "62811432844";
-
-                const fullURL = getFullURL();
-
-                const message = `Hello, I am interested in your product! ${fullURL}`;
-                const encodedMessage = encodeURIComponent(message);
-
-                const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
-                window.open(whatsappURL, "_blank");
-              }}
-            />
-          </div>
-        </DialogContent>
-      </DialogComponent>
+      <section>
+        <Timeline
+          data={data}
+          title="Milestones"
+          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        />
+      </section>
     </LayoutComponent>
   );
 };
