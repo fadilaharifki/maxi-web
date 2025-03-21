@@ -19,10 +19,9 @@ import { ArrowRight } from "lucide-react";
 
 interface CSRCardProps {
   image: string;
-  date: string;
   title: string;
 }
-const CSRCard = ({ image, date, title }: CSRCardProps) => {
+const CSRCard = ({ image, title }: CSRCardProps) => {
   return (
     <div className="flex flex-col">
       <div className="overflow-hidden rounded-lg">
@@ -35,7 +34,6 @@ const CSRCard = ({ image, date, title }: CSRCardProps) => {
         />
       </div>
       <div className="mt-4 space-y-2">
-        <p className="text-sm uppercase text-gray-500">{date}</p>
         <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
       </div>
     </div>
@@ -84,17 +82,14 @@ const ModuleHome = () => {
   const csrActivities = [
     {
       image: "/assets/image/products/placeholder.png",
-      date: "APRIL 2021",
       title: "Bantu Korban Banjir Bandang dan Longsor Nusa Tenggara Timur",
     },
     {
       image: "/assets/image/products/placeholder.png",
-      date: "APRIL 2021",
       title: "Bantu Korban Banjir Bandang dan Longsor Nusa Tenggara Timur",
     },
     {
       image: "/assets/image/products/placeholder.png",
-      date: "APRIL 2021",
       title: "Bantu Korban Banjir Bandang dan Longsor Nusa Tenggara Timur",
     },
     {
@@ -289,11 +284,7 @@ const ModuleHome = () => {
                       key={index}
                       className="w-full md:w-1/3 md:basis-1/3"
                     >
-                      <CSRCard
-                        image={activity.image}
-                        date={activity.date}
-                        title={activity.title}
-                      />
+                      <CSRCard image={activity.image} title={activity.title} />
                     </CarouselItem>
                   ))}
                 </CarouselContent>
