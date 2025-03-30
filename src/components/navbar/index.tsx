@@ -1,6 +1,6 @@
 "use client";
 
-import { MenuIcon, PhoneIcon, XIcon } from "lucide-react";
+import { MenuIcon, MessageCircleQuestion, MessageSquare, PhoneIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -19,11 +19,13 @@ const NavBar = ({ isBottomNavgation }: { isBottomNavgation: boolean }) => {
   const router = useRouter();
   const { breakpoint } = useScreenSize();
   const [open, setOpen] = useState(false);
+  const [isBottom, setIsBottom] = useState(false);
 
   const [isHidden, setIsHidden] = useState(false);
   const lastScrollY = useRef(0);
 
   useEffect(() => {
+
     const handleScroll = () => {
       const scrollY = window.scrollY;
 
@@ -39,6 +41,31 @@ const NavBar = ({ isBottomNavgation }: { isBottomNavgation: boolean }) => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const pengaduanMessage = encodeURIComponent(
+    "Halo, saya ingin menyampaikan pengaduan terkait produk air mineral.\n\nNama: \nNomor HP: \nJenis Produk: \nTanggal Pembelian: \nKeluhan: \n\nMohon bantuannya, terima kasih."
+  );
+
+  const contactMessage = encodeURIComponent(
+    "Halo, saya ingin bertanya mengenai produk air mineral. Mohon informasinya lebih lanjut. Terima kasih."
+  );
+
+  const pengaduanUrl = `https://wa.me/6285255565306?text=${pengaduanMessage}`;
+  const contactUrl = `https://wa.me/6285255565306?text=${contactMessage}`;
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isAtBottom =
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 10;
+      setIsBottom(isAtBottom);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  
   return (
     <nav className={"pt-20"}>
       {breakpoint === "sm" || breakpoint === "md" ? (
@@ -151,7 +178,7 @@ const NavBar = ({ isBottomNavgation }: { isBottomNavgation: boolean }) => {
               width={1000}
               height={1000}
               alt="Logo"
-              className="h-14 w-28"
+              className="h-14 w-24"
             />
           </div>
           <ul className="flex justify-center gap-10">
@@ -186,11 +213,33 @@ const NavBar = ({ isBottomNavgation }: { isBottomNavgation: boolean }) => {
       <Tooltip>
         <TooltipTrigger asChild>
           <div
-            className="fixed z-50 bottom-20 md:bottom-10 right-5 md:right-10 cursor-pointer hover:scale-125 duration-300"
-            onClick={() => window.open("https://wa.me/62811432844", "_blank")}
+            className={`fixed z-50 right-5 md:right-10 cursor-pointer hover:scale-125 duration-300 transition-all ${
+              isBottom ? "bottom-48 md:bottom-[345px]" : "bottom-40 md:bottom-28"
+            }`}
+            onClick={() => window.open(pengaduanUrl, "_blank")}
           >
-            <div className="bg-gradient-to-tr from-blue-500 to-orange-500 rounded-full p-2">
-              <div className="p-3 border-2 border-white rounded-full">
+            <div className="bg-[#25D366] rounded-lg">
+              <div className="p-2.5 border-white rounded-full">
+                <MessageSquare className="text-white" size={40} />
+              </div>
+            </div>
+          </div>
+        </TooltipTrigger>
+        <TooltipContent>
+          <p>Pengaduan</p>
+        </TooltipContent>
+      </Tooltip>
+
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <div
+            className={`fixed z-50 right-5 md:right-10 cursor-pointer hover:scale-125 duration-300 transition-all ${
+              isBottom ? "bottom-28 md:bottom-[270px]" : "bottom-20 md:bottom-10"
+            }`}
+            onClick={() => window.open(contactUrl, "_blank")}
+          >
+            <div className="bg-[#25D366] rounded-full p-2">
+              <div className="p-2.5 border-2 border-white rounded-full">
                 <PhoneIcon className="text-white" size={20} />
               </div>
             </div>

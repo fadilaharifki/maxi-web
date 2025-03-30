@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { productsKnowledge } from "@/contants/product";
+import { twMerge } from "tailwind-merge";
 
 const ProductModule = () => {
   const pathname = usePathname();
@@ -40,7 +41,7 @@ const ProductModule = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <div className="relative flex flex-col h-full bg-green-white">
+          <div className="relative flex flex-col h-full">
             <Image
               src="/assets/image/banner/BANNER-01.webp"
               width={1000}
@@ -50,11 +51,11 @@ const ProductModule = () => {
             />
           </div>
         </motion.section>
-        {productsKnowledge.map((product) => (
+        {productsKnowledge.map((product, i) => (
           <motion.section
             key={product.id}
             id={product.name}
-            className="h-auto md:h-screen grid grid-cols-1 md:grid-cols-2 pb-12"
+            className={twMerge("h-auto md:h-screen grid grid-cols-1 md:grid-cols-2 pb-12", i % 2 === 0 ? "bg-tertiary-blue":"")}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

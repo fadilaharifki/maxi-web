@@ -81,25 +81,20 @@ const FooterComponent = () => {
           <div></div>
           <div className="flex justify-start md:justify-end flex-col items-start md:items-end gap-2 md:gap-5">
             <div className="text-white font-semibold text-2xl md:text-3xl uppercase">
-              PT. MAXI
+            CV MITRA INTI JAYA
             </div>
             <div className="flex justify-start md:justify-end  flex-col items-start md:items-end gap-2">
               <div className="font-poppins text-xl text-bold text-white">
-                Global Sales Office :
+              Head office :
               </div>
               <div className="flex items-center font-poppins text-sm text-bold text-white">
-                <MapPin className="w-3 h-3 mr-2" /> Jl. M.H. Thamrin
+                <MapPin className="w-3 h-3 mr-2" /> Jalan Jendral Ahmad Yani 251
               </div>
               <div className="flex items-center font-poppins text-sm text-bold text-white">
-                <MapPin className=" opacity-0 w-3 h-3 mr-2" /> Mahkota Mas
-                Complex, Block J 57-6
+                <MapPin className=" opacity-0 w-3 h-3 mr-2" /> Kendari, Sulawesi Tenggara.
               </div>
               <div className="flex items-center font-poppins text-sm text-bold text-white">
-                <MapPin className=" opacity-0 w-3 h-3 mr-2" /> Tangerang -
-                Indonesia 15117
-              </div>
-              <div className="flex items-center font-poppins text-sm text-bold text-white">
-                <Phone className="w-3 h-3 mr-2" /> +62 21 5577 5024
+                <Phone className="w-3 h-3 mr-2" /> 0401 3196158
               </div>
             </div>
           </div>

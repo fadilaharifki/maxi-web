@@ -78,22 +78,46 @@ export const productsKnowledge = [
   },
   {
     id: 2,
-    name: "330 ML, 600 ML, 750 ML",
+    name: "330 ML",
     description:
-      "Ukuran yang pas untuk aktivitas sehari-hari. Cocok bagi yang aktif dan membutuhkan hidrasi lebih lama saat bekerja, olahraga, atau bepergian.",
-    image: "/assets/image/products/product5-removebg-preview.png",
+      "Ukuran botol yang pas untuk menemani aktivitas harian. Cocok untuk dibawa ke sekolah, kantor, atau saat bepergian.",
+    image: "/assets/image/products/4.webp",
     benefits: [
-      "Ukuran ideal untuk dibawa ke kantor, sekolah, atau olahraga",
-      "Botol ergonomis yang nyaman digenggam",
-      "Menyediakan hidrasi yang cukup untuk waktu lebih lama",
+      "Mudah dibawa ke mana saja",
+      "Ukuran cukup untuk satu sesi minum",
+      "Botol ergonomis, nyaman digenggam",
     ],
   },
   {
     id: 3,
+    name: "600 ML",
+    description:
+      "Pilihan tepat bagi yang membutuhkan hidrasi lebih lama. Ideal untuk menemani olahraga, perjalanan jauh, atau bekerja.",
+    image: "/assets/image/products/1.webp",
+    benefits: [
+      "Volume cukup untuk kebutuhan lebih lama",
+      "Mudah dimasukkan ke dalam tas",
+      "Cocok untuk aktivitas luar ruangan",
+    ],
+  },
+  {
+    id: 4,
+    name: "750 ML",
+    description:
+      "Botol dengan kapasitas lebih besar untuk memastikan kebutuhan cairan terpenuhi sepanjang hari. Cocok bagi yang aktif seharian.",
+    image: "/assets/image/products/3.webp",
+    benefits: [
+      "Daya tampung lebih besar untuk aktivitas panjang",
+      "Mengurangi frekuensi isi ulang",
+      "Nyaman dibawa bepergian",
+    ],
+  },
+  {
+    id: 5,
     name: "Galon (19L)",
     description:
       "Pilihan ekonomis untuk kebutuhan rumah tangga, kantor, dan usaha. Dilengkapi tutup segel untuk menjaga kebersihan dan kualitas air.",
-    image: "/assets/image/products/product10-removebg-preview.png",
+    image: "/assets/image/products/product10-removebg-preview.webp",
     benefits: [
       "Kapasitas besar untuk penggunaan jangka panjang",
       "Hemat dan lebih ramah lingkungan",
