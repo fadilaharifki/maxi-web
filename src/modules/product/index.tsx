@@ -7,6 +7,9 @@ import { useEffect } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { productsKnowledge } from "@/contants/product";
 import { twMerge } from "tailwind-merge";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { banners, bannersHome, bannersProduct } from "@/contants/banner";
 
 const ProductModule = () => {
   const pathname = usePathname();
@@ -34,23 +37,31 @@ const ProductModule = () => {
   }, [pathname, searchParams]);
   return (
     <LayoutComponent>
+      
       <div className="bg-primary-blue">
-        <motion.section
-          className="md:h-screen"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+      <Carousel
+          opts={{ align: "start", loop: true }}
+          plugins={[Autoplay({ delay: 3000 })]}
+          className="w-screen"
         >
-          <div className="relative flex flex-col h-full">
-            <Image
-              src="/assets/image/banner/BANNER-01.webp"
-              width={1000}
-              height={1000}
-              alt="Logo"
-              className="w-screen md:h-screen"
-            />
-          </div>
-        </motion.section>
+          <CarouselContent>
+            {bannersProduct.map((banner, index) => (
+              <CarouselItem key={index} className="w-screen">
+                <motion.img
+                  src={banner}
+                  width={1000}
+                  height={1000}
+                  alt="Logo"
+                  className="md:h-[90vh] w-screen object-cover"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+        
         {productsKnowledge.map((product, i) => (
           <motion.section
             key={product.id}

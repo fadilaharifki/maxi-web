@@ -69,7 +69,7 @@ export const productsKnowledge = [
     name: "220 ML",
     description:
       "Ukuran kecil yang praktis dan mudah dibawa. Cocok untuk konsumsi satu kali minum, acara pertemuan, seminar, atau perjalanan singkat.",
-    image: "/assets/image/products/product4-removebg-preview.png",
+    image: "/assets/image/products/5.webp",
     benefits: [
       "Kemasan ringkas, mudah dibawa",
       "Ideal untuk konsumsi sekali minum",
@@ -102,7 +102,7 @@ export const productsKnowledge = [
   },
   {
     id: 4,
-    name: "750 ML",
+    name: "1,5 L",
     description:
       "Botol dengan kapasitas lebih besar untuk memastikan kebutuhan cairan terpenuhi sepanjang hari. Cocok bagi yang aktif seharian.",
     image: "/assets/image/products/3.webp",
@@ -117,7 +117,7 @@ export const productsKnowledge = [
     name: "Galon (19L)",
     description:
       "Pilihan ekonomis untuk kebutuhan rumah tangga, kantor, dan usaha. Dilengkapi tutup segel untuk menjaga kebersihan dan kualitas air.",
-    image: "/assets/image/products/product10-removebg-preview.webp",
+    image: "/assets/image/products/2.webp",
     benefits: [
       "Kapasitas besar untuk penggunaan jangka panjang",
       "Hemat dan lebih ramah lingkungan",

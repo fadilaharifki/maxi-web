@@ -102,7 +102,7 @@ const FooterComponent = () => {
       </div>
       <div className="w-screen bg-secondary-blue min-h-10 flex items-center">
         <div className="text-white px-4 md:px-10 py-2">
-          © 2021 - {yerasNow} PT. MAXI All Rights Reserved
+          © 2025 MAXI All Rights Reserved
         </div>
       </div>
     </div>

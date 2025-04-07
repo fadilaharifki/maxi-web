@@ -3,8 +3,6 @@
 import {
   ChevronLeftCircle,
   ChevronRightCircle,
-  PhoneIcon,
-  Share2Icon,
 } from "lucide-react";
 import Image from "next/image";
 
@@ -20,27 +18,16 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import {
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "../../components/ui/dialog";
-import { DialogComponent } from "@/components/dialog";
-import { useEffect, useState } from "react";
-import { copyTextToClipboard } from "@/lib/utils";
+import { useEffect } from "react";
 import { products } from "@/contants/product";
 import { logoCustomers } from "@/contants/cloboration";
 import useScreenSize from "@/hooks/useScreenSize";
-import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import LayoutComponent from "@/components/layout";
-import { banners } from "@/contants/banner";
 import { Timeline } from "@/components/ui/timeline";
 
 const ModuleOurCompany = () => {
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
   const { ref: refVision, inView: inViewVision } = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -53,8 +40,13 @@ const ModuleOurCompany = () => {
     triggerOnce: true,
     threshold: 0.5,
   });
+
+  const { ref: aboutRef, inView: aboutInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
   const { breakpoint } = useScreenSize();
-  const { params, updateParams } = useParamsHook();
+  const { params, updateParams } = useParamsHook()
 
   const { id } = params;
   const flag = false;
@@ -64,7 +56,7 @@ const ModuleOurCompany = () => {
       title: "2022",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-primary-blue text-xs md:text-sm font-normal mb-8">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industrys standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -107,11 +99,11 @@ const ModuleOurCompany = () => {
       title: "2023",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-primary-blue text-xs md:text-sm font-normal mb-8">
             I usually run out of copy, but when I see content this big, I try to
             integrate lorem ipsum.
           </p>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+          <p className="text-primary-blue text-xs md:text-sm font-normal mb-8">
             Lorem ipsum is for people who are too lazy to write copy. But we are
             not. Here are some more example of beautiful designs I built.
           </p>
@@ -152,29 +144,12 @@ const ModuleOurCompany = () => {
       title: "2024",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-primary-blue text-xs md:text-sm font-normal mb-4">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industrys standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book.
           </p>
-          <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Lorem Ipsum is simply
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Lorem Ipsum is simply
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Lorem Ipsum is simply
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Lorem Ipsum is simply
-            </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Lorem Ipsum is simply
-            </div>
-          </div>
           <div className="grid grid-cols-2 gap-4">
             <Image
               src="/assets/image/products/placeholder.png"
@@ -250,37 +225,6 @@ const ModuleOurCompany = () => {
 
   return (
     <LayoutComponent>
-      <section className="md:min-h-screen" id="our-company">
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          plugins={[
-            Autoplay({
-              delay: 3000,
-            }),
-          ]}
-          className="w-screen md:h-screen"
-        >
-          <CarouselContent>
-            {banners.map((banner, index) => (
-              <CarouselItem key={index} className="w-screen md:h-screen">
-                <motion.img
-                  src={banner}
-                  width={1000}
-                  height={1000}
-                  alt="Logo"
-                  className="md:h-screen w-screen object-cover"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
-                />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
-      </section>
       {flag && (
         <section className="h-screen" id="our-company">
           <div className="relative flex flex-col h-full">
@@ -415,58 +359,55 @@ const ModuleOurCompany = () => {
         </div>
       </section>
 
-      <section className="bg-blue-50">
-        {(breakpoint === "sm" || breakpoint === "md") && (
-          <div className="flex flex-col justify-center items-center pt-10 px-10">
-            <div className="text-center font-bold text-xl text-secondary-blue">
-              From the Glorious Land of Indonesia to the world.
-            </div>
-            <div className="text-center text-base text-gray-500">
-              we create the best natural product to improving the quality of
-              life.
+      <motion.section
+        ref={aboutRef}
+        initial={{ opacity: 0, y: 50 }}
+        animate={aboutInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.5 }}
+        className="grid grid-cols-1 md:grid-cols-2 p-5 md:px-20 gap-5 bg-primary-blue"
+      >
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={aboutInView ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="flex flex-col gap-3 justify-center"
+        >
+          <div className="flex flex-col gap-1">
+            <div className="text-xl font-semibold text-white">Tentang Kami</div>
+            <div className="text-3xl font-semibold text-white">
+              Membantu orang sehat menjadi lebih sehat
             </div>
           </div>
-        )}
-        <div className="grid grid-cols-1 md:grid-cols-2 p-10 md:pt-20 pb-10 md:pb-32 gap-y-10">
-          <div className="flex justify-center">
-            <motion.img
-              ref={ref}
-              src="/assets/image/products/sotol-drink-still-life.jpg"
-              width={1000}
-              height={1000}
-              alt="Logo"
-              className="w-[50vh] h-[70vh] rounded-xl"
-              initial={{ opacity: 0, y: 50 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5 }}
-            />
+          <div className="text-white">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industrys standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
           </div>
-          {breakpoint !== "sm" && breakpoint !== "md" && (
-            <div
-              ref={ref}
-              className="flex flex-col justify-center items-center px-10"
-            >
-              <motion.div
-                className="text-center font-bold text-3xl text-secondary-blue"
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5 }}
-              >
-                From the Glorious Land of Indonesia to the world.
-              </motion.div>
-              <motion.div
-                className="text-center text-xl text-gray-500"
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                We create the best natural product to improving the quality of
-                life.
-              </motion.div>
-            </div>
-          )}
-        </div>
-      </section>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={aboutInView ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="flex flex-col gap-3 justify-end items-end"
+        >
+          <motion.img
+            src="/assets/image/products/office-harus-ganti.png"
+            width={1000}
+            height={1000}
+            alt="Logo"
+            className="h-96 w-screen md:w-2/3 object-cover rounded-lg"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          />
+        </motion.div>
+      </motion.section>
       {flag && (
         <motion.section
           ref={refProduct}
@@ -580,7 +521,6 @@ const ModuleOurCompany = () => {
         <Timeline
           data={data}
           title="Milestones"
-          description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         />
       </section>
     </LayoutComponent>
