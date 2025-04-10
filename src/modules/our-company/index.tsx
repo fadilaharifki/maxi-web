@@ -1,9 +1,6 @@
 "use client";
 
-import {
-  ChevronLeftCircle,
-  ChevronRightCircle,
-} from "lucide-react";
+import { ChevronLeftCircle, ChevronRightCircle } from "lucide-react";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -46,7 +43,7 @@ const ModuleOurCompany = () => {
     threshold: 0.5,
   });
   const { breakpoint } = useScreenSize();
-  const { params, updateParams } = useParamsHook()
+  const { params, updateParams } = useParamsHook();
 
   const { id } = params;
   const flag = false;
@@ -210,16 +207,16 @@ const ModuleOurCompany = () => {
 
   const visionDescription = [
     {
-      title: "Our Main Values",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+      title: "Visi",
+      text: "Menjadi produsen AMDK terpercaya yang mengedepankan kualitas, higienitas, dan standar mutu tinggi demi kesehatan dan kepuasan pelanggan.",
     },
     {
-      title: "Our Vision",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+      title: "Misi",
+      text: "Menghasilkan produk air minum berkualitas tinggi dengan pelayanan terbaik untuk memenuhi kepuasan pelanggan.",
     },
     {
-      title: "Our Technology",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+      title: "Nilai-Nilai Perusahaan",
+      text: "Kualitas, integritas, inovasi, kepedulian, dan profesionalisme dalam setiap proses dan pelayanan.",
     },
   ];
 
@@ -518,10 +515,7 @@ const ModuleOurCompany = () => {
       )}
 
       <section>
-        <Timeline
-          data={data}
-          title="Milestones"
-        />
+        <Timeline data={data} title="Milestones" />
       </section>
     </LayoutComponent>
   );
