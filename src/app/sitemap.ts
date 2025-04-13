@@ -4,7 +4,7 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteMapProductKnowledge = productsKnowledge.map((product) => {
     return {
-      url: `https://maxi.com/product-knowledge#${product.name}`,
+      url: `https://maxi.com/product-knowledge#${product.product_name}`,
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: 0.5,

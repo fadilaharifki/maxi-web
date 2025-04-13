@@ -7,7 +7,11 @@ import { useEffect } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { productsKnowledge } from "@/contants/product";
 import { twMerge } from "tailwind-merge";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { banners, bannersHome, bannersProduct } from "@/contants/banner";
 
@@ -37,9 +41,8 @@ const ProductModule = () => {
   }, [pathname, searchParams]);
   return (
     <LayoutComponent>
-      
       <div className="bg-primary-blue">
-      <Carousel
+        <Carousel
           opts={{ align: "start", loop: true }}
           plugins={[Autoplay({ delay: 3000 })]}
           className="w-screen"
@@ -61,12 +64,15 @@ const ProductModule = () => {
             ))}
           </CarouselContent>
         </Carousel>
-        
+
         {productsKnowledge.map((product, i) => (
           <motion.section
             key={product.id}
-            id={product.name}
-            className={twMerge("h-auto md:h-screen grid grid-cols-1 md:grid-cols-2 pb-12", i % 2 === 0 ? "bg-tertiary-blue":"")}
+            id={product.product_name}
+            className={twMerge(
+              "h-auto md:h-screen grid grid-cols-1 md:grid-cols-2 pb-12",
+              i % 2 === 0 ? "bg-tertiary-blue" : ""
+            )}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -81,7 +87,7 @@ const ProductModule = () => {
             >
               <div>
                 <h2 className="text-4xl font-semibold text-white mb-12">
-                  {product.name}
+                  {product.product_name}
                 </h2>
                 <p className="mb-4 text-white">{product.description}</p>
                 <ul className="list-disc pl-5 text-gray-700">
@@ -110,7 +116,7 @@ const ProductModule = () => {
               <div className="w-[200px] h-[300px] md:w-2/3 md:h-2/3 relative">
                 <Image
                   src={product.image}
-                  alt={product.name}
+                  alt={product.product_name}
                   fill
                   className="rounded-xl object-contain"
                 />

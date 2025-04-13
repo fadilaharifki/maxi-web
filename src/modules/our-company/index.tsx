@@ -16,7 +16,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useEffect } from "react";
-import { products } from "@/contants/product";
+import { products, visionDescription } from "@/contants/product";
 import { logoCustomers } from "@/contants/cloboration";
 import useScreenSize from "@/hooks/useScreenSize";
 import { motion } from "framer-motion";
@@ -50,133 +50,124 @@ const ModuleOurCompany = () => {
 
   const data = [
     {
-      title: "2022",
+      title: "2008",
       content: (
         <div>
-          <p className="text-primary-blue text-xs md:text-sm font-normal mb-8">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+          <p className="text-primary-blue text-lg md:text-2xl font-bold mb-2">
+            MAXI didirikan dengan komitmen :
           </p>
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="/assets/image/products/placeholder.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/products/placeholder.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/products/placeholder.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/products/placeholder.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div>
+          <p className="text-primary-blue italic text-xs md:text-sm font-normal mb-2">
+            “Setiap tetes air minum MAXI diproduksi untuk mendukung Anda
+            memaksimalkan hari – hari Anda”
+          </p>
+          <p className="text-primary-blue text-xs md:text-sm font-normal mb-2">
+            Komitmen kami terhadap kualitas dibuktikan dengan preolehan izin
+            edar dari BPOM, Sertifikasi HALAL, dan sertifikat Standar Nasional
+            Indonesia (SNI). Langkah ini memastikan bahwa setiap produk yang
+            Anda nikmati berkualitas baik, aman, bersih, dan terpercaya. Semua
+            ini kami lakukan agar MAXI menjadi sumber energi yang dapat Anda
+            andalkan setiap hari.
+          </p>
+          {flag && (
+            <div className="grid grid-cols-2 gap-4">
+              <Image
+                src="/assets/image/products/placeholder.png"
+                alt="hero template"
+                width={500}
+                height={500}
+                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+              <Image
+                src="/assets/image/products/placeholder.png"
+                alt="feature template"
+                width={500}
+                height={500}
+                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+              <Image
+                src="/assets/image/products/placeholder.png"
+                alt="bento template"
+                width={500}
+                height={500}
+                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+              <Image
+                src="/assets/image/products/placeholder.png"
+                alt="cards template"
+                width={500}
+                height={500}
+                className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </div>
+          )}
         </div>
       ),
     },
     {
-      title: "2023",
+      title: "2009",
       content: (
         <div>
-          <p className="text-primary-blue text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+          <p className="text-primary-blue text-lg md:text-2xl font-bold mb-2">
+            Launching MAXI gelas 240 ml |Praktis Menemani Setiap Aktivitas
           </p>
-          <p className="text-primary-blue text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
+          <p className="text-primary-blue text-xs md:text-sm font-normal mb-2">
+            Produk pertama kami hadir : Air minum MAXI dalam kemasan gelas 240
+            ml. Air minum segar dalam kemasan praktis yang siap menemani Anda
+            dalam setiap momen penting.
           </p>
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="/assets/image/products/placeholder.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/products/placeholder.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/products/placeholder.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/products/placeholder.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div>
         </div>
       ),
     },
     {
-      title: "2024",
+      title: "2015",
       content: (
         <div>
-          <p className="text-primary-blue text-xs md:text-sm font-normal mb-4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+          <p className="text-primary-blue text-lg md:text-2xl font-bold mb-2">
+            Lauching MAXI botol 600 ml dan 1500 ml | Teman Aktif Sepanjang Hari
           </p>
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="/assets/image/products/placeholder.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/products/placeholder.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/products/placeholder.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="/assets/image/products/placeholder.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-          </div>
+          <p className="text-primary-blue text-xs md:text-sm font-normal mb-2">
+            MAXI kembali menghadirkan dua varian kemasan baru yang dirancang
+            khusus untuk mendukung gaya hidup aktif Anda, dengan kesegaran yang
+            selalu bisa diandalkan kapan saja.
+          </p>
+          <p className="text-primary-blue text-xs md:text-sm font-normal mb-2">
+            MAXI botol 600 ml hadir untuk menemani setiap langkah Anda,
+            sementara MAXI botol 1500 ml siap memenuhi kebutuhan hidrasi lebih
+            besar sepanjang hari
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "2018",
+      content: (
+        <div>
+          <p className="text-primary-blue text-lg md:text-2xl font-bold mb-2">
+            Launching MAXI Galon 19 L | Solusi Hidrasi untuk Lingkungan Aktif
+          </p>
+          <p className="text-primary-blue text-xs md:text-sm font-normal mb-2">
+            MAXI menghadirkan kemasan galon 19 liter yang siap mendukung
+            produktivitas di rumah, kantor, komunitas, dan ruang publik. Dengan
+            kesegaran yang selalu terjaga, MAXI galon memastikan energi tetap
+            maksimal di setiap aktivitas Anda.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "2020",
+      content: (
+        <div>
+          <p className="text-primary-blue text-lg md:text-2xl font-bold mb-2">
+            Launching MAXI botol 330 ml | Kesegaran yang Menyempurnakan Setiap
+            Langkah
+          </p>
+          <p className="text-primary-blue text-xs md:text-sm font-normal mb-2">
+            MAXI mempersembahkan kesegaran dalam kemasan botol 330 ml, untuk
+            mendukung Anda yang bergerak cepat dan bermimpi besar. Kecil dalam
+            ukuran, besar dalam manfaat – sempurna untuk maksimalkan setiap
+            momen.
+          </p>
         </div>
       ),
     },
@@ -204,21 +195,6 @@ const ModuleOurCompany = () => {
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
-
-  const visionDescription = [
-    {
-      title: "Visi",
-      text: "Menjadi produsen AMDK terpercaya yang mengedepankan kualitas, higienitas, dan standar mutu tinggi demi kesehatan dan kepuasan pelanggan.",
-    },
-    {
-      title: "Misi",
-      text: "Menghasilkan produk air minum berkualitas tinggi dengan pelayanan terbaik untuk memenuhi kepuasan pelanggan.",
-    },
-    {
-      title: "Nilai-Nilai Perusahaan",
-      text: "Kualitas, integritas, inovasi, kepedulian, dan profesionalisme dalam setiap proses dan pelayanan.",
-    },
-  ];
 
   return (
     <LayoutComponent>
@@ -372,19 +348,16 @@ const ModuleOurCompany = () => {
           <div className="flex flex-col gap-1">
             <div className="text-xl font-semibold text-white">Tentang Kami</div>
             <div className="text-3xl font-semibold text-white">
-              Membantu orang sehat menjadi lebih sehat
+              Maksimalkan Harimu
             </div>
           </div>
           <div className="text-white">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Langkah Awal untuk Memulai Hari yang Penuh Energi Maksimalkan Harimu
+            Kami percaya bahwa di tengah aktivitas yang padat, kita semua
+            membutuhkan sesuatu yang sederhana, namun sangat berarti : energi
+            dan kesegaran. Untuk itu, kami menghadirkan MAXI, air minum
+            berkualitas yang tidak hanya melepas dahaga, tetapi juga menjadi
+            langkah awal untuk menjalani hari dengan lebih produktif.
           </div>
         </motion.div>
         <motion.div
@@ -515,7 +488,14 @@ const ModuleOurCompany = () => {
       )}
 
       <section>
-        <Timeline data={data} title="Milestones" />
+        <Timeline
+          data={data}
+          title="Milestones"
+          tag="#MaksimalkanHarimu"
+          footerDesc="Setiap langkah kecil di pagi hari, setiap tegukan segar yang Anda
+          nikmati, semuanya adalah bagian dari perjalanan besar Anda. Dan MAXI
+          ada di sana, menemani Anda di setiap momen."
+        />
       </section>
     </LayoutComponent>
   );
