@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    product_name: "Kesegaran Alami dari Mata Air Pegunungan",
+    product_name: "Kesegaran Alami, Terasa di Setiap Tetes",
     source: "Pegunungan Indonesia",
     product_form: "Botol",
     category: "Maxi Premium Series",
@@ -12,12 +12,12 @@ export const products = [
       "/assets/image/products/realistic-water-drop-with-ecosystem (1).jpg",
     ],
     description:
-      "Maxi Air Mineral diproses langsung dari sumber mata air pegunungan yang kaya mineral alami. Rasakan kesegarannya di setiap tetes yang menyegarkan tubuh dan pikiran.",
+      "Maxi Air Mineral berasal dari sumber air pilihan yang murni dan bersih. Memberikan kesegaran yang menenangkan tubuh dan menyegarkan hari-harimu.",
     seo: {
       title: "Maxi Air Mineral - Kesegaran Alami dari Mata Air Pegunungan",
       keyword: "air mineral alami, air pegunungan, maxi air mineral",
       description:
-        "Air mineral berkualitas dari pegunungan Indonesia. Maxi menghadirkan kesegaran alami di setiap tetesnya, cocok untuk menjaga hidrasi harian Anda.",
+        "Maxi Air Mineral berasal dari sumber air pilihan yang murni dan bersih. Memberikan kesegaran yang menenangkan tubuh dan menyegarkan hari-harimu.",
     },
   },
   {
