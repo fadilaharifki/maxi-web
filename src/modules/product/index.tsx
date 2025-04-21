@@ -125,6 +125,25 @@ const ProductModule = () => {
           </motion.section>
         ))}
       </div>
+      <div>
+        <motion.section>
+          <motion.div
+            className="w-full flex justify-center items-center"
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <Image
+              src={"/assets/image/banner/BANNER-02.webp"}
+              alt={"product 3"}
+              width={1000}
+              height={1000}
+              className="w-full h-auto object-contain"
+            />
+          </motion.div>
+        </motion.section>
+      </div>
     </LayoutComponent>
   );
 };

@@ -1,6 +1,12 @@
 "use client";
 
-import { MenuIcon, MessageCircleQuestion, MessageSquare, PhoneIcon, XIcon } from "lucide-react";
+import {
+  MenuIcon,
+  MessageCircleQuestion,
+  MessageSquare,
+  PhoneIcon,
+  XIcon,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -25,7 +31,6 @@ const NavBar = ({ isBottomNavgation }: { isBottomNavgation: boolean }) => {
   const lastScrollY = useRef(0);
 
   useEffect(() => {
-
     const handleScroll = () => {
       const scrollY = window.scrollY;
 
@@ -53,7 +58,6 @@ const NavBar = ({ isBottomNavgation }: { isBottomNavgation: boolean }) => {
   const pengaduanUrl = `https://wa.me/6285255565306?text=${pengaduanMessage}`;
   const contactUrl = `https://wa.me/6285255565306?text=${contactMessage}`;
 
-
   useEffect(() => {
     const handleScroll = () => {
       const isAtBottom =
@@ -65,7 +69,6 @@ const NavBar = ({ isBottomNavgation }: { isBottomNavgation: boolean }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  
   return (
     <nav className={"pt-20"}>
       {breakpoint === "sm" || breakpoint === "md" ? (
@@ -213,8 +216,10 @@ const NavBar = ({ isBottomNavgation }: { isBottomNavgation: boolean }) => {
       <Tooltip>
         <TooltipTrigger asChild>
           <div
-            className={`fixed z-50 right-5 md:right-10 cursor-pointer hover:scale-125 duration-300 transition-all ${
-              isBottom ? "bottom-48 md:bottom-[345px]" : "bottom-40 md:bottom-28"
+            className={`fixed z-50 right-5 md:right-10 cursor-pointer hover:scale-125 duration-300 transition-all justify-center items-center flex flex-row ${
+              isBottom
+                ? "bottom-48 md:bottom-[345px]"
+                : "bottom-40 md:bottom-28"
             }`}
             onClick={() => window.open(pengaduanUrl, "_blank")}
           >
@@ -223,8 +228,12 @@ const NavBar = ({ isBottomNavgation }: { isBottomNavgation: boolean }) => {
                 <MessageSquare className="text-white" size={40} />
               </div>
             </div>
+            <div className="bg-[#25D366] -ml-2 px-2 py-1 rounded-lg">
+              <p className="text-white text-xs">Pengaduan</p>
+            </div>
           </div>
         </TooltipTrigger>
+
         <TooltipContent>
           <p>Pengaduan</p>
         </TooltipContent>
@@ -233,15 +242,22 @@ const NavBar = ({ isBottomNavgation }: { isBottomNavgation: boolean }) => {
       <Tooltip>
         <TooltipTrigger asChild>
           <div
-            className={`fixed z-50 right-5 md:right-10 cursor-pointer hover:scale-125 duration-300 transition-all ${
-              isBottom ? "bottom-28 md:bottom-[270px]" : "bottom-20 md:bottom-10"
+            className={`fixed z-50 right-5 md:right-10 cursor-pointer hover:scale-125 duration-300 transition-all justify-center items-center flex flex-row ${
+              isBottom
+                ? "bottom-28 md:bottom-[270px]"
+                : "bottom-20 md:bottom-10"
             }`}
             onClick={() => window.open(contactUrl, "_blank")}
           >
-            <div className="bg-[#25D366] rounded-full p-2">
-              <div className="p-2.5 border-2 border-white rounded-full">
-                <PhoneIcon className="text-white" size={20} />
+            <div className="flex">
+              <div className="bg-[#25D366] rounded-full p-2">
+                <div className="p-2.5 border-2 border-white rounded-full">
+                  <PhoneIcon className="text-white" size={20} />
+                </div>
               </div>
+            </div>
+            <div className="bg-[#25D366] -ml-2 px-2 py-1 rounded-lg">
+              <p className="text-white text-xs">Contact Us</p>
             </div>
           </div>
         </TooltipTrigger>
