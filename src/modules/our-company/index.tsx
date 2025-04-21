@@ -367,9 +367,9 @@ const ModuleOurCompany = () => {
           className="flex flex-col gap-3 justify-end items-end"
         >
           <motion.img
-            src="/assets/image/products/office-harus-ganti.png"
-            width={1000}
-            height={1000}
+            src="/assets/image/products/office.webp"
+            width={500}
+            height={500}
             alt="Logo"
             className="h-96 w-screen md:w-2/3 object-cover rounded-lg"
             initial={{ opacity: 0, scale: 0.8 }}

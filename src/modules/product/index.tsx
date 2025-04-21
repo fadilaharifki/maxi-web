@@ -135,7 +135,7 @@ const ProductModule = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <Image
-              src={"/assets/image/banner/BANNER-02.webp"}
+              src={"/assets/image/banner/BANNER-03.webp"}
               alt={"product 3"}
               width={1000}
               height={1000}

@@ -9,16 +9,16 @@ export const metadata: Metadata = {
   keywords:
     "maxi, water, mineral water, hydration, clean water, healthy drinking",
   icons: {
-    icon: "https://maxi.com/favicon.ico",
+    icon: "https://maxiamdk.com/favicon.ico",
   },
   openGraph: {
     title: "Maxi - Premium Mineral Water",
     description:
       "Discover the purest hydration with Maxi. Stay refreshed and healthy with our premium mineral water.",
-    url: "https://www.maxi.com/products",
+    url: "https://www.maxiamdk.com/products",
     images: [
       {
-        url: "https://maxi.com/assets/banner/BANNER-01.webp",
+        url: "https://maxiamdk.com/assets/banner/BANNER-01.webp",
         width: 1200,
         height: 630,
         alt: "Maxi Mineral Water",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Maxi - Premium Mineral Water",
     description:
       "Stay hydrated with Maxi's premium mineral water. The best choice for your daily hydration needs!",
-    images: ["https://maxi.com/assets/banner/BANNER-01.webp"],
+    images: ["https://maxiamdk.com/assets/banner/BANNER-01.webp"],
   },
 };
 
