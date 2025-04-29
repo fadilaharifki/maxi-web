@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   keywords:
     "maxi, mineral water, hydration, health, clean water, healthy drink",
   icons: {
-    icon: "https://maxiamdk.com/favicon.ico",
+    icon: "https://www.maxiamdk.com/favicon.ico",
   },
   openGraph: {
     title: "Maxi - Premium Mineral Water",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://www.maxiamdk.com",
     images: [
       {
-        url: "https://maxiamdk.com/assets/banner/BANNER-01.webp",
+        url: "https://www.maxiamdk.com/assets/banner/BANNER-01.webp",
         width: 1200,
         height: 630,
         alt: "Maxi - Premium Mineral Water",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Maxi - Premium Mineral Water",
     description:
       "Get the best hydration with Maxi, pure and refreshing mineral water for your health!",
-    images: ["https://maxiamdk.com/assets/banner/BANNER-01.webp"],
+    images: ["https://www.maxiamdk.com/assets/banner/BANNER-01.webp"],
   },
 };
 export default function Home() {

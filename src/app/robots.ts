@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://maxiamdk.com/sitemap.xml",
+    sitemap: "https://www.maxiamdk.com/sitemap.xml",
   };
 }
